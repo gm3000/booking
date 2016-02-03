@@ -18,6 +18,7 @@ class CreateVipProgramsTable extends Migration
             $table->string('title_en');
             $table->string('desc');
             $table->string('desc_en');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

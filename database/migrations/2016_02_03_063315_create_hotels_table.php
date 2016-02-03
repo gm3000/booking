@@ -20,6 +20,7 @@ class CreateHotelsTable extends Migration
             $table->text('desc');
             $table->text('desc_en');
             $table->string('logo');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

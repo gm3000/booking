@@ -17,6 +17,10 @@ class CreateFlightsTable extends Migration
             $table->integer('airport_id');
             $table->integer('airline_id');
             $table->string('external_id');
+            $table->integer('origin_city_id');
+            $table->integer('destination_city_id');
+            $table->dateTime('departure_time');
+            $table->dateTime('landing_time');
             $table->timestamps();
         });
     }

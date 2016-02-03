@@ -20,6 +20,7 @@ class CreateActivitiesTable extends Migration
             $table->text('desc');
             $table->text('desc_en');
             $table->string('poster');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
