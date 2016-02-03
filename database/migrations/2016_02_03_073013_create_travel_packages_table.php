@@ -14,9 +14,9 @@ class CreateTravelPackagesTable extends Migration
     {
         Schema::create('travel_packages', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name_cn');
             $table->string('name_en');
-            $table->string('desc');
+            $table->string('desc_cn');
             $table->string('desc_en');
             $table->float('discount');
             $table->softDeletes();

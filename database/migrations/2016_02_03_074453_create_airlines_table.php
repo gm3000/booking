@@ -14,9 +14,9 @@ class CreateAirlinesTable extends Migration
     {
         Schema::create('airlines', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name_cn');
             $table->string('name_en');
-            $table->text('desc');
+            $table->text('desc_cn');
             $table->text('desc_en');
             $table->string('logo');
             $table->softDeletes();

@@ -15,9 +15,9 @@ class CreateActivitiesTable extends Migration
         Schema::create('activities', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('city_id');
-            $table->string('name');
+            $table->string('name_cn');
             $table->string('name_en');
-            $table->text('desc');
+            $table->text('desc_cn');
             $table->text('desc_en');
             $table->string('poster');
             $table->softDeletes();

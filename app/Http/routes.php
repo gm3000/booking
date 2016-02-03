@@ -13,3 +13,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/setlanguage', function(){
+    $language = Request::input('lang');
+    session(['lang'=>$language]);
+    $backUrl = URL::previous();
+    if(str_contains($backUrl,'/setlanguage'))
+    {
+        return redirect('/');
+    }
+    else
+    {
+        return redirect($backUrl);
+    }
+});
