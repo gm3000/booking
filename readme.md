@@ -1,6 +1,6 @@
 ## bookings website based on laravel 5.1.11
 
-windows platform,
+- windows environment setup,
 ```
     1. download php 5.6.17 VC11 x86 Non Thread Safe
        (1) add php.exe folder to PATH environment
@@ -20,4 +20,13 @@ windows platform,
     5. php artisan serve
     6. goto http://localhost:8000/
     7. if you see laravel welcome page the configuration succeed
+```
+- create tables in database
+```
+    1. dev environment will use sqlite database
+    2. dev database has been configured in config\database.php
+    3. bookings.sqlite can be found in storage folder
+    4. create table migration files has been at folder database\migrations
+    5. just at project folder fun php.exe artisan migrate to create all the tables
+
 ```
