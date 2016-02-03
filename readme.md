@@ -6,6 +6,7 @@
        (1) add php.exe folder to PATH environment
        (2) edit php.ini file, uncomment below lines,
        
+           ;extension_dir = "ext"
            ;extension=php_mbstring.dll
            ;extension=php_mysql.dll
            ;extension=php_openssl.dll
