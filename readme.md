@@ -27,6 +27,6 @@
     2. dev database has been configured in config\database.php
     3. bookings.sqlite can be found in storage folder
     4. create table migration files has been at folder database\migrations
-    5. just at project folder fun php.exe artisan migrate to create all the tables
+    5. just at project folder fun php.exe artisan migrate:refresh to create all the tables
 
 ```
