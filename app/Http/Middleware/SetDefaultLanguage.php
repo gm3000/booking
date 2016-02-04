@@ -15,11 +15,15 @@ class SetDefaultLanguage
      */
     public function handle($request, Closure $next)
     {
-        if(!$request->session()->has('lang'))
+
+        if(!\Cookie::has('lang'))
         {
-            $request->session()->put('lang','cn');
+            \App::setLocale('cn');
         }
-        \App::setLocale(session('lang'));
+        else
+        {
+            \App::setLocale(\Cookie::get('lang'));
+        }
         return $next($request);
     }
 }

@@ -8,15 +8,14 @@ Route::group(['prefix' => '/'], function () {
 
     Route::get('/setlanguage', function(){
         $language = Request::input('lang');
-        session(['lang'=>$language]);
         $backUrl = URL::previous();
         if(str_contains($backUrl,'/setlanguage'))
         {
-            return redirect('/');
+            return redirect('/')->withCookie('lang',$language);
         }
         else
         {
-            return redirect($backUrl);
+            return redirect($backUrl)->withCookie('lang',$language);
         }
     });
 
