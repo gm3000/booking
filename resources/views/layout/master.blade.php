@@ -8,7 +8,7 @@
 
     <!-- Site Properties -->
     <title>@yield('title')</title>
-    <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
     <style>
         #navigator .menu {
             padding-left:150px;
@@ -25,10 +25,14 @@
             font-size:smaller;
         }
 
-        #navigator .menu .item{
-            padding-top: 3px;
-            padding-bottom: 3px;
+        #navigator {
+            padding-bottom:0;
         }
+
+        #content {
+            padding-top:1px;
+        }
+
     </style>
 </head>
 <body>
@@ -73,8 +77,8 @@
     </div>
 </div>
 @section('scripts')
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantc.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 <script type="text/javascript">
     $('.menu .item').removeClass('active');
 </script>
