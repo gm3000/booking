@@ -8,7 +8,9 @@
 
     <!-- Site Properties -->
     <title>@yield('title')</title>
+    @section('styles')
     <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
+    @show
     <style>
         #navigator .menu {
             padding-left:150px;
