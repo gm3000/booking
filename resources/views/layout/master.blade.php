@@ -16,6 +16,11 @@
             font-size:small;
         }
 
+        #header {
+            padding-top:25px;
+            padding-bottom:0;
+        }
+
         #header a{
             font-size:smaller;
         }
@@ -28,7 +33,7 @@
 </head>
 <body>
 <div id="container" class="ui grid">
-    <div id="header" class="ui three column row" style="padding-top:25px;padding-bottom:0;">
+    <div id="header" class="ui three column row">
         <div class="ui column">
             this is header area
         </div>
