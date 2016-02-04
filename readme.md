@@ -6,8 +6,6 @@
        (1) add php.exe folder to PATH environment
        (2) edit php.ini file, uncomment below lines,
        
-           ; extension_dir = "ext"
-           
            ;extension=php_mbstring.dll
            ;extension=php_mysql.dll
            ;extension=php_openssl.dll
@@ -32,3 +30,34 @@
     5. just at project folder fun php.exe artisan migrate:refresh to create all the tables
 
 ```
+
+
+# **FRONT END DEVELOPMENT** #
+
+----------
+## RUN ##
+
+1. enter folder `Frontend`
+2. execute command `npm install`
+	1. you may need to run it via admin
+3. to start dev server - run command `npm start`
+	1. changes on code will auto re-compile and update to browser in runtime
+	2. to stop, use `ctrl-c`
+3. to build - run command `npm run dist`, built artifacts locate in dist folder
+4. to clean build folder - run `npm run clean`
+5. to run dev server based on built artifacts - run command `npm run serve:dist`
+
+## Config ##
+
+1. dev server port (default 8000) - cfg/base.js
+
+
+## REFERENCE ##
+
+1. REACTjs
+	1. [official doc](http://facebook.github.io/react/docs/getting-started.html) finish reading in 2-3 days
+	2.  [webpack](http://webpack.github.io/docs/) no need to read through.
+		1.  [handbook chinese version](https://fakefish.github.io/react-webpack-cookbook/index.html)
+	3.  [react+webpack tutorial](http://survivejs.com/)
+4.  REACTnative
+	1.  
