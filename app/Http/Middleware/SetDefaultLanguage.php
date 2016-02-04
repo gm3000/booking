@@ -19,6 +19,7 @@ class SetDefaultLanguage
         {
             $request->session()->put('lang','cn');
         }
+        \App::setLocale(session('lang'));
         return $next($request);
     }
 }
