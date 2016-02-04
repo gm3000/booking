@@ -31,6 +31,10 @@
             padding-bottom:0;
         }
 
+        #navigator .menu .item {
+            font-size:medium;
+        }
+
         #content {
             padding-top:1px;
         }
@@ -81,8 +85,5 @@
 @section('scripts')
 <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
-<script type="text/javascript">
-    $('.menu .item').removeClass('active');
-</script>
 @show
 </body>

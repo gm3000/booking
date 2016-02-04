@@ -8,6 +8,7 @@ this is home page
 @section('scripts')
 	@parent
 	<script type="text/javascript">
+		$('.menu .item').removeClass('active');
 		$('#home').addClass('active');
 	</script>
 @endsection
