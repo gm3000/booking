@@ -7,6 +7,8 @@
        (2) edit php.ini file, uncomment below lines,
        
            ; extension_dir = "ext"
+           ;extension=php_fileinfo.dll
+           ;extension=php_gd2.dll
            ;extension=php_mbstring.dll
            ;extension=php_mysql.dll
            ;extension=php_openssl.dll

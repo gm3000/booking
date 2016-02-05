@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Hotel extends Model
 {
-    public function City()
+    public function city()
     {
         return $this->belongsTo('App\City');
     }

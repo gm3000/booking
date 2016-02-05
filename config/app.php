@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'cn',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -145,6 +145,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Frozennode\Administrator\AdministratorServiceProvider::class
 
     ],
 
