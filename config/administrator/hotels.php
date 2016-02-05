@@ -29,7 +29,11 @@ return array(
         'name_cn' => array(
             'title' => '中文名称'
         ),
-        'logo',
+        'city' => array(
+            'title' => 'city',
+            'relationship' => 'city',
+            'select' => '(:table).name_en',
+        ),
     ),
 
     'edit_fields' => array(
@@ -40,6 +44,11 @@ return array(
         'name_cn' => array(
             'title' => '名称',
             'type' => 'text',
+        ),
+        'city' => array(
+            'title' => 'city',
+            'type' => 'relationship',
+            'name_field' => 'name_en',
         ),
         'logo' => array(
             'title' => 'Hotel Logo',
