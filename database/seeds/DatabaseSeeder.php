@@ -15,6 +15,17 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         // $this->call(UserTableSeeder::class);
+        factory(\App\Country::class,5)->create()->each(function($country){
+            $country->cities()->saveMany(factory(\App\City::class,5)->make());
+        });
+
+        $cities = \App\City::all();
+        foreach($cities as $city)
+        {
+            $city->hotels()->saveMany(factory(\App\Hotel::class,5)->make());
+            $city->shoppings()->saveMany(factory(\App\Shopping::class,5)->make());
+            $city->activities()->saveMany(factory(\App\Activity::class,5)->make());
+        }
 
         Model::reguard();
     }

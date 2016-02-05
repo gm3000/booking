@@ -49,7 +49,7 @@ class HotelController extends Controller
      */
     public function show($hotel)
     {
-        //
+        return $hotel;
     }
 
     /**

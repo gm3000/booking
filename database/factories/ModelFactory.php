@@ -20,4 +20,62 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
+$factory->define(App\Country::class, function (Faker\Generator $faker) {
+    $country = $faker->country;
+    $desc = $faker->paragraph;
+    return [
+        'name_en' => $country,
+        'desc_en' => $desc,
+        'name_cn' => '中文名字:' . $country,
+        'desc_cn' => '中文简介:' . $desc
+    ];
+});
+
+$factory->define(App\City::class, function (Faker\Generator $faker) {
+    $city = $faker->city;
+    $desc = $faker->paragraph;
+    return [
+        'name_en' => $city,
+        'desc_en' => $desc,
+        'name_cn' => '中文名字:' . $city,
+        'desc_cn' => '中文简介:' . $desc
+    ];
+});
+
+$factory->define(App\Hotel::class, function (Faker\Generator $faker) {
+    $name = $faker->word;
+    $desc = $faker->paragraph;
+    return [
+        'name_en' => $name,
+        'desc_en' => $desc,
+        'logo' => $faker->imageUrl(60,60),
+        'name_cn' => '中文名字:' . $name,
+        'desc_cn' => '中文简介:' . $desc
+    ];
+});
+
+$factory->define(\App\Shopping::class, function(Faker\Generator $faker){
+    $name = $faker->word;
+    $desc = $faker->paragraph;
+    return [
+        'name_en' => $name,
+        'desc_en' => $desc,
+        'logo' => $faker->imageUrl(60,60),
+        'name_cn' => '中文名字:' . $name,
+        'desc_cn' => '中文简介:' . $desc
+    ];
+});
+
+$factory->define(\App\Activity::class, function(Faker\Generator $faker){
+    $name = $faker->word;
+    $desc = $faker->paragraph;
+    return [
+        'name_en' => $name,
+        'desc_en' => $desc,
+        'poster' => $faker->imageUrl(320,240),
+        'name_cn' => '中文名字:' . $name,
+        'desc_cn' => '中文简介:' . $desc
+    ];
+});
+
 
