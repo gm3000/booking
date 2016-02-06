@@ -23,12 +23,8 @@ return array(
      */
     'columns' => array(
         'id',
-        'name_en' =>array(
-            'title' => 'name'
-        ),
-        'name_cn' => array(
-            'title' => '中文名称'
-        ),
+        'name_en',
+        'name_cn',
     ),
 
     'edit_fields' => array(

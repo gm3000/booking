@@ -23,12 +23,8 @@ return array(
      */
     'columns' => array(
         'id',
-        'name_en' =>array(
-            'title' => 'name'
-        ),
-        'name_cn' => array(
-            'title' => '中文名称'
-        ),
+        'name_en',
+        'name_cn',
         'city' => array(
             'title' => 'city',
             'relationship' => 'city',
@@ -42,7 +38,7 @@ return array(
             'type' => 'text',
         ),
         'name_cn' => array(
-            'title' => '名称',
+            'title' => '中文名称',
             'type' => 'text',
         ),
         'city' => array(
