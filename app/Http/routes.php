@@ -6,7 +6,7 @@ use App\Hotel;
 
 Route::group(['prefix' => '/'], function () {
 
-    Route::get('/setlanguage', function(){
+    Route::get('setlanguage', function(){
         $language = Request::input('lang');
         $backUrl = URL::previous();
         if(str_contains($backUrl,'/setlanguage'))
@@ -30,5 +30,3 @@ Route::group(['prefix' => '/'], function () {
 Route::group(['prefix' => 'api'], function () {
     Route::resource('hotels', 'Api\HotelController', ['only' => ['index','show']]);
 });
-
-
