@@ -72,10 +72,10 @@
         </div>
     </div>
     <div id="bookingContainer" class="ui grid" style="position:absolute;left:0;top:120px;width:100%;z-index:999">
-         <div class="ui two column row">
-            <div class="ui column">
+         <div class="ui row">
+            <div class="ui seven wide column">
             </div>
-            <div class="ui column">
+            <div class="ui nine wide column">
               <iframe id="bec_container_frame" frameborder="0" src="main.html" scrolling="no" width="630" height="430"></iframe>
             </div>
          </div>
