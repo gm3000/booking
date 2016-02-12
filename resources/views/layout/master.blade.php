@@ -76,7 +76,7 @@
             <div class="ui column">
             </div>
             <div class="ui column">
-              <iframe frameborder="0" src="main.html" scrolling="no" width="620" height="420"></iframe>
+              <iframe id="bec_container_frame" frameborder="0" src="main.html" scrolling="no" style="width:620px;height:420px;"></iframe>
             </div>
          </div>
     </div>
