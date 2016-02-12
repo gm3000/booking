@@ -18,7 +18,7 @@ class CreateTravelPackagesTable extends Migration
             $table->string('name_en');
             $table->string('desc_cn');
             $table->string('desc_en');
-            $table->float('discount');
+            $table->float('discount')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

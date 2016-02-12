@@ -18,7 +18,7 @@ class CreateAirlinesTable extends Migration
             $table->string('name_en');
             $table->text('desc_cn');
             $table->text('desc_en');
-            $table->string('logo');
+            $table->string('logo')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

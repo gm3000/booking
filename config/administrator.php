@@ -14,7 +14,7 @@ return array(
 	 *
 	 *  @type string
 	 */
-	'domain' => 'localhost',
+	//'domain' => 'localhost',
 
 	/**
 	 *  Middleware for admin routing.
@@ -65,7 +65,7 @@ return array(
 	 * 		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
 	 *	)
 	 */
-	'menu' => array('countries','cities','hotels','shoppings'),
+	'menu' => array('countries','cities','hotels','shoppings','activities','packages'),
 
 	/**
 	 * The permission option is the highest-level authentication check that lets you define a closure that should return true if the current user

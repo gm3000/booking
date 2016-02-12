@@ -1,16 +1,16 @@
 <?php
 
 /**
- * activities model config
+ * packages model config
  */
 
 return array(
 
-    'title' => 'Activities',
+    'title' => 'Packages',
 
-    'single' => 'Activity',
+    'single' => 'Package',
 
-    'model' => '\App\Activity',
+    'model' => '\App\TravelPackage',
 
     'form_width' =>700,
 
@@ -25,11 +25,6 @@ return array(
         'id',
         'name_en',
         'name_cn',
-        'city' => array(
-            'title' => 'city',
-            'relationship' => 'city',
-            'select' => '(:table).name_en',
-        ),
     ),
 
     'edit_fields' => array(
@@ -40,11 +35,6 @@ return array(
         'name_cn' => array(
             'title' => '中文名称',
             'type' => 'text',
-        ),
-        'city' => array(
-            'title' => 'city',
-            'type' => 'relationship',
-            'name_field' => 'name_en',
         ),
         'desc_en' => array(
             'title' => 'Description',
