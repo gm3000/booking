@@ -71,6 +71,15 @@
             </div>
         </div>
     </div>
+    <div id="bookingContainer" class="ui grid" style="position:absolute;left:0;top:120px;width:100%;z-index:999">
+         <div class="ui two column row">
+            <div class="ui column">
+            </div>
+            <div class="ui column">
+              <iframe frameborder="0" src="main.html" scrolling="no" width="620" height="420"></iframe>
+            </div>
+         </div>
+    </div>
     <div id="content" class="ui row" style="min-height:350px;">
         <div class="ui column">
             @yield('content')
