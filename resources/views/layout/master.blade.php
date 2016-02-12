@@ -39,6 +39,11 @@
             padding-top:1px;
         }
 
+        body {
+            background-color: #e9e9e9;
+
+        }
+
     </style>
 </head>
 <body>
