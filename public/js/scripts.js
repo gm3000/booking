@@ -1413,7 +1413,7 @@ function resizeParent(bec) {
 		 bodyH = 330
 	// alert(bodyH)
 	if(bec =='bec_container_frame')
-		frame.style.height = (bodyH + 100) +"px";
+		frame.style.height = (bodyH + 87) +"px";
 	else
 		frame.style.height = (bodyH + 10) +"px";
 // }
