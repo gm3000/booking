@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVipProgramsTable extends Migration
+class CreatePagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,9 @@ class CreateVipProgramsTable extends Migration
      */
     public function up()
     {
-        Schema::create('vip_programs', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title_cn');
-            $table->string('title_en');
-            $table->text('desc_cn');
-            $table->text('desc_en');
-            $table->string('img')->nullable();
+            $table->string('slug');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -31,6 +27,6 @@ class CreateVipProgramsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('vip_programs');
+        Schema::drop('pages');
     }
 }
