@@ -85,16 +85,12 @@
             </div>
          </div>
     </div>
-    <div id="content" class="ui row" style="min-height:350px;">
+    <div id="content" class="ui row" style="min-height:450px;">
         <div class="ui column">
             @yield('content')
         </div>
     </div>
-    <div id="footer" class="ui row">
-        <div class="ui column">
-            this is footer
-        </div>
-    </div>
+    @include('layout.footer_'.App::getLocale())
 </div>
 @section('scripts')
 <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>

@@ -3,9 +3,8 @@
 use App\Hotel;
 
 
-
 Route::group(['prefix' => '/'], function () {
-
+  
     Route::get('setlanguage', function(){
         $language = Request::input('lang');
         $backUrl = URL::previous();
