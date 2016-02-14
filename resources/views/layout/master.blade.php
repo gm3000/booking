@@ -76,6 +76,7 @@
             </div>
         </div>
     </div>
+    @section('sliderContainer')
     <div id="bookingContainer" class="ui grid" style="position:absolute;left:0;top:120px;width:100%;z-index:999">
          <div class="ui row">
             <div class="ui seven wide column">
@@ -85,6 +86,7 @@
             </div>
          </div>
     </div>
+    @show
     <div id="content" class="ui row" style="min-height:450px;">
         <div class="ui column">
             @yield('content')
