@@ -4,7 +4,7 @@
           About Us
         </div>
         <p style="text-align:justify;">
-          PICCVIPTravel makes travel easy for all of your international and outbound trips with over 300,000 hotels worldwide with a lowest price guarantee at the time of your booking. PICCVIPTravel provides PICC customers the ability to customize your trip with our easy to use booking engine or you can select from our pre-packaged vacations.
+          PICC VIP Travel makes travel easy for all of your international and outbound trips with over 300,000 hotels worldwide with a lowest price guarantee at the time of your booking. PICC VIP Travel provides PICC customers the ability to customize your trip with our easy to use booking engine or you can select from our pre-packaged vacations.
         </p>
     </div>
     <div class="ui column">

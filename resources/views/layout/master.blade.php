@@ -13,7 +13,7 @@
     @show
     <style>
         #navigator .menu {
-            padding-left:150px;
+            padding-left:200px;
             border-radius: 0;
             font-size:small;
         }
