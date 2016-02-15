@@ -90,7 +90,7 @@
         </div>
     </div>
     @section('sliderContainer')
-    <div id="bookingContainer" class="ui grid" style="position:absolute;left:0;top:120px;width:100%;z-index:999">
+    <div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:120px;width:90%;z-index:999">
          <div class="ui row">
             <div class="ui seven wide column">
             </div>
