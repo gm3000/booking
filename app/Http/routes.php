@@ -4,7 +4,7 @@ use App\Hotel;
 
 
 Route::group(['prefix' => '/'], function () {
-  
+
     Route::get('setlanguage', function(){
         $language = Request::input('lang');
         $backUrl = URL::previous();
@@ -22,6 +22,8 @@ Route::group(['prefix' => '/'], function () {
     Route::get('home', 'HomeController@show');
 
     Route::resource('hotels', 'HotelController');
+
+    Route::get('about','PagesController@about');
 
 });
 

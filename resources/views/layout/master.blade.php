@@ -10,7 +10,7 @@
     <title>@yield('title')</title>
     @section('styles')
     <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
-    @show
+
     <style>
         #navigator .menu {
             padding-left:200px;
@@ -58,6 +58,7 @@
         }
 
     </style>
+    @show
 </head>
 <body>
 <div id="container" class="ui grid">
@@ -87,7 +88,7 @@
             </div>
         </div>
     </div>
-    @section('sliderContainer')
+    @section('bookingContainer')
     <div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:120px;width:90%;z-index:999">
          <div class="ui row">
             <div class="ui seven wide column">
