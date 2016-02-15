@@ -47,7 +47,7 @@
         Outside of China: <br/>
         <span>1-888-929-9991</span> <br/>
         Email:<br/>
-        <a href="mailto:cmbinfo@happybookings.com" style="color:white;">cmbinfo@happybookings.com</a>
+        <a href="mailto:piccinfo@happybookings.com" style="color:white;">piccinfo@happybookings.com</a>
       </p>
       <div class="ui small header title">
         Info

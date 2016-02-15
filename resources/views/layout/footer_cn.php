@@ -47,7 +47,7 @@
         中国境外可以拨打免费电话：<br/>
         <span>1-888-929-9991</span> <br/>
         电子邮箱：<br/>
-        <a href="mailto:cmbinfo@happybookings.com" style="color:white;">cmbinfo@happybookings.com</a>
+        <a href="mailto:piccinfo@happybookings.com" style="color:white;">piccinfo@happybookings.com</a>
       </p>
       <div class="ui small header title">
         其他
