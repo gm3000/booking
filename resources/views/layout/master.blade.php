@@ -63,10 +63,8 @@
 <div id="container" class="ui grid">
     <div id="header" class="ui three column row">
         <div class="ui column">
-            this is header area
         </div>
         <div class="ui column">
-            this is header area
         </div>
         <div class="ui center aligned column">
             <div class="basic segment">
