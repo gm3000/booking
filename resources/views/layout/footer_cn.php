@@ -1,4 +1,4 @@
-<div id="footer" class="red ui five column centered row" style="padding-left:5em;padding-bottom:2em;">
+<div id="footer" class="red ui five column centered row" style="padding-left:6rem;padding-bottom:2em;">
     <div class="ui column">
         <div class="ui small header title">
           关于我们
