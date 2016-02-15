@@ -41,7 +41,20 @@
 
         body {
             background-color: #e9e9e9;
+        }
 
+        #footer .title {
+            color:white;
+            margin-top:1em;
+        }
+
+        #footer .column p {
+            line-height:1.7em;
+            font-size:small;
+        }
+
+        #footer ul {
+            font-size:small;
         }
 
     </style>
