@@ -55,7 +55,7 @@
       <ul class="ui list">
         <li>联系我们</li>
         <li>广告/合作伙伴</li>
-        <li>联系我们</li>
+        <li>联系方式</li>
       </ul>
     </div>
 </div>
