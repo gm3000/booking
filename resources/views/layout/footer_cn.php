@@ -12,10 +12,10 @@
           关于太平洋保险VIP旅游
         </div>
         <ul class="ui list">
-          <li>PICC VIP 旅游概况</li>
-          <li>PICC 旅游贵宾会员计划</li>
-          <li>使用条款</li>
-          <li>隐私政策</li>
+          <li><a href="/about">PICC VIP 旅游概况</a></li>
+          <li><a href="#">PICC 旅游贵宾会员计划</a></li>
+          <li><a href="#">使用条款</a></li>
+          <li><a href="#">隐私政策</a></li>
         </ul>
         <div class="ui small header title">
           旅游承接方

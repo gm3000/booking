@@ -12,10 +12,10 @@
           About PICC VIP Travel
         </div>
         <ul class="ui list">
-          <li>PICC Travel Overview</li>
-          <li>PICC Travel VIP Membership</li>
-          <li>Terms of Use</li>
-          <li>Privacy Policy</li>
+          <li><a href="/about">PICC Travel Overview</a></li>
+          <li><a href="#">PICC Travel VIP Membership</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
         </ul>
         <div class="ui small header title">
           Travel Fulfillment Services Provided by

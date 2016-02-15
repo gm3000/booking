@@ -43,6 +43,10 @@
             background-color: #e9e9e9;
         }
 
+        body a:hover {
+            text-decoration: underline;
+        }
+
         #footer .title {
             color:white;
             margin-top:1em;
@@ -55,6 +59,10 @@
 
         #footer ul {
             font-size:small;
+        }
+
+        #footer ul li a {
+            color:white;
         }
 
     </style>
