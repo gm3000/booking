@@ -18,6 +18,10 @@
         #home-detail{
             margin-top: 5rem;
         }
+
+        #home-partner {
+            padding-top: 4px;
+        }
     </style>
 @endsection
 
@@ -45,7 +49,7 @@
         <div class="five wide column">
             <h3 class="ui left floated red header">{{ trans('home.partner') }}</h3>
             <div class="ui clearing divider"></div>
-            <div class="ui segment">
+            <div id="home-partner">
                 <div class="partner blurring dimmable image">
                     <div class="ui dimmer">
                         <div class="content">
