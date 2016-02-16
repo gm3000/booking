@@ -40,7 +40,7 @@
         }
 
         body {
-            background-color: #e9e9e9;
+            background-color: #ffffff;
         }
 
         body a:hover {
