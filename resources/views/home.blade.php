@@ -1,5 +1,5 @@
 @extends('layout.slider-page')
-@section('title', 'PICC - Home')
+@section('title', trans('title.home'))
 
 @section('content')
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
