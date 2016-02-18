@@ -112,7 +112,7 @@
             @yield('content')
         </div>
     </div>
-    @include('layout.footer_'.App::getLocale())
+    @include('partial.footer_'.App::getLocale())
 </div>
 @section('scripts')
 <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
