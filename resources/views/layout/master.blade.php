@@ -86,7 +86,7 @@
         <div class="ui column">
             <div class="ui red inverted icon menu">
                 <a id="home" class="item" href="/home"><i class="large home icon"></i></a>
-                <a id="hotel" class="item" href="#">{{ trans('menu.hotel') }}</a>
+                <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>
                 <a class="item" href="#">{{ trans('menu.flight') }}</a>
                 <a class="item" href="#">{{ trans('menu.package') }}</a>
                 <a class="item" href="#">{{ trans('menu.VipProgram') }}</a>
