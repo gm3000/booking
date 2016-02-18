@@ -1,7 +1,8 @@
 <?php
-
+$prefix = 'PICC - ';
 return [
 
-    'home' => 'PICC - 首页',
+    'home' => $prefix.'首页',
+    'hotel' => $prefix.'酒店',
 
 ];

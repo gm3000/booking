@@ -17,7 +17,7 @@ class HotelController extends Controller
      */
     public function index()
     {
-        return Hotel::all();
+        return view('hotel.index');
     }
 
     /**
