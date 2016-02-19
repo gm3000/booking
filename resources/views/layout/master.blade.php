@@ -97,7 +97,7 @@
         </div>
     </div>
     @section('bookingContainer')
-    <div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:120px;width:90%;z-index:999">
+    <div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:160px;width:90%;z-index:999">
          <div class="ui row">
             <div class="ui seven wide column">
             </div>
@@ -107,7 +107,7 @@
          </div>
     </div>
     @show
-    <div id="content" class="ui row" style="min-height:450px;">
+    <div id="content" class="ui row" style="min-height:450px;margin-bottom:3em;">
         <div class="ui column">
             @yield('content')
         </div>

@@ -9,7 +9,7 @@
             <div class="ui clearing divider"></div>
             <div id="home-gallery"></div>
         </div>
-        <div class="five wide column">
+        <div class="five wide column" style="padding-left:5em;">
             <h3 class="ui left floated red header">{{ trans('home.partner') }}</h3>
             <div class="ui clearing divider"></div>
             <div id="home-partner">
