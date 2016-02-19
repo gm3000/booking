@@ -2,7 +2,7 @@
   <div class="ui grid container">
     <div class="ui four column row">
       <div class="ui column">
-          <div class="ui small header title">
+          <div class="ui header title">
             About Us
           </div>
           <p style="text-align:justify;padding-right:2em;">
@@ -10,7 +10,7 @@
           </p>
       </div>
       <div class="ui column">
-          <div class="ui small header title">
+          <div class="ui header title">
             About PICC VIP Travel
           </div>
           <ul class="ui list">
@@ -19,7 +19,7 @@
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
-          <div class="ui small header title">
+          <div class="ui header title">
             Travel Fulfillment Services Provided by
           </div>
           <p>
@@ -28,7 +28,7 @@
           </p>
       </div>
       <div class="ui column">
-        <div class="ui small header title">
+        <div class="ui header title">
           Our Services
         </div>
         <ul class="ui link list">
@@ -41,7 +41,7 @@
         </ul>
       </div>
       <div class="ui column" style="margin-left:-2em;">
-        <div class="ui small header title">
+        <div class="ui header title">
           Contact Info
         </div>
         <p>
@@ -51,7 +51,7 @@
           Email:<br/>
           <a href="mailto:piccinfo@happybookings.com" style="color:white;">piccinfo@happybookings.com</a>
         </p>
-        <div class="ui small header title">
+        <div class="ui header title">
           Info
         </div>
         <ul class="ui list">

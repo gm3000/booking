@@ -50,6 +50,7 @@
         #footer .title {
             color:white;
             margin-top:1em;
+            font-size:1.2em;
         }
 
         #footer .column p {

@@ -2,7 +2,7 @@
     <div class="ui grid container">
       <div class="ui four column row">
         <div class="ui column">
-            <div class="ui small header title">
+            <div class="ui header title">
               关于我们
             </div>
             <p style="text-align:justify;padding-right:2em;">
@@ -10,7 +10,7 @@
             </p>
         </div>
         <div class="ui column">
-            <div class="ui small header title">
+            <div class="ui header title">
               关于太平洋保险VIP旅游
             </div>
             <ul class="ui list">
@@ -19,7 +19,7 @@
               <li><a href="#">使用条款</a></li>
               <li><a href="#">隐私政策</a></li>
             </ul>
-            <div class="ui small header title">
+            <div class="ui header title">
               旅游承接方
             </div>
             <p>
@@ -28,7 +28,7 @@
             </p>
         </div>
         <div class="ui column">
-          <div class="ui small header title">
+          <div class="ui header title">
             我们的服务项目
           </div>
           <ul class="ui link list">
@@ -41,7 +41,7 @@
           </ul>
         </div>
         <div class="ui column" style="margin-left:-2em;">
-          <div class="ui small header title">
+          <div class="ui header title">
             联系信息
           </div>
           <p>
@@ -51,7 +51,7 @@
             电子邮箱：<br/>
             <a href="mailto:piccinfo@happybookings.com" style="color:white;">piccinfo@happybookings.com</a>
           </p>
-          <div class="ui small header title">
+          <div class="ui header title">
             其他
           </div>
           <ul class="ui list">
