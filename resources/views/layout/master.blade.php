@@ -19,15 +19,17 @@
         }
 
         #header {
-            padding-top:25px;
+            padding-top:20px;
             padding-bottom:0;
+            min-height:60px;          
         }
 
         #header a{
-            font-size:smaller;
+            font-size:0.9em;
         }
 
         #navigator {
+            padding-top:0;
             padding-bottom:0;
         }
 
@@ -72,12 +74,14 @@
 <body>
 <div id="container" class="ui grid">
     <div id="header" class="ui three column row">
-        <div class="ui column">
+        <div class="ui center aligned column">
+            <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
+            <img src="/images/happybookings_logo.png" alt="happybookings logo"/>           
         </div>
         <div class="ui column">
         </div>
         <div class="ui center aligned column">
-            <div class="basic segment">
+            <div class="basic segment" style="padding-top:7px;">
                 <a href="/setlanguage?lang=cn" style="margin-right:13px;"><i class="cn flag"></i>中文</a>
                 <a href="/setlanguage?lang=en"><i class="us flag"></i>English</a>
             </div>

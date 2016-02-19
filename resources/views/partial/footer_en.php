@@ -1,13 +1,17 @@
 <div id="footer" class="red ui row" style="padding-bottom:2em;">
   <div class="ui grid container">
     <div class="ui four column row">
-      <div class="ui column">
+      <div class="ui column" style="padding-right:2em;">
           <div class="ui header title">
             About Us
           </div>
-          <p style="text-align:justify;padding-right:2em;">
+          <p style="text-align:justify;">
             PICC VIP Travel makes travel easy for all of your international and outbound trips with over 300,000 hotels worldwide with a lowest price guarantee at the time of your booking. PICC VIP Travel provides PICC customers the ability to customize your trip with our easy to use booking engine or you can select from our pre-packaged vacations.
           </p>
+          <div style="background-color:white;text-align:center;">
+            <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
+            <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
+          </div>
       </div>
       <div class="ui column">
           <div class="ui header title">

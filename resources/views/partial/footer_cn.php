@@ -1,13 +1,17 @@
 <div id="footer" class="red ui row" style="padding-bottom:2em;">
     <div class="ui grid container">
       <div class="ui four column row">
-        <div class="ui column">
+        <div class="ui column" style="padding-right:2em;">
             <div class="ui header title">
               关于我们
             </div>
-            <p style="text-align:justify;padding-right:2em;">
+            <p style="text-align:justify;">
               PICC VIP Travel使得所有的出境游变得容易得多。我们拥有全球30多万家酒店，并保证最低价格。我们可以向中国太平洋保险客户定制旅游行程，也可以让这些用户自行在我们的预定系统里直接预定全球机票和酒店，还可以提供全球各地的旅游套餐。
             </p>
+            <div style="background-color:white;text-align:center;">
+              <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
+              <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
+            </div>
         </div>
         <div class="ui column">
             <div class="ui header title">
