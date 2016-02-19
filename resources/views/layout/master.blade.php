@@ -75,7 +75,7 @@
 <div id="container" class="ui grid">
     <div id="header" class="ui three column row">
         <div class="ui center aligned column">
-            <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
+            <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
             <img src="/images/happybookings_logo.png" alt="happybookings logo"/>           
         </div>
         <div class="ui column">
