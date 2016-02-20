@@ -2,5 +2,5 @@
 @section('title', 'PICC - 关于')
 
 @section('content')
-中文about页面
+<img src="/images/about.png" alt="PICC VIP 旅游概况" />
 @endsection
