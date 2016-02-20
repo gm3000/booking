@@ -36,12 +36,12 @@
             我们的服务项目
           </div>
           <ul class="ui link list">
-            <li>机票</li>
-            <li>酒店</li>
-            <li>景点门票</li>
-            <li>旅行套餐</li>
-            <li>VIP 服务</li>
-            <li>购物优惠</li>
+            <li><a href="#">机票</a></li>
+            <li><a href="/hotels">酒店</a></li>
+            <li><a href="#">景点门票</a></li>
+            <li><a href="#">旅行套餐</a></li>
+            <li><a href="#">VIP 服务</a></li>
+            <li><a href="#">购物优惠</a></li>
           </ul>
         </div>
         <div class="ui column" style="margin-left:-2em;">

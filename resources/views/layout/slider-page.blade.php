@@ -33,10 +33,6 @@
             opacity: '0.1',
             on: 'hover'
         });
-
-        $('.menu .item').removeClass('active');
-		$('#home').addClass('active');
-
         $('#home-slider').lightSlider(
                 {
                     item: 1,

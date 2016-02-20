@@ -9,3 +9,7 @@
   </div>
 </div>
 @endsection
+@section('scripts')
+  @parent
+  <script src="/js/hotel.js"></script>
+@endsection
