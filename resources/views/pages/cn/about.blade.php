@@ -2,7 +2,7 @@
 @section('title', 'PICC - 关于')
 
 @section('content')
-<img class="ui fluid image"src="/images/about.png" style="height:400px;" alt="PICC VIP 旅游概况" />
+<img class="ui fluid image" src="/images/about.png" style="height:400px;" alt="PICC VIP 旅游概况" />
 <div id="about_content" style="padding-top:3em;">
   <div class="ui grid container">
     <div class="ui column">
@@ -32,9 +32,7 @@
       <p>
         旅行是所有关于经验！中国人保VIP旅游已超过20,000种不同的活动，观光旅游，戏剧，娱乐，游乐园供您选择其他的独特的选项。您可以预订所有类型的活动，我们的网站在香港，泰国，台湾，美国，加拿大，悉尼，巴黎，罗马，伦敦全球上百个其他热门目的地。
       </p>
-
     </div>
   </div>
-
 </div>
 @endsection

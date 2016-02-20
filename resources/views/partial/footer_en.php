@@ -19,7 +19,7 @@
           </div>
           <ul class="ui list">
             <li><a href="/about">PICC Travel Overview</a></li>
-            <li><a href="#">PICC Travel VIP Membership</a></li>
+            <li><a href="/about_vip">PICC Travel VIP Membership</a></li>
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>

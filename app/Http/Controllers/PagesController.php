@@ -14,4 +14,10 @@ class PagesController extends Controller
         $lang = \App::getLocale();
         return view('pages.'.$lang.'.about');
     }
+
+    public function aboutVip()
+    {
+        $lang = \App::getLocale();
+        return view('pages.'.$lang.'.about_vip');
+    }
 }

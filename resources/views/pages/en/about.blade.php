@@ -2,7 +2,7 @@
 @section('title', 'PICC - About')
 
 @section('content')
-<img class="ui fluid image"src="/images/about.png" style="height:400px;" alt="PICC VIP 旅游概况" />
+<img class="ui fluid image" src="/images/about.png" style="height:400px;" alt="PICC VIP 旅游概况" />
 <div id="about_content" style="padding-top:3em;">
   <div class="ui grid container">
     <div class="ui column">
