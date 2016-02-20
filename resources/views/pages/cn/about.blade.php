@@ -1,6 +1,15 @@
 @extends('layout.page')
 @section('title', 'PICC - 关于')
 
+@section('styles')
+  @parent
+  <style>
+    #about_content h3 {
+      text-decoration: underline;
+    }
+  </style>
+@endsection
+
 @section('content')
 <img class="ui fluid image" src="/images/about.png" style="height:400px;" alt="PICC VIP 旅游概况" />
 <div id="about_content" style="padding-top:3em;">
