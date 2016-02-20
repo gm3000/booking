@@ -21,7 +21,7 @@
         #header {
             padding-top:20px;
             padding-bottom:0;
-            min-height:60px;          
+            min-height:60px;
         }
 
         #header a{
@@ -47,6 +47,11 @@
 
         body a:hover {
             text-decoration: underline;
+        }
+
+        body p {
+          line-height: 1.7em;
+          text-align:justify;
         }
 
         #footer .title {
@@ -76,7 +81,7 @@
     <div id="header" class="ui three column row">
         <div class="ui center aligned column">
             <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
-            <img src="/images/happybookings_logo.png" alt="happybookings logo"/>           
+            <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
         </div>
         <div class="ui column">
         </div>
