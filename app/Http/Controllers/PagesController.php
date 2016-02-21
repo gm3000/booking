@@ -20,4 +20,10 @@ class PagesController extends Controller
         $lang = \App::getLocale();
         return view('pages.'.$lang.'.about_vip');
     }
+
+    public function termsOfUse()
+    {
+        $lang = \App::getLocale();
+        return view('pages.'.$lang.'.terms_of_use');
+    }
 }
