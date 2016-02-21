@@ -60,13 +60,20 @@ return array(
         ),
         'desc_en' => array(
             'title' => 'Description',
-            'type' => 'wysiwyg',
+            'type' => 'textarea',
         ),
         'desc_cn' => array(
             'title' => '中文描述',
+            'type' => 'textarea',
+        ),
+        'body_en' => array(
+            'title' => 'Detailed Description',
             'type' => 'wysiwyg',
         ),
-
+        'body_cn' => array(
+            'title' => '详细中文描述',
+            'type' => 'wysiwyg',
+        ),
     ),
 
 );
