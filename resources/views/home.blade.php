@@ -13,6 +13,23 @@
             background-color: #00A6C7;
             background-size: cover;
             background-position: center center;
+            position: relative;
+        }
+
+        .slide-caption {
+            display: block;
+            position: absolute;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px rgba(0,0,0,1);
+
+            top: 25%;
+            left: 5%;
+            width: 35%;
+            line-height: 1.2;
+
+
+
         }
 
         #home-detail{
@@ -29,13 +46,25 @@
 <div>
     <ul id="home-slider">
         <li>
-            <div id="slide1" class="home-slide" style="background-image: url(/images/slider/travel1.jpg);"></div>
+            <div id="slide1" class="home-slide" style="background-image: url(/images/slider/travel1.jpg);">
+                <h1 class="ui inverted header">
+                    <span class="slide-caption">在出发前就订好景点门票和观光项目，以获得更多优惠!</span>
+                </h1>
+            </div>
         </li>
         <li>
-            <div id="slide2" class="home-slide" style="background-image: url(/images/slider/travel2.jpg);"></div>
+            <div id="slide2" class="home-slide" style="background-image: url(/images/slider/travel2.jpg);">
+                <h1 class="ui inverted header">
+                    <span class="slide-caption">一起预定机票和酒店，享受高达70%的优惠!</span>
+                </h1>
+            </div>
         </li>
         <li>
-            <div id="silde3" class="home-slide" style="background-image: url(/images/slider/travel3.jpg);"></div>
+            <div id="silde3" class="home-slide" style="background-image: url(/images/slider/travel3.jpg);">
+                <h1 class="ui inverted header">
+                    <span class="slide-caption">在出发前就订好景点门票和观光项目，以获得更多优惠!</span>
+                </h1>
+            </div>
         </li>
     </ul>
 </div>
