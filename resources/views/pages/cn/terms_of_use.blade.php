@@ -63,7 +63,7 @@
         供应商规则和限制
       </h3>
       <p>
-        附加条款和条件将适用于您的预订和购买您选择旅行相关的商品和服务。请仔细阅读这些附加条款和条件慎重。您同意与你选择要处理，包括条款和任何供应商强加的购买条件的遵守，但不限于，支付所有款项到期符合供应商的规则和限制有关供应和使用费的时候，产品或服务。一旦购买完成机票只能保证和门票已经发出。航空公司和其他旅游供应商可能会改变他们的价格，恕不另行通知。我们保留取消预订，如果全额付款不及时接受正确的。一些酒店供应商可能会要求您出示信用卡或现金押金在办理入住手续，以支付您在逗留期间所发生的额外费用。存款是不相关的由快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesfor您的酒店预订收到任何付款。您承认，一些第三方供应商提供的某些服务和/或活动可能​​需要您自己的责任豁免参加他们所提供的服务和/或活动之前签署。您理解，任何此类供应商的规则和限制，任何违反都可能导致您的预订（S）的取消，在你被拒绝访问相应的旅游产品或服务，在你没收的任何款项支付这种预约（s）和/或在我们的借记您的帐户，我们承担这样违反的结果的任何费用。
+        附加条款和条件将适用于您的预订和购买您选择旅行相关的商品和服务。请仔细阅读这些附加条款和条件慎重。您同意与你选择要处理，包括条款和任何供应商强加的购买条件的遵守，但不限于，支付所有款项到期符合供应商的规则和限制有关供应和使用费的时候，产品或服务。一旦购买完成机票只能保证和门票已经发出。航空公司和其他旅游供应商可能会改变他们的价格，恕不另行通知。我们保留取消预订，如果全额付款不及时接受正确的。一些酒店供应商可能会要求您出示信用卡或现金押金在办理入住手续，以支付您在逗留期间所发生的额外费用。存款是不相关的由快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司为您的酒店预订收到任何付款。您承认，一些第三方供应商提供的某些服务和/或活动可能​​需要您自己的责任豁免参加他们所提供的服务和/或活动之前签署。您理解，任何此类供应商的规则和限制，任何违反都可能导致您的预订（S）的取消，在你被拒绝访问相应的旅游产品或服务，在你没收的任何款项支付这种预约（s）和/或在我们的借记您的帐户，我们承担这样违反的结果的任何费用。
       </p>
       <h3 class="ui red header">
         隐私政策
@@ -98,17 +98,17 @@
         您有责任确保您满足国外入学要求，并且您的旅行证件，如护照和签证（交通，商业，旅游，和其他），是为了和其他外国入境要求得到满足。 PICCVIPTravel有外资方面的入学要求或旅行证件没有专门的知识。我们敦促客户查看旅行禁令，警告，公告，并经有关政府发行公告预订前往国际目的地之前。
 护照和签证：你必须咨询相关的大使馆或领事馆了解此信息。需求可能会改变，你订票及出发前应检查向上的最新信息。我们不承担任何责任，如果你被拒绝进入到一个航班或进入任何国家因您未能进行正确和充分的护照，签证或其他旅行由任何一家航空公司，权威或国家所要求的文件，包括你可能只是国家通过过境。这包括飞机的所有停止，即使你不离开飞机或机场。
 健康：旅游推荐接种可能会改变，你离开之前，你应该咨询你的医生建议当前。这是你的责任，以确保您符合所有健康的入学要求，获得推荐的接种，采取所有建议的药物治疗，并按照相关的所有医疗咨询您的行程。
-灭虫：虽然不常见，大多数国家保留除虫飞机，如果有对公众健康，农业和环境感知威胁的权利。世界卫生组织和国际民用航空组织已通过了如下灭虫程序：（1）用气雾杀虫剂喷洒飞机客舱，而乘客在船上或（2）残余杀虫剂处理飞机的内表面，而乘客不在船上。欲了解更多信息，请参见：HTTP：//ostpxweb.dot.gov/policy/safetyenergyenv/disinsection.htm
+灭虫：虽然不常见，大多数国家保留除虫飞机，如果有对公众健康，农业和环境感知威胁的权利。世界卫生组织和国际民用航空组织已通过了如下灭虫程序：（1）用气雾杀虫剂喷洒飞机客舱，而乘客在船上或（2）残余杀虫剂处理飞机的内表面，而乘客不在船上。欲了解更多信息，请参见：<a href="http://ostpxweb.dot.gov/policy/safetyenergyenv/disinsection.html">http://ostpxweb.dot.gov/policy/safetyenergyenv/disinsection.html</a>
 通过提供旅游商品特别是国际目的地，PICCVIPTRAVEL不声明或保证的旅行这些地区，建议或没有风险，并且不承担任何责任损害或损失可能造成的旅游目的地此类。
       </p>
       <h3 class="ui red header">
         免责条款
       </h3>
       <p>
-        信息，软件，产品及本网站上公布可能包含不准确或错误，包括定价错误的服务。特别是，PICCVIPTravel公司和逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesdo不能保证的准确性，并拒绝对有关该酒店的信息和说明，任何错误或其他不准确的全部责任，空气，巡航，汽车和其他旅游产品及本网站显示的服务（包括但不限于定价，照片，饭店设施清单，一般产品描述等）。此外，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司明确保留纠正我们的网站和/或不正确的价格下进行未决保留的任何定价错误的权利。在这种情况下，如果有的话，我们会为您提供机会，让您的未决预订正确的价格，否则我们会取消您的预订而不受处罚。
-本网站显示的酒店评级仅作一般准则，以及PICCVIPTravel公司和逍遥预订国际有限责任公司，北京DYNASTY旅游国际有限公司（中国）和附属Companiesdo无法保证收视率的准确性。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesand各供应商做出具体的产品和服务的可用性没有保证。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesand各自的供应商可能就随时网站改进和/或变更。
-该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesand各自供应商不对本网站上为任何目的的信息，软件，产品和服务的适用性表示，和任何产品或服务对本网站包含或发行不构成由PICCVIPTravel公司或快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司的任何认可或此类产品或服务的建议。所有此类信息，软件产品和服务的提供“按原样”，没有任何形式的担保。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司及其各自的供应商否认所有担保和条件，本网站，其服务器或从PICCVIPTravel公司派，逍遥预订国际任何电子邮件，有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesand /或各自的供应商没有病毒或其他有害成分。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesand各供应商特此声明对于这个信息，软件，产品和服务，包括所有的暗示担保和条件的所有保证和条件的适销性，对于特定的反应，所有权和非侵权。
-运营商，酒店和其他供应商在本网站上提供旅行或其他服务都是独立的承包商，​​而不是代理人或PICCVIPTravel公司或快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司的雇员。该PICCVIPTravel公司和快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companiesare不为的行为，错误，遗漏，陈述，保证，任何此类供应商的违规行为或疏忽，或任何人身伤害承担责任，死亡，财产损失或其他损害或费用产生那里。该PICCVIPTravel公司和快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属Companieshave不承担责任，将不予退还任何延误，取消，超额预订，罢工，不可抗力或其他原因超出了事件的直接控制，他们有任何额外费用，遗漏，延误，改道或任何政府或当局的行为不承担任何责任。
+        信息，软件，产品及本网站上公布可能包含不准确或错误，包括定价错误的服务。特别是，PICCVIPTravel公司和逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司不能保证的准确性，并拒绝对有关该酒店的信息和说明，任何错误或其他不准确的全部责任，空气，巡航，汽车和其他旅游产品及本网站显示的服务（包括但不限于定价，照片，饭店设施清单，一般产品描述等）。此外，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司明确保留纠正我们的网站和/或不正确的价格下进行未决保留的任何定价错误的权利。在这种情况下，如果有的话，我们会为您提供机会，让您的未决预订正确的价格，否则我们会取消您的预订而不受处罚。
+本网站显示的酒店评级仅作一般准则，以及PICCVIPTravel公司和逍遥预订国际有限责任公司，北京DYNASTY旅游国际有限公司（中国）和附属公司无法保证收视率的准确性。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司和各供应商做出具体的产品和服务的可用性没有保证。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司和各自的供应商可能就随时网站改进和/或变更。
+该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司和各自供应商不对本网站上为任何目的的信息，软件，产品和服务的适用性表示，和任何产品或服务对本网站包含或发行不构成由PICCVIPTravel公司或快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司的任何认可或此类产品或服务的建议。所有此类信息，软件产品和服务的提供“按原样”，没有任何形式的担保。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司及其各自的供应商否认所有担保和条件，本网站，其服务器或从PICCVIPTravel公司派，逍遥预订国际任何电子邮件，有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司和/或各自的供应商没有病毒或其他有害成分。该PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司和各供应商特此声明对于这个信息，软件，产品和服务，包括所有的暗示担保和条件的所有保证和条件的适销性，对于特定的反应，所有权和非侵权。
+运营商，酒店和其他供应商在本网站上提供旅行或其他服务都是独立的承包商，​​而不是代理人或PICCVIPTravel公司或快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司的雇员。该PICCVIPTravel公司和快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司的不作为的行为，错误，遗漏，陈述，保证，任何此类供应商的违规行为或疏忽，或任何人身伤害承担责任，死亡，财产损失或其他损害或费用产生那里。该PICCVIPTravel公司和快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司不承担责任，将不予退还任何延误，取消，超额预订，罢工，不可抗力或其他原因超出了事件的直接控制，他们有任何额外费用，遗漏，延误，改道或任何政府或当局的行为不承担任何责任。
 在任何情况下，PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司及/或各自的供应商均不由此引起的任何直接的，间接的，惩罚性的，偶然，特殊或间接损害出，或与有关的任何方式，你的访问，显示或使用本网站或与延迟或无法访问，显示或使用本网站（包括但不限于在出现在这个意见的依赖网站;任何计算机病毒，信息，软件，链接的网站，产品和服务获得通过本网站或其他方式产生出来的访问，无论是基于疏忽，合同，侵权的理论，展示或使用本网站）严格责任，保护消费者权益的法规，否则，即使在PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司及/或其各自的供应商已被告知这种可能性赔偿。
 如果，尽管有上述限制，PICCVIPTravel公司，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司或彼等各自的供应商发现它产生的或以任何方式任何损失或损害承担责任与上述任何事件，那么PICCVIPTravel公司的责任相连，逍遥预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司及/或其各自的供应商将在任何情况下超过，在骨料，越大（a）您在本网站上此类交易（S），或（b）一百元（$ 100.00美元）的连接支付给快乐预订国际公司和附属公司的服务费或等值当地货币。
 责任限制反映了各方之间的风险分配。在本节规定的限制屹立不倒，即使本使用条款中规定的任何有限救济发现未能达到其基本目的适用。责任在本使用条款中规定的限制适用条款的PICCVIPTravel公司的利益，快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司及/或其各自的供应商。
@@ -155,7 +155,7 @@
         版权和商标声明
       </h3>
       <p>
-        本网站所有内容均为2013快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司，违者必究。快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司概不负责内容由乐意预订国际公司和附属CompaniesPICCVIPTravel，PICCVIPTRAVEL.COM and.CN，最低价格其他方运营的网站保证标志，精英加标志，PICCVIPTravel业内人士“选择标志，PICCVIPTravel本地专家徽标和标志的飞机在美国和/或其他国家的注册商标或快乐预订国际公司和附属公司的注册商标。本文提及的其他徽标，产品和公司名称可能是其各自所有者的商标。
+        本网站所有内容均为2013快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司，违者必究。快乐预订国际有限责任公司，北京DYNASTY TRAVEL INTERNATIONAL COMPANY LTD（中国）和附属公司概不负责内容由乐意预订国际公司和附属公司PICCVIPTravel，PICCVIPTRAVEL.COM and.CN，最低价格其他方运营的网站保证标志，精英加标志，PICCVIPTravel业内人士“选择标志，PICCVIPTravel本地专家徽标和标志的飞机在美国和/或其他国家的注册商标或快乐预订国际公司和附属公司的注册商标。本文提及的其他徽标，产品和公司名称可能是其各自所有者的商标。
 如果你意识到侵犯我们的品牌的，请让我们知道我们发送电子邮件在hotline@PICCVIPTRAVEL.COM and.CN.我们只有在解决这个电子邮件地址关于品牌侵权的消息。
       </p>
       <h3 class="ui red header">
