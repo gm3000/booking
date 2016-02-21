@@ -24,6 +24,7 @@ Route::group(['prefix' => '/'], function () {
     Route::resource('hotels', 'HotelController');
 
     Route::get('about','PagesController@about');
+    Route::get('about_vip','PagesController@aboutVip');
 
 });
 
