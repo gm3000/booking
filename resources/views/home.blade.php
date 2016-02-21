@@ -1,7 +1,10 @@
 @extends('layout.slider-page')
 @section('title', trans('title.home'))
 @section('content')
-@include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
+@include('partial.slider',['images'=>[
+['image'=>'/images/slider/travel1.jpg', 'caption'=>'在出发前就订好景点门票和观光项目，以获得更多优惠!'],
+['image'=>'/images/slider/travel2.jpg', 'caption'=>'一起预定机票和酒店，享受高达70%的优惠!'],
+['image'=>'/images/slider/travel3.jpg', 'caption'=>'在出发前就订好景点门票和观光项目，以获得更多优惠!']]])
 <div id="home-detail">
     <div class="ui grid container">
         <div class="eleven wide column">
@@ -18,7 +21,7 @@
                         <div class="content">
                             <div class="center">
                                 <h3><a class="ui red header" href="#">Hilton</a></h3>
-                                <p>The Best of LasVegas</p>
+                                <p style="text-align: center">The Best of LasVegas</p>
                             </div>
                         </div>
                     </div>
@@ -30,7 +33,7 @@
                         <div class="content">
                             <div class="center">
                                 <h3><a class="ui red header" href="#">Four Seasons</a></h3>
-                                <p>The Best of London</p>
+                                <p style="text-align: center">The Best of London</p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +45,7 @@
                         <div class="content">
                             <div class="center">
                                 <h3><a class="ui red header" href="#">Drake</a></h3>
-                                <p>The Best of Chicago</p>
+                                <p style="text-align: center">The Best of Chicago</p>
                             </div>
                         </div>
                     </div>
