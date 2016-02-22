@@ -21,11 +21,11 @@ class HotelController extends Controller
         $lang = \App::getLocale();
         $hotels = Hotel::orderBy('name')->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
         $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.id')
-                                      ->select('cities.id as id','cities.name_'.$lang.' as name',\DB::raw('count(*) as count'))
+                                      ->select('cities.id as id','cities.name_'.$lang.' as name')
                                       ->groupBy('name')
-                                      ->orderBy('count','desc')
+                                      ->orderBy(\DB::raw('count(*)'),'desc')
                                       ->take(3)->get();
-                                      
+
         return view('hotel.index',compact(['hotels','cities']));
     }
 
