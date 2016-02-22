@@ -33,9 +33,7 @@
         @endforeach
         <div class="ui divider">
         </div>
-        <div id="paginationWrapper" style="margin-top:3em;text-align:center;">
-             {!! (new Landish\Pagination\SemanticUI($hotels))->render() !!}
-        </div>
+        @include('partial.pagination',['items'=>$hotels])
       </div>
     </div>
   </div>
