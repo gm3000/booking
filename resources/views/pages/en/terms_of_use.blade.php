@@ -14,7 +14,7 @@
 @endsection
 
 @section('content')
-<img class="ui fluid image" src="/images/about.png" style="height:400px;" alt="PICC VIP 使用条款" />
+<img class="page ui fluid image" src="/images/about.jpg" alt="PICC VIP 使用条款" />
 <div id="terms_of_use" style="padding-top:3em;">
   <div class="ui grid container">
     <div class="ui column">

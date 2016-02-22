@@ -13,7 +13,7 @@
 @endsection
 
 @section('content')
-<img class="ui fluid image" src="/images/about.png" style="height:400px;" alt="PICC VIP 会员计划" />
+<img class="page ui fluid image" src="/images/about.jpg" alt="PICC VIP 会员计划" />
 <div id="about_vip_content" style="padding-top:3em;">
   <div class="ui grid container">
     <div class="ui column">
