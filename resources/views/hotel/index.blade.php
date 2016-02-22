@@ -3,10 +3,6 @@
 @section('content')
 {{-- change hotel sider images --}}
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
-<?php
-  $name='name_'.$lang;
-  $desc='desc_'.$lang;
-?>
 <div id="hotel_list" style="padding-top:3em;">
   <div class="ui grid container">
     <div class="ui column">
@@ -22,10 +18,10 @@
             <img src="http://placem.at/things?w=80&h=80&random=1&txt=0" alt="place holder" />
           </div>
           <div class="content">
-            <a class="header">{{$hotel->$name}}</a>
+            <a class="header">{{$hotel->name}}</a>
             <div class="description">
               <p>
-                {{$hotel->$desc}}
+                {{$hotel->desc}}
               </p>
             </div>
           </div>
