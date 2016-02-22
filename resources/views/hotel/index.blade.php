@@ -4,8 +4,8 @@
 {{-- change hotel sider images --}}
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
 <?php
-  $name='name_'.App::getLocale();
-  $desc='desc_'.App::getLocale();
+  $name='name_'.$lang;
+  $desc='desc_'.$lang;
 ?>
 <div id="hotel_list" style="padding-top:3em;">
   <div class="ui grid container">

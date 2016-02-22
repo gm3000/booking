@@ -17,8 +17,9 @@ class HotelController extends Controller
      */
     public function index()
     {
-        $hotels = Hotel::paginate(20);
-        return view('hotel.index',compact('hotels'));
+        $lang = \App::getLocale();
+        $hotels = Hotel::paginate(20,['name_'.$lang,'desc_'.$lang]);
+        return view('hotel.index',compact(['hotels','lang']));
     }
 
     /**
