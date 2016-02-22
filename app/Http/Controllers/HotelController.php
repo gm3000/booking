@@ -105,7 +105,6 @@ class HotelController extends Controller
                                       ->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
       $cities = $this->city_list();
       return view('hotel.index',compact(['hotels','cities']));
-
     }
 
     protected function city_list(){
