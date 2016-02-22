@@ -33,4 +33,5 @@ Route::group(['prefix' => '/'], function(){
 
 Route::group(['prefix' => 'api'], function () {
     Route::resource('hotels', 'Api\HotelController', ['only' => ['index','show']]);
+    Route::get('cities/hotest', 'Api\CityController@showHotest');
 });
