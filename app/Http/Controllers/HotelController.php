@@ -20,12 +20,7 @@ class HotelController extends Controller
     {
         $lang = \App::getLocale();
         $hotels = Hotel::orderBy('name')->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
-        $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.id')
-                                      ->select('cities.id as id','cities.name_'.$lang.' as name')
-                                      ->groupBy('name')
-                                      ->orderBy(\DB::raw('count(*)'),'desc')
-                                      ->take(3)->get();
-
+        $cities = $this->city_list();
         return view('hotel.index',compact(['hotels','cities']));
     }
 
@@ -93,5 +88,29 @@ class HotelController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function search(Request $request)
+    {
+      $query = $request->input('query');
+      $lang = \App::getLocale();
+      $hotels = Hotel::orderBy('name')->where('name_en','like','%'.$query.'%')
+                                      ->orWhere('name_cn','like','%'.$query.'%')
+                                      ->orWhere('desc_en','like','%'.$query.'%')
+                                      ->orWhere('desc_cn','like','%'.$query.'%')
+                                      ->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
+      $cities = $this->city_list();
+      return view('hotel.index',compact(['hotels','cities']));
+
+    }
+
+    protected function city_list(){
+      $lang = \App::getLocale();
+      $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.id')
+                                    ->select('cities.id as id','cities.name_'.$lang.' as name')
+                                    ->groupBy('name')
+                                    ->orderBy(\DB::raw('count(*)'),'desc')
+                                    ->take(3)->get();
+      return $cities;
     }
 }

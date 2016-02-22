@@ -15,10 +15,13 @@
             <a class="item" href="#">{{$city->name}}</a>
           @endforeach
         </div>
-        <div class="ui icon input" style="margin-left:3.5em;width:21em;">
-          <input type="text" placeholder="{{trans('site.search')}}...">
-          <i class="circular search link icon"></i>
-        </div>
+        <form class="" action="/hotels/search" method="get" style="display:inline;">
+          <div class="ui icon input" style="margin-left:3.5em;width:21em;">
+            <input type="text" name="query" value="{{ Request::input('query') }}" placeholder="{{ trans('site.search') }}">
+            <i class="circular search link icon"></i>
+            <input type="submit" style="display:none;">
+          </div>
+        </form>
       </div>
       <div class="ui divider" style="margin-top:2em;">
       </div>

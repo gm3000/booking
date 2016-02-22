@@ -27,7 +27,8 @@ Route::group(['prefix' => '/'], function () {
 });
 
 Route::group(['prefix' => '/'], function(){
-    Route::resource('hotels', 'HotelController',['only' => ['index','show']]);
+    Route::get('hotels/search', 'HotelController@search');
+    Route::resource('hotels', 'HotelController',['only' => ['index','show']]);  
 });
 
 Route::group(['prefix' => 'api'], function () {
