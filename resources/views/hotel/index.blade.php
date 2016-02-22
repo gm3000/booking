@@ -11,22 +11,12 @@
       </h1>
       <div style="display:inline-block;float:right;" >
         <div id="city_list" class="ui horizontal list" style="font-weight:bold;">
-          <a class="item" href="#">纽约</a>
-          <a class="item" href="#">伦敦</a>
-          <a class="item" href="#">巴黎</a>
-          <a class="item" href="#">东京</a>
-          <a class="item" href="#">纽约</a>
-          <a class="item" href="#">伦敦</a>
-          <a class="item" href="#">巴黎</a>
-          <a class="item" href="#">东京</a>
-          <a class="item" href="#">东京</a>
-          <a class="item" href="#">纽约</a>
-          <a class="item" href="#">伦敦</a>
-          <a class="item" href="#">巴黎</a>
-          <a class="item" href="#">东京</a>
+          @foreach($cities as $city)
+            <a class="item" href="#">{{$city->name}}</a>
+          @endforeach
         </div>
         <div class="ui icon input" style="margin-left:3.5em;width:21em;">
-          <input type="text" placeholder="搜索...">
+          <input type="text" placeholder="{{trans('site.search')}}...">
           <i class="circular search link icon"></i>
         </div>
       </div>
