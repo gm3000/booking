@@ -20,16 +20,15 @@ Route::group(['prefix' => '/'], function () {
 
     Route::get('/', 'HomeController@show');
     Route::get('home', 'HomeController@show');
-
-    Route::resource('hotels', 'HotelController');
-
     Route::get('about','PagesController@about');
     Route::get('about_vip','PagesController@aboutVip');
     Route::get('terms-of-use','PagesController@termsOfUse');
 
-
 });
 
+Route::group(['prefix' => '/'], function(){
+    Route::resource('hotels', 'HotelController',['only' => ['index','show']]);
+});
 
 Route::group(['prefix' => 'api'], function () {
     Route::resource('hotels', 'Api\HotelController', ['only' => ['index','show']]);
