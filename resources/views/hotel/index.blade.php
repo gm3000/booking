@@ -28,8 +28,8 @@
       <div class="ui divided items">
         @foreach($hotels as $hotel)
         <div class="ui item">
-          <div class="ui image" style="width:80px;height:auto;">
-            <img src="http://placem.at/things?w=80&h=80&random=1&txt=0" alt="place holder" />
+          <div class="ui image" style="width:100px;height:auto;">
+            <img src="http://placem.at/things?w=100&h=100&random=1&txt=0" alt="place holder" />
           </div>
           <div class="content">
             <a class="header">{{$hotel->name}}</a>
