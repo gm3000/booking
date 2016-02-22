@@ -10,7 +10,7 @@
         全球星级酒店
       </h1>
       <div style="display:inline-block;float:right;" >
-        <div id="city_list" class="ui horizontal list">
+        <div id="city_list" class="ui horizontal list" style="font-weight:bold;">
           <a class="item" href="#">纽约</a>
           <a class="item" href="#">伦敦</a>
           <a class="item" href="#">巴黎</a>
