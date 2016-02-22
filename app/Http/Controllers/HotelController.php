@@ -111,7 +111,7 @@ class HotelController extends Controller
       $lang = \App::getLocale();
       $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.id')
                                     ->select('cities.id as id','cities.name_'.$lang.' as name')
-                                    ->groupBy('name')
+                                    ->groupBy('city_id')
                                     ->orderBy(\DB::raw('count(*)'),'desc')
                                     ->take(3)->get();
       return $cities;
