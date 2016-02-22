@@ -27,6 +27,9 @@ class DatabaseSeeder extends Seeder
             $city->activities()->saveMany(factory(\App\Activity::class,5)->make());
         }
 
+        //generate hot cities for HOME page
+        $this->call(CitiesTableSeeder::class);
+
         Model::reguard();
     }
 }
