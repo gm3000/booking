@@ -93,6 +93,10 @@ class HotelController extends Controller
     public function search(Request $request)
     {
       $query = $request->input('query');
+      if(empty($query))
+      {
+        return redirect('/hotels');
+      }
       $lang = \App::getLocale();
       $hotels = Hotel::orderBy('name')->where('name_en','like','%'.$query.'%')
                                       ->orWhere('name_cn','like','%'.$query.'%')
