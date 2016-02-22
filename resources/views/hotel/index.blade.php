@@ -6,10 +6,31 @@
 <div id="hotel_list" style="padding-top:3em;">
   <div class="ui grid container">
     <div class="ui column">
-      <h2 class="ui red header">
-        {{trans('menu.hotel')}}
-      </h2>
-      <div class="ui divider">
+      <h1 class="ui red header" style="display:inline-block">
+        全球星级酒店
+      </h1>
+      <div style="display:inline-block;float:right;" >
+        <div id="city_list" class="ui horizontal list">
+          <a class="item" href="#">纽约</a>
+          <a class="item" href="#">伦敦</a>
+          <a class="item" href="#">巴黎</a>
+          <a class="item" href="#">东京</a>
+          <a class="item" href="#">纽约</a>
+          <a class="item" href="#">伦敦</a>
+          <a class="item" href="#">巴黎</a>
+          <a class="item" href="#">东京</a>
+          <a class="item" href="#">东京</a>
+          <a class="item" href="#">纽约</a>
+          <a class="item" href="#">伦敦</a>
+          <a class="item" href="#">巴黎</a>
+          <a class="item" href="#">东京</a>
+        </div>
+        <div class="ui icon input" style="margin-left:3.5em;width:21em;">
+          <input type="text" placeholder="搜索...">
+          <i class="circular search link icon"></i>
+        </div>
+      </div>
+      <div class="ui divider" style="margin-top:2em;">
       </div>
       <div class="ui divided items">
         @foreach($hotels as $hotel)
