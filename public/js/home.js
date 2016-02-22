@@ -3,7 +3,22 @@ $('.partner').dimmer({
         opacity: '0.1',
         on: 'hover'
     });
-    $('#home-gallery').nanoGallery(
+
+    $.getJSON('/api/cities/hotest', function(data){
+        var items = [];
+        console.log(data);
+        $.each(data, function(idex,item){
+            items.push({
+                src:'/cities/'+item.id,
+                srct:item.thumbnail,
+                title: item.name
+            });
+            console.log(item.name);
+        });
+
+        console.log(items);
+
+        $('#home-gallery').nanoGallery(
 
             {
                 thumbnailWidth: 'auto',
@@ -16,15 +31,16 @@ $('.partner').dimmer({
                 thumbnailGutterHeight : 0,
                 thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
                 thumbnailLabel: {
-                                    display: true,
-                                    position: 'overImageOnMiddle',
-                                    align: 'center',
-                                    hideIcons: true,
-                                },
+                    display: true,
+                    position: 'overImageOnMiddle',
+                    align: 'center',
+                    hideIcons: true,
+                },
                 fnThumbnailOpen: function(items){
                     window.location.href=items[0].src;
                 },
-                items: [
+                items:items,
+                /*items: [
                     {
                         src:'/about',
                         srct:'/images/thumbnails/lasvegas.jpg',
@@ -69,7 +85,8 @@ $('.partner').dimmer({
                         src: '/about',
                         srct: '/images/thumbnails/losangeles.jpg',
                         title: 'Los Angeles (LA)'
-                    }]
+                    }]*/
             }
 
-    );
+        );
+    });
