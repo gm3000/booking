@@ -100,7 +100,7 @@
                 <a class="item" href="#">{{ trans('menu.flight') }}</a>
                 <a class="item" href="#">{{ trans('menu.package') }}</a>
                 <a class="item" href="#">{{ trans('menu.VipProgram') }}</a>
-                <a class="item" href="#">{{ trans('menu.shopping') }}</a>
+                <a id="shopping" class="item" href="/shopping">{{ trans('menu.shopping') }}</a>
                 <a class="item" href="#">{{ trans('menu.activity') }}</a>
                 <a class="item" href="#">{{ trans('menu.TopDestination') }}</a>
             </div>

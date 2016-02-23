@@ -16,7 +16,7 @@ $('.partner').dimmer({
         });
 
         items.push({
-            src: '/cities',
+            src: '#',
             srct: '/images/thumbnails/more.jpg',
             title: 'More/了解更多'
         });

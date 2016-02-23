@@ -3,8 +3,6 @@
 @section('styles')
     @parent
     <link rel="stylesheet" type="text/css" href="/css/lightslider.min.css">
-    <link rel="stylesheet" href="/css/nanoGALLERY/nanogallery.min.css">
-    <link rel="stylesheet" href="/css/nanoGALLERY/themes/light/nanogallery_light.min.css">
     <style>
         .home-slide {
             display: block;
@@ -44,6 +42,5 @@
 @section('scripts')
 	@parent
     <script src="/js/lightslider.min.js"></script>
-    <script src="/js/jquery.nanogallery.min.js"></script>
     <script src="/js/slider.js"></script>
 @endsection
