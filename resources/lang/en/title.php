@@ -4,5 +4,6 @@ return [
 
     'home' => 'PICC - Home',
     'hotel' => $prefix.'Hotel',
-    'shopping' => $prefix.'Shopping'
+    'shopping' => $prefix.'Shopping',
+    'vipprogram' => $prefix.'VIP Service',
 ];

@@ -30,6 +30,10 @@ Route::group(['prefix' => '/'], function(){
     Route::get('shopping','ShoppingController@showList');
 });
 
+Route::group(['prefix' => '/'], function(){
+    Route::get('vipprograms','VipProgramController@index');
+});
+
 
 
 Route::group(['prefix' => '/'], function(){

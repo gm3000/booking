@@ -1,21 +1,9 @@
 @extends('layout.page')
 @section('title', 'PICC - Terms of Use')
 
-@section('styles')
-  @parent
-  <style>
-    #terms_of_use li {
-      line-height:1.5em;
-    }
-    #terms_of_use h3 {
-      text-decoration: underline;
-    }
-  </style>
-@endsection
-
 @section('content')
 <img class="page ui fluid image" src="/images/about.jpg" alt="PICC VIP 使用条款" />
-<div id="terms_of_use" style="padding-top:3em;">
+<div id="terms_of_use" class="page_container">
   <div class="ui grid container">
     <div class="ui column">
       <h2 class="ui red header">

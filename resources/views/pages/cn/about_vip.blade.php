@@ -1,20 +1,9 @@
 @extends('layout.page')
 @section('title', 'PICC - 关于中国人保VIP会员计划')
 
-@section('styles')
-  @parent
-  <style>
-    #about_vip_content li {
-      line-height:3em;
-      font-weight:600;
-      color:brown;
-    }
-  </style>
-@endsection
-
 @section('content')
-<img class="page ui fluid image" src="/images/about.jpg" alt="PICC VIP 会员计划" />
-<div id="about_vip_content" style="padding-top:3em;">
+<img class="ui fluid image" src="/images/about.jpg" alt="PICC VIP 会员计划" />
+<div id="about_vip_content" class="page_container">
   <div class="ui grid container">
     <div class="ui column">
       <h2 class="ui red header">

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/nanoGALLERY/nanogallery.min.css">
     <link rel="stylesheet" href="/css/nanoGALLERY/themes/light/nanogallery_light.min.css">
     <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/page.css">
     @show
 
 </head>
@@ -40,7 +41,7 @@
                 <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>
                 <a class="item" href="#">{{ trans('menu.flight') }}</a>
                 <a class="item" href="#">{{ trans('menu.package') }}</a>
-                <a class="item" href="#">{{ trans('menu.VipProgram') }}</a>
+                <a id="vipprogram" class="item" href="/vipprograms">{{ trans('menu.VipProgram') }}</a>
                 <a id="shopping" class="item" href="/shopping">{{ trans('menu.shopping') }}</a>
                 <a class="item" href="#">{{ trans('menu.activity') }}</a>
                 <a class="item" href="#">{{ trans('menu.TopDestination') }}</a>
