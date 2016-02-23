@@ -23,12 +23,16 @@ class DatabaseSeeder extends Seeder
         foreach($cities as $city)
         {
             $city->hotels()->saveMany(factory(\App\Hotel::class,5)->make());
-            $city->shoppings()->saveMany(factory(\App\Shopping::class,5)->make());
+            //$city->shoppings()->saveMany(factory(\App\Shopping::class,5)->make());
             $city->activities()->saveMany(factory(\App\Activity::class,5)->make());
         }
 
         //generate hot cities for HOME page
         $this->call(CitiesTableSeeder::class);
+
+        //shopping data
+        $this->call(ShoppingsTableSeeder::class);
+
 
         Model::reguard();
     }
