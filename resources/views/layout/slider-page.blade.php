@@ -8,7 +8,7 @@
     <style>
         .home-slide {
             display: block;
-            height: 768px;
+            height: 600px;
             background-color: #00A6C7;
             background-size: cover;
             background-position: center center;
