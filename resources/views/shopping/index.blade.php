@@ -1,13 +1,6 @@
 @extends('layout.page')
 @section('title', trans('title.shopping'))
-@section('styles')
-    @parent
-    <style>
-        #shopping-list {
-            margin-top: 2rem;
-        }
-    </style>
-@endsection
+
 @section('content')
     <div id="shopping-list" class="ui grid container">
         <div class="ui row">
@@ -26,7 +19,7 @@
 
 @section('scripts')
     @parent
-    <script>
+    <script tyle="text/javascript">
         $('#shopping').addClass('active');
     </script>
 @endsection
