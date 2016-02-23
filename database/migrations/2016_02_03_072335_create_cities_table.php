@@ -22,6 +22,7 @@ class CreateCitiesTable extends Migration
             $table->text('desc_en');
             $table->text('body_cn')->nullable();
             $table->text('body_en')->nullable();
+            $table->string('thumbnail')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

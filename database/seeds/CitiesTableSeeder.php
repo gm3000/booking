@@ -12,7 +12,6 @@ class CitiesTableSeeder extends Seeder
     public function run()
     {
         $country = App\Country::firstOrCreate([]);
-        App\Country::
         $country->cities()->saveMany([
             factory(\App\City::class)->make([
                 'name_cn' => '拉斯维加斯',
