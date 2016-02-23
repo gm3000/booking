@@ -19,7 +19,7 @@ class HotelController extends Controller
     public function index()
     {
         $lang = \App::getLocale();
-        $hotels = Hotel::orderBy('name')->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
+        $hotels = Hotel::orderBy('name')->paginate(15,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
         $cities = $this->city_list();
         return view('hotel.index',compact(['hotels','cities']));
     }
@@ -102,7 +102,7 @@ class HotelController extends Controller
                                       ->orWhere('name_cn','like','%'.$query.'%')
                                       ->orWhere('desc_en','like','%'.$query.'%')
                                       ->orWhere('desc_cn','like','%'.$query.'%')
-                                      ->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
+                                      ->paginate(15,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
       $cities = $this->city_list();
       return view('hotel.index',compact(['hotels','cities']));
     }
@@ -120,7 +120,7 @@ class HotelController extends Controller
     function hotelsByCity($cid)
     {
       $lang = \App::getLocale();
-      $hotels = Hotel::orderBy('name')->where('city_id',$cid)->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
+      $hotels = Hotel::orderBy('name')->where('city_id',$cid)->paginate(15,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
       $cities = $this->city_list();
       return view('hotel.index',compact(['hotels','cities']));
     }
