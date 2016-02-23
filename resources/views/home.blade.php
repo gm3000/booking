@@ -2,8 +2,7 @@
 @section('title', trans('title.home'))
 @section('content')
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg', '/images/slider/travel3.jpg'],
-'captions'=>['在出发前就订好景点门票和观光项目，以获得更多优惠!','一起预定机票和酒店，享受高达70%的优惠!',
-'在出发前就订好景点门票和观光项目以获得更多优惠!']]);
+'captions'=>[trans('home.cap1'),trans('home.cap2'),trans('home.cap1')]]);
 <div id="home-detail">
     <div class="ui grid container">
         <div class="eleven wide column">
@@ -19,8 +18,7 @@
                     <div class="ui dimmer">
                         <div class="content">
                             <div class="center">
-                                <h3><a class="ui red header" href="#">Hilton</a></h3>
-                                <p style="text-align: center">The Best of LasVegas</p>
+                                <h3><a class="ui red header" href="{{$cities_url['LasVegas']}}">{{trans('home.partner_vegas')}}</a></h3>
                             </div>
                         </div>
                     </div>
@@ -31,8 +29,7 @@
                     <div class="ui dimmer">
                         <div class="content">
                             <div class="center">
-                                <h3><a class="ui red header" href="#">Four Seasons</a></h3>
-                                <p style="text-align: center">The Best of London</p>
+                                <h3><a class="ui red header" href="{{$cities_url['NewYork']}}">{{trans('home.partner_newyork')}}</a></h3>
                             </div>
                         </div>
                     </div>
@@ -43,8 +40,7 @@
                     <div class="ui dimmer">
                         <div class="content">
                             <div class="center">
-                                <h3><a class="ui red header" href="#">Drake</a></h3>
-                                <p style="text-align: center">The Best of Chicago</p>
+                                <h3><a class="ui red header" href="{{$cities_url['Chicago']}}">{{trans('home.partner_chicago')}}</a></h3>
                             </div>
                         </div>
                     </div>
