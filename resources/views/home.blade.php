@@ -1,10 +1,6 @@
 @extends('layout.slider-page')
 @section('title', trans('title.home'))
-@section('styles')
-    @parent
-    <link rel="stylesheet" href="/css/nanoGALLERY/nanogallery.min.css">
-    <link rel="stylesheet" href="/css/nanoGALLERY/themes/light/nanogallery_light.min.css">
-@endsection
+
 @section('content')
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg', '/images/slider/travel3.jpg'],
 'captions'=>[trans('home.cap1'),trans('home.cap2'),trans('home.cap1')]]);
@@ -59,6 +55,6 @@
 
 @section('scripts')
   @parent
-  <script src="/js/jquery.nanogallery.min.js"></script>
-  <script src="/js/home.js"></script>
+  <script type="text/javascript" src="/js/jquery.nanogallery.min.js"></script>
+  <script type="text/javascript" src="/js/home.js"></script>
 @endsection

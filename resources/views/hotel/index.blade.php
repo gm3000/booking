@@ -59,5 +59,5 @@
 @endsection
 @section('scripts')
   @parent
-  <script src="/js/hotel.js"></script>
+  <script type="text/javascript" src="/js/hotel.js"></script>
 @endsection

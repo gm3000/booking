@@ -1,0 +1,102 @@
+#about_content h3 {
+  text-decoration: underline;
+}
+
+#about_vip_content li {
+  line-height:3em;
+  font-weight:600;
+  color:brown;
+}
+
+
+.home-slide {
+    display: block;
+    height: 600px;
+    background-color: #00A6C7;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.slide-caption {
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+
+    top: 25%;
+    left: 5%;
+    width: 35%;
+    line-height: 1.2;
+
+}
+
+#home-detail{
+    margin-top: 5rem;
+}
+
+#home-partner {
+    padding-top: 4px;
+}
+
+#navigator .menu {
+    padding-left:15rem;
+    border-radius: 0;
+    font-size:small;
+}
+
+#header {
+    padding-top:20px;
+    padding-bottom:0;
+    min-height:60px;
+}
+
+#header a{
+    font-size:0.9em;
+}
+
+#navigator {
+    padding-top:0;
+    padding-bottom:0;
+}
+
+#navigator .menu .item {
+    font-size:medium;
+}
+
+#content {
+    padding-top:1px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+body p {
+  line-height: 1.7em;
+  text-align:justify;
+}
+
+#footer .title {
+    color:white;
+    margin-top:1em;
+    font-size:1.2em;
+}
+
+#footer .column p {
+    line-height:1.7em;
+    font-size:small;
+}
+
+#footer ul {
+    font-size:small;
+}
+
+#footer ul li a {
+    color:white;
+}

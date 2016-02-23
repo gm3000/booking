@@ -10,73 +10,12 @@
     <title>@yield('title')</title>
     @section('styles')
     <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
-
-    <style>
-        #navigator .menu {
-            padding-left:15rem;
-            border-radius: 0;
-            font-size:small;
-        }
-
-        #header {
-            padding-top:20px;
-            padding-bottom:0;
-            min-height:60px;
-        }
-
-        #header a{
-            font-size:0.9em;
-        }
-
-        #navigator {
-            padding-top:0;
-            padding-bottom:0;
-        }
-
-        #navigator .menu .item {
-            font-size:medium;
-        }
-
-        #content {
-            padding-top:1px;
-        }
-
-        body {
-            background-color: #ffffff;
-        }
-
-        body a:hover {
-            text-decoration: underline;
-        }
-
-        body p {
-          line-height: 1.7em;
-          text-align:justify;
-        }
-
-        #footer .title {
-            color:white;
-            margin-top:1em;
-            font-size:1.2em;
-        }
-
-        #footer .column p {
-            line-height:1.7em;
-            font-size:small;
-        }
-
-        #footer ul {
-            font-size:small;
-        }
-
-        #footer ul li a {
-            color:white;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/lightslider.min.css">
+    <link rel="stylesheet" href="/css/nanoGALLERY/nanogallery.min.css">
+    <link rel="stylesheet" href="/css/nanoGALLERY/themes/light/nanogallery_light.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
     @show
-    <script src="/js/jquery.turbolinks.min.js"></script>
-    <script src="/js/turbolinks.js"></script>
+
 </head>
 <body>
 <div id="container" class="ui grid">
@@ -127,9 +66,11 @@
     @include('partial.footer_'.App::getLocale())
 </div>
 @section('scripts')
-<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
-<script src="/js/menu.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
+<script type="text/javascript" src="/js/jquery.turbolinks.min.js"></script>
+<script type="text/javascript" src="/js/turbolinks.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
 @show
 
 </body>
