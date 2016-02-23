@@ -6,7 +6,7 @@ $('.partner').dimmer({
 
     $.getJSON('/api/cities/hotest', function(data){
         var items = [];
-        console.log(data);
+
         $.each(data, function(idex,item){
             items.push({
                 src:'/cities/'+item.id,
@@ -16,7 +16,6 @@ $('.partner').dimmer({
             console.log(item.name);
         });
 
-        console.log(items);
 
         $('#home-gallery').nanoGallery(
 
@@ -40,52 +39,7 @@ $('.partner').dimmer({
                     window.location.href=items[0].src;
                 },
                 items:items,
-                /*items: [
-                    {
-                        src:'/about',
-                        srct:'/images/thumbnails/lasvegas.jpg',
-                        title: "LasVegas"
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/newyork.jpg',
-                        title: 'NewYork'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/london.jpg',
-                        title: 'London'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/chicago.jpg',
-                        title: 'Chicago'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/paris.jpg',
-                        title: 'Paris'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/tokyo.jpg',
-                        title: 'Tokyo'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/orlando.jpg',
-                        title: 'Orlando'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/sydney.jpg',
-                        title: 'Sydney'
-                    },
-                    {
-                        src: '/about',
-                        srct: '/images/thumbnails/losangeles.jpg',
-                        title: 'Los Angeles (LA)'
-                    }]*/
+
             }
 
         );
