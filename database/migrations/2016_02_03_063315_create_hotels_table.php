@@ -15,10 +15,10 @@ class CreateHotelsTable extends Migration
         Schema::create('hotels', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('city_id');
-            $table->string('name_cn');
-            $table->string('name_en');
-            $table->text('desc_cn');
-            $table->text('desc_en');
+            $table->string('name_cn')->index();
+            $table->string('name_en')->index();
+            $table->text('desc_cn')->index();
+            $table->text('desc_en')->index();
             $table->text('body_cn')->nullable();
             $table->text('body_en')->nullable();
             $table->string('logo')->nullable();
