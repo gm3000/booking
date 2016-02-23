@@ -11,6 +11,16 @@ class HomeController extends Controller
 {
     public function show()
     {
-        return view('home');
+        //get url of city
+        $cities_url=[];
+        $cities = \App\City::select('name_en as name','id')
+            ->whereIn('name',['LasVegas','NewYork','Chicago'])
+            ->get()->all();
+
+        foreach($cities as $city){
+            $cities_url[$city->name] = '/cities/'.$city->id;
+        }
+
+        return view('home', compact('cities_url'));
     }
 }

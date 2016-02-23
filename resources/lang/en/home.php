@@ -8,5 +8,10 @@
 
 return [
     'hot_place' => 'Top Destination',
-    'partner' => 'Our Partners'
+    'partner' => 'Our Partners',
+    'partner_vegas' => 'Top Hotels in Vegas',
+    'partner_newyork' => 'Top Hotels in NewYork',
+    'partner_chicago' => 'Top Hotels in Chicago',
+    'cap1' => 'Book your Activities and Sightseeing Tours before  You Go!',
+    'cap2' => 'Book Air and Hotel together and Save up to 70%!'
 ];
