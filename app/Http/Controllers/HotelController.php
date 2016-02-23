@@ -109,7 +109,7 @@ class HotelController extends Controller
 
     protected function city_list(){
       $lang = \App::getLocale();
-      $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.id')
+      $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.city_id')
                                     ->select('cities.id as id','cities.name_'.$lang.' as name')
                                     ->groupBy('city_id')
                                     ->orderBy(\DB::raw('count(*)'),'desc')
