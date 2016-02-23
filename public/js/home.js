@@ -1,6 +1,6 @@
 $('#home').addClass('active');
 $('.partner').dimmer({
-        opacity: '0.1',
+        opacity: '0.5',
         on: 'hover'
     });
 
@@ -13,9 +13,13 @@ $('.partner').dimmer({
                 srct:item.thumbnail,
                 title: item.name
             });
-            console.log(item.name);
         });
 
+        items.push({
+            src: '/cities',
+            srct: '/images/thumbnails/more.jpg',
+            title: 'More/了解更多'
+        });
 
         $('#home-gallery').nanoGallery(
 
