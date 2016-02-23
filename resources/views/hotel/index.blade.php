@@ -14,12 +14,12 @@
       <div class="ui seven wide left aligned column">
         <div id="city_list" class="ui horizontal list" style="font-weight:bold;">
           @foreach($cities as $city)
-            <a class="item" href="#">{{$city->name}}</a>
+            <a class="item" href="{{ action('HotelController@hotelsByCity', ['cid'=>($city->id)]) }}">{{$city->name}}</a>
           @endforeach
         </div>
       </div>
       <div class="ui five wide right aligned column">
-        <form id="searchForm" class="" action="/hotels/search" method="get" style="display:inline;">
+        <form id="searchForm" class="" action="{{ action('HotelController@search') }}" method="get" style="display:inline;">
           <div class="ui fluid icon input">
             <input type="text" name="query" value="{{ Request::input('query') }}" placeholder="{{ trans('site.search') }}">
             <i id="search" class="circular search link icon"></i>

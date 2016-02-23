@@ -113,7 +113,15 @@ class HotelController extends Controller
                                     ->select('cities.id as id','cities.name_'.$lang.' as name')
                                     ->groupBy('city_id')
                                     ->orderBy(\DB::raw('count(*)'),'desc')
-                                    ->take(3)->get();
+                                    ->take(7)->get();
       return $cities;
+    }
+
+    function hotelsByCity($cid)
+    {
+      $lang = \App::getLocale();
+      $hotels = Hotel::orderBy('name')->where('city_id',$cid)->paginate(20,['name_'.$lang.' as name','desc_'.$lang.' as desc']);
+      $cities = $this->city_list();
+      return view('hotel.index',compact(['hotels','cities']));
     }
 }
