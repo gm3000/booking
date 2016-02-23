@@ -7,6 +7,6 @@
  */
 
 return [
-    'hot_place' => 'Hot Places',
+    'hot_place' => 'Top Destination',
     'partner' => 'Our Partners'
 ];
