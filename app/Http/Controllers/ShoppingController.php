@@ -11,6 +11,7 @@ class ShoppingController extends Controller
 {
     public function showList(){
 
-        return view('shopping.index');
+        $shoppings = \App\Shopping::all();
+        return view('shopping.index', compact('shoppings'));
     }
 }
