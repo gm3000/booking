@@ -1,8 +1,11 @@
-@extends('layout.page')
+@extends('layout.slider-page')
 @section('title', trans('title.vipprogram'))
 
+@section('bookingContainer')
+@endsection
+
 @section('content')
-<img class="page ui fluid image" src="/images/about.jpg" alt="PICC VIP 会员计划" />
+@include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
 <div id="vip_program_content" class="page_container">
   <div class="ui grid container">
      <div class="ui column">
