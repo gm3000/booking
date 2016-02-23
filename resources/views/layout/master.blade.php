@@ -75,6 +75,8 @@
 
     </style>
     @show
+    <script src="/js/jquery.turbolinks.min.js"></script>
+    <script src="/js/turbolinks.js"></script>
 </head>
 <body>
 <div id="container" class="ui grid">
@@ -129,4 +131,5 @@
 <script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 <script src="/js/menu.js"></script>
 @show
+
 </body>
