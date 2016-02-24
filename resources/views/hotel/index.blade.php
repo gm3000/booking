@@ -8,7 +8,7 @@
     <div class="ui row">
       <div class="ui four wide column">
         <h1 class="ui red header" style="display:inline-block">
-          全球星级酒店
+          {{trans('hotel.title')}}
         </h1>
       </div>
       <div class="ui seven wide left aligned column">
