@@ -21,23 +21,27 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 });
 
 $factory->define(App\Country::class, function (Faker\Generator $faker) {
-    $country = $faker->country;
+    $countries_cn = ['中国','美国','英国','澳大利亚','日本',];
+    $countries_en = ['Chinese','USA','England','Australia','Japan',];
+    $index = $faker->numberBetween(0,4);
     $desc = $faker->paragraph;
     return [
-        'name_en' => $country,
+        'name_en' => $countries_en[$index],
         'desc_en' => $desc,
-        'name_cn' => '国家:' . $country,
+        'name_cn' => $countries_cn[$index],
         'desc_cn' => '国家简介:' . $desc
     ];
 });
 
 $factory->define(App\City::class, function (Faker\Generator $faker) {
-    $city = $faker->city;
+    $cities_cn = ['北京','上海','成都','纽约','东京','伦敦','巴黎','拉斯维加斯','迪拜','奥兰多','波士顿','大阪','北海道','盐湖城',];
+    $cities_en = ['Beijing','Shanghai','Chengdu','New York','Tokya','London','Paris','LasVagas','Dubai','Orlando','Boston','Osaka','Hokkaido','Salt Lake City',];
+    $index = $faker->numberBetween(0,13);
     $desc = $faker->paragraph;
     return [
-        'name_en' => $city,
+        'name_en' => $cities_en[$index],
         'desc_en' => $desc,
-        'name_cn' => '城市:' . $city,
+        'name_cn' => $cities_cn[$index],
         'desc_cn' => '城市简介:' . $desc
     ];
 });

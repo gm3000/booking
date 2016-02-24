@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
         // $this->call(UserTableSeeder::class);
         factory(\App\Country::class,5)->create()->each(function($country){
             $country->cities()->saveMany(factory(\App\City::class,5)->make());
