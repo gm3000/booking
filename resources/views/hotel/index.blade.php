@@ -3,7 +3,7 @@
 @section('content')
 {{-- change hotel sider images --}}
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
-<div id="hotel_list" style="padding-top:3em;">
+<div id="hotel_list" class="page_container">
   <div class="ui grid container">
     <div class="ui row">
       <div class="ui four wide column">
@@ -32,26 +32,26 @@
     </div>
     <div class="ui row">
       <div class="ui column">
-        <div class="ui divided items">
+        <div class="ui divided link items">
           @foreach($hotels as $hotel)
-          <div class="ui item">
+          <a class="ui item" href="#">
             <div class="ui image" style="width:120px;height:auto;">
-              <img src="http://placem.at/things?w=120&h=120&random=1&txt=0" alt="place holder" />
+              <img src="{{ $hotel->logo }}" alt="place holder" />
             </div>
             <div class="content">
-              <a class="header">{{$hotel->name}}</a>
+              <div class="header">{{$hotel->name}}</div>
               <div class="description">
                 <p>
                   {{$hotel->desc}}
                 </p>
               </div>
-            </div>
-          </div>
+             </div>
+           </a>
           @endforeach
-          <div class="ui divider">
-          </div>
-          @include('partial.pagination',['items'=>$hotels])
         </div>
+        <div class="ui divider">
+        </div>
+        @include('partial.pagination',['items'=>$hotels])
       </div>
     </div>
   </div>

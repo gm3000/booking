@@ -62,7 +62,7 @@ body {
     background-color: #ffffff;
 }
 
-body a:hover {
+body a:not(.item):hover {
     text-decoration: underline;
 }
 

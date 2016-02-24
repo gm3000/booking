@@ -49,7 +49,7 @@
                 <a class="item" href="#">{{ trans('menu.package') }}</a>
                 <a id="vipprogram" class="item" href="/vipprograms">{{ trans('menu.VipProgram') }}</a>
                 <a id="shopping" class="item" href="/shopping">{{ trans('menu.shopping') }}</a>
-                <a class="item" href="#">{{ trans('menu.activity') }}</a>
+                <a id="activity" class="item" href="/activities">{{ trans('menu.activity') }}</a>
                 <a class="item" href="#">{{ trans('menu.TopDestination') }}</a>
             </div>
         </div>

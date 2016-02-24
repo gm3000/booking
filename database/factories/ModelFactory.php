@@ -48,7 +48,7 @@ $factory->define(App\Hotel::class, function (Faker\Generator $faker) {
     return [
         'name_en' => $name,
         'desc_en' => $desc,
-        'logo' => $faker->imageUrl(60,60),
+        'logo' => $faker->imageUrl(120,120),
         'name_cn' => '酒店:' . $name,
         'desc_cn' => '酒店简介:' . $desc
     ];

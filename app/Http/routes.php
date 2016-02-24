@@ -34,6 +34,9 @@ Route::group(['prefix' => '/'], function(){
     Route::get('vipprograms','VipProgramController@index');
 });
 
+Route::group(['prefix' => '/'], function(){
+    Route::get('activities','ActivityController@index');
+});
 
 
 Route::group(['prefix' => '/'], function(){
