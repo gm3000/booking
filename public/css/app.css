@@ -97,3 +97,8 @@ body p {
   font-weight:600;
   color:brown;
 }
+
+#hotel_list .ui.horizontal.list:not(.celled)>.item:first-child{
+  margin-left:1em!important;
+  padding-left: 0!important;
+}

@@ -113,7 +113,7 @@ class HotelController extends Controller
                                     ->select('cities.id as id','cities.name_'.$lang.' as name')
                                     ->groupBy('city_id')
                                     ->orderBy(\DB::raw('count(*)'),'desc')
-                                    ->take(7)->get();
+                                    ->take(8)->get();
       return $cities;
     }
 
