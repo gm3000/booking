@@ -40,8 +40,8 @@
           <li><a href="/hotels">Hotels</a></li>
           <li><a href="#">Activities</a></li>
           <li><a href="#">Travel Packages</a></li>
-          <li><a href="#">VIP Programs</a></li>
-          <li><a href="#">Shopping Partners</a></li>
+          <li><a href="/vipprograms">VIP Programs</a></li>
+          <li><a href="/shopping">Shopping Partners</a></li>
         </ul>
       </div>
       <div class="ui column" style="margin-left:-2em;">
