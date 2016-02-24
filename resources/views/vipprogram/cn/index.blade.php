@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-@include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg','/images/slider/travel3.jpg']])
+@include('partial.slider',['images'=>['/images/slider/vipprograms1.jpg','/images/slider/vipprograms2.jpg','/images/slider/vipprograms3.jpg'],'captions'=>['尊享私人礼宾服务','私人驾驶服务','独家高尔夫球场使用']])
 <div id="vip_program_content" class="page_container">
   <div class="ui grid container">
      <div class="ui column">
