@@ -15,7 +15,7 @@
       <div class="ui column">
         <div class="ui divided link items">
           @foreach($activities as $activity)
-          <a class="ui item" href="#">
+          <a class="ui item" href="{{action('ActivityController@show',array($activity->id))}}">
             <div class="ui image" style="width:120px;height:auto;">
               <img src="http://placem.at/things?w=120&h=120&random=1&txt=0" alt="place holder" />
             </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="ui divider">
         </div>
-          @include('partial.pagination',['items'=>$activities])
+        @include('partial.pagination',['items'=>$activities])
       </div>
     </div>
   </div>

@@ -35,7 +35,7 @@ Route::group(['prefix' => '/'], function(){
 });
 
 Route::group(['prefix' => '/'], function(){
-    Route::get('activities','ActivityController@index');
+    Route::resource('activities', 'ActivityController',['only' => ['index','show']]);
 });
 
 

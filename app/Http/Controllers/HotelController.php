@@ -19,7 +19,7 @@ class HotelController extends Controller
     public function index()
     {
         $lang = \App::getLocale();
-        $hotels = Hotel::orderBy('name')->paginate(15,['name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
+        $hotels = Hotel::orderBy('name')->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
         $cities = $this->city_list();
         return view('hotel.index',compact(['hotels','cities']));
     }
@@ -53,7 +53,7 @@ class HotelController extends Controller
      */
     public function show($hotel)
     {
-        //
+        abort(404);
     }
 
     /**

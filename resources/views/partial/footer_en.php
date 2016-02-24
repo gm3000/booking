@@ -36,10 +36,10 @@
           Our Services
         </h3>
         <ul class="ui link list">
-          <li><a href="#">Flights</a></li>
+          <li><a href="/flights">Flights</a></li>
           <li><a href="/hotels">Hotels</a></li>
           <li><a href="/activities">Activities</a></li>
-          <li><a href="#">Travel Packages</a></li>
+          <li><a href="/travelpackages">Travel Packages</a></li>
           <li><a href="/vipprograms">VIP Programs</a></li>
           <li><a href="/shopping">Shopping Partners</a></li>
         </ul>

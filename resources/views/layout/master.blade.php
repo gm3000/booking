@@ -45,12 +45,12 @@
             <div id="menu_bar" class="ui red inverted icon menu" data-turbolinks-permanent>
                 <a id="home" class="item" href="/home"><i class="large home icon"></i></a>
                 <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>
-                <a class="item" href="#">{{ trans('menu.flight') }}</a>
-                <a class="item" href="#">{{ trans('menu.package') }}</a>
+                <a id="flight" class="item" href="/flights">{{ trans('menu.flight') }}</a>
+                <a id="package" class="item" href="/travelpackages">{{ trans('menu.package') }}</a>
                 <a id="vipprogram" class="item" href="/vipprograms">{{ trans('menu.VipProgram') }}</a>
                 <a id="shopping" class="item" href="/shopping">{{ trans('menu.shopping') }}</a>
                 <a id="activity" class="item" href="/activities">{{ trans('menu.activity') }}</a>
-                <a class="item" href="#">{{ trans('menu.TopDestination') }}</a>
+                <a id="tops" class="item" href="/tops">{{ trans('menu.TopDestination') }}</a>
             </div>
         </div>
     </div>
