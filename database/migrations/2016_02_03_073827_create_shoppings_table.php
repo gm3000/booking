@@ -24,6 +24,15 @@ class CreateShoppingsTable extends Migration
             $table->string('logo')->nullable();
             $table->softDeletes();
             $table->timestamps();
+
+            $table->text('offers_cn')->nullable();
+            $table->text('offers_en')->nullable();
+            $table->text('hours_cn')->nullable();
+            $table->text('hours_en')->nullable();
+            $table->text('address_cn')->nullable();
+            $table->text('address_en')->nullable();
+
+            $table->string('website')->nullable();
         });
     }
 

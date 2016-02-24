@@ -9,5 +9,9 @@
 return [
 
     'title' => 'Shopping Partners',
+    'offers' => 'OFFERS',
+    'hours' => 'HOURS',
+    'location' => 'LOCATION',
+    'website' => 'WEBSITE'
 
 ];

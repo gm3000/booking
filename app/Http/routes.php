@@ -28,6 +28,7 @@ Route::group(['prefix' => '/'], function () {
 
 Route::group(['prefix' => '/'], function(){
     Route::get('shopping','ShoppingController@showList');
+    Route::get('shoppings/{id}','ShoppingController@showDetail');
 });
 
 Route::group(['prefix' => '/'], function(){
