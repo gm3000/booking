@@ -10,7 +10,11 @@
         </div>
         <div class="ui row">
             <div class="column">
-                {{$shoppings}}
+                <div class="ui items">
+                    @foreach ($shoppings as $store)
+                        
+                    @endforeach
+                </div>
             </div>
 
         </div>
