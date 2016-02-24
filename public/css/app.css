@@ -92,3 +92,9 @@ body p {
 #shopping-list {
     margin-top: 2rem;
 }
+
+#vip_program_content  li {
+  line-height:3em;
+  font-weight:600;
+  color:brown;
+}
