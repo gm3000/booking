@@ -16,11 +16,17 @@
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <link rel="stylesheet" type="text/css" href="/css/page.css">
     @show
-
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.turbolinks.min.js"></script>
+    <script type="text/javascript" src="/js/turbolinks.min.js"></script>
+    <script type="text/javascript">
+      Turbolinks.enableTransitionCache();
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 </head>
 <body>
 <div id="container" class="ui grid">
-    <div id="header" class="ui three column row">
+    <div id="header" class="ui three column row" data-turbolinks-permanent>
         <div class="ui center aligned column">
             <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
             <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
@@ -36,7 +42,7 @@
     </div>
     <div id="navigator" class="ui row">
         <div class="ui column">
-            <div class="ui red inverted icon menu">
+            <div id="menu_bar" class="ui red inverted icon menu" data-turbolinks-permanent>
                 <a id="home" class="item" href="/home"><i class="large home icon"></i></a>
                 <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>
                 <a class="item" href="#">{{ trans('menu.flight') }}</a>
@@ -67,14 +73,6 @@
     @include('partial.footer_'.App::getLocale())
 </div>
 @section('scripts')
-<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.turbolinks.min.js"></script>
-<script type="text/javascript" src="/js/turbolinks.min.js"></script>
-<script type="text/javascript">
-  Turbolinks.enableTransitionCache();
-</script>
-<script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 <script type="text/javascript" src="/js/menu.js"></script>
 @show
-
 </body>
