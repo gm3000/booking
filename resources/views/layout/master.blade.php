@@ -68,9 +68,9 @@
 </div>
 @section('scripts')
 <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 <script type="text/javascript" src="/js/jquery.turbolinks.min.js"></script>
 <script type="text/javascript" src="/js/turbolinks.min.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 <script type="text/javascript" src="/js/menu.js"></script>
 @show
 
