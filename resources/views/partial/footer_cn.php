@@ -38,7 +38,7 @@
           <ul class="ui link list">
             <li><a href="#">机票</a></li>
             <li><a href="/hotels">酒店</a></li>
-            <li><a href="#">景点门票</a></li>
+            <li><a href="/activities">景点门票</a></li>
             <li><a href="#">旅行套餐</a></li>
             <li><a href="/vipprograms">VIP 服务</a></li>
             <li><a href="/shopping">购物优惠</a></li>

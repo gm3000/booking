@@ -38,7 +38,7 @@
         <ul class="ui link list">
           <li><a href="#">Flights</a></li>
           <li><a href="/hotels">Hotels</a></li>
-          <li><a href="#">Activities</a></li>
+          <li><a href="/activities">Activities</a></li>
           <li><a href="#">Travel Packages</a></li>
           <li><a href="/vipprograms">VIP Programs</a></li>
           <li><a href="/shopping">Shopping Partners</a></li>
