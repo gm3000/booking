@@ -11,7 +11,8 @@ class ShoppingController extends Controller
 {
     public function showList(){
 
-        $shoppings = \App\Shopping::all();
+        $lang = \App::getLocale();
+        $shoppings = \App\Shopping::select('name_'.$lang.' as name', 'desc_'.$lang.' as desc', 'id', 'logo')->get()->all();
         return view('shopping.index', compact('shoppings'));
     }
 }
