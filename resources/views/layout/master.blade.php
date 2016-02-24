@@ -28,7 +28,7 @@
         <div class="ui column">
         </div>
         <div class="ui center aligned column">
-            <div class="basic segment" style="padding-top:7px;">
+            <div class="basic segment" style="padding-top:7px;" data-no-turbolink>
                 <a href="/setlanguage?lang=cn" style="margin-right:13px;"><i class="cn flag"></i>中文</a>
                 <a href="/setlanguage?lang=en"><i class="us flag"></i>English</a>
             </div>
