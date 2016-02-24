@@ -41,7 +41,7 @@
             <li><a href="/activities">景点门票</a></li>
             <li><a href="/travelpackages">旅行套餐</a></li>
             <li><a href="/vipprograms">VIP 服务</a></li>
-            <li><a href="/shopping">购物优惠</a></li>
+            <li><a href="/shopping-partner">购物优惠</a></li>
           </ul>
         </div>
         <div class="ui column" style="margin-left:-2em;">

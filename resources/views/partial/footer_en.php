@@ -41,7 +41,7 @@
           <li><a href="/activities">Activities</a></li>
           <li><a href="/travelpackages">Travel Packages</a></li>
           <li><a href="/vipprograms">VIP Programs</a></li>
-          <li><a href="/shopping">Shopping Partners</a></li>
+          <li><a href="/shopping-partner">Shopping Partners</a></li>
         </ul>
       </div>
       <div class="ui column" style="margin-left:-2em;">
