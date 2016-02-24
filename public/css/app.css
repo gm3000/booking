@@ -51,7 +51,7 @@
 }
 
 #navigator .menu .item {
-    font-size:medium;
+    font-size:16px;
 }
 
 #content {
@@ -74,16 +74,15 @@ body p {
 #footer .title {
     color:white;
     margin-top:1em;
-    font-size:1.2em;
 }
 
 #footer .column p {
     line-height:1.7em;
-    font-size:small;
+    font-size:13px;
 }
 
 #footer ul {
-    font-size:small;
+    font-size:13px;
 }
 
 #footer ul li a {
