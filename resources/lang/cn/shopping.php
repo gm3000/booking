@@ -9,5 +9,10 @@
 return [
 
     'title' => '购物合作伙伴',
+    'offers' => '特别优惠',
+    'hours' => '营业时间',
+    'location' => '地址',
+    'website' => '官网'
+
 
 ];

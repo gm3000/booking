@@ -3,16 +3,16 @@
 
 @section('content')
     <div id="shopping-list" class="ui grid container">
-        <div class="ui row">
+        <div class="row">
             <div class="column">
                 <h1 class="ui header">{{trans('shopping.title')}}</h1>
             </div>
         </div>
-        <div class="ui row">
+        <div class="row">
             <div class="column">
                 <div class="ui divided link items">
                     @foreach ($shoppings as $store)
-                        <a class="item" href="{{'/shoppings/'.$store['id']}}">
+                        <a class="item" href="{{'/shopping-partner/'.$store['id']}}">
                             <div class="ui image">
                                 <img src="{{$store['logo']}}" alt="{{$store['name']}}">
                             </div>

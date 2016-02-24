@@ -50,7 +50,7 @@
                    <a id="flight" class="item" href="/flights">{{ trans('menu.flight') }}</a>
                    <a id="package" class="item" href="/travelpackages">{{ trans('menu.package') }}</a>
                    <a id="vipprogram" class="item" href="/vipprograms">{{ trans('menu.VipProgram') }}</a>
-                   <a id="shopping" class="item" href="/shopping">{{ trans('menu.shopping') }}</a>
+                   <a id="shopping" class="item" href="/shopping-partner">{{ trans('menu.shopping') }}</a>
                    <a id="activity" class="item" href="/activities">{{ trans('menu.activity') }}</a>
                    <a id="tops" class="item" href="/tops">{{ trans('menu.TopDestination') }}</a>
                </div>
