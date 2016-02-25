@@ -18,7 +18,7 @@ class ActivityController extends Controller
     public function index()
     {
       $lang = \App::getLocale();
-      $activities = Activity::orderBy('name')->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc']);
+      $activities = Activity::orderBy('name')->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','poster']);
       return view('activity.index',compact('activities'));
     }
 
