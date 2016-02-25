@@ -23,6 +23,7 @@
       Turbolinks.enableTransitionCache();
     </script>
     <script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
+    <script type="text/javascript" src="/js/lightslider.min.js"></script>
 </head>
 <body>
 <div id="container" class="ui grid">

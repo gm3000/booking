@@ -1,5 +1,5 @@
 <div>
-    <ul id="home-slider">
+    <ul id="home-slider" style="list-style-type: none; margin: 0; padding: 0">
         @foreach($images as $index=>$image)
         <li>
             <div id="slide-{{$index}}" class="home-slide" style="background-image: url({{$image}});">
