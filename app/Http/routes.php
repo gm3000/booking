@@ -36,6 +36,7 @@ Route::group(['prefix' => '/'], function(){
 });
 
 Route::group(['prefix' => '/'], function(){
+    Route::get('activities/search', 'ActivityController@search');
     Route::resource('activities', 'ActivityController',['only' => ['index','show']]);
 });
 
