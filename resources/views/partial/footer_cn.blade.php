@@ -1,4 +1,4 @@
-<div id="footer" class="{{config('app.primary_color')}} ui row" style="padding-bottom:2em;" data-turbolinks-permanent>
+<div id="footer" class="{{config('app.primary_color')}} ui row" style="padding-bottom:2em;">
     <div class="ui grid container">
       <div class="ui four column row">
         <div class="ui column" style="padding-right:2em;">

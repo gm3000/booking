@@ -29,7 +29,7 @@
     <div class="ui row">
       <div class="ui column">
         <div class="ui grid container">
-           <div id="header" class="ui two column row" data-turbolinks-permanent>
+           <div id="header" class="ui two column row">
              <div class="ui column">
                  <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
                  <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
@@ -62,6 +62,12 @@
           </div>
          </div>
     </div>
+    <div id="content" class="ui row" style="min-height:450px;margin-bottom:3em;">
+        <div class="ui column">
+            @yield('content')
+        </div>
+    </div>
+    @include('partial.footer_'.App::getLocale())
     @section('bookingContainer')
     <div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:160px;width:90%;z-index:999">
          <div class="ui row">
@@ -73,12 +79,6 @@
          </div>
     </div>
     @show
-    <div id="content" class="ui row" style="min-height:450px;margin-bottom:3em;">
-        <div class="ui column">
-            @yield('content')
-        </div>
-    </div>
-    @include('partial.footer_'.App::getLocale())
 </div>
 @section('scripts')
 <script type="text/javascript" src="/js/menu.js"></script>
