@@ -6,7 +6,7 @@
 <div id="about_vip_content" class="page_container">
   <div class="ui grid container">
     <div class="ui column">
-      <h2 class="ui red header">
+      <h2 class="ui {{config('app.primary_color')}} header">
         中国人民保险VIP会员计划
       </h2>
       <div class="ui divider">
@@ -17,7 +17,7 @@
       <p>
         这一方案将只限于&nbsp;<strong style="color:red;font-size:x-large;text-decoration:underline;">5000</strong>&nbsp;个成员，以确保我们能为每个成员提供个性化服务，以满足您的期望。
       </p>
-      <h3 class="ui red header">
+      <h3 class="ui {{config('app.primary_color')}} header">
         独家提供给我们的会员额外服务
       </h3>
       <div class="ui divider">

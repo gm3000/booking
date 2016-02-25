@@ -7,7 +7,7 @@
   <div class="ui grid container">
     <div class="ui row">
         <div class="column">
-            <h1 class="ui red header">{{ trans('activity.title') }}</h1>
+            <h1 class="ui {{config('app.primary_color')}} header">{{ trans('activity.title') }}</h1>
         </div>
     </div>
     <div class="ui divider" style="margin-top:2em;"></div>

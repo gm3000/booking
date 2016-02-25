@@ -6,7 +6,7 @@
 <div id="about_vip_content" class="page_container">
   <div class="ui grid container">
     <div class="ui column">
-      <h2 class="ui red header">
+      <h2 class="ui {{config('app.primary_color')}} header">
         PICC VIP ONE Membership Program
       </h2>
       <div class="ui divider">
@@ -17,7 +17,7 @@
       <p>
         This program will be limited to only <strong style="color:red;font-size:x-large;text-decoration:underline;"> 5000</strong> members to ensure that we can provide each member with personalized service to meet your expectations and ensure you are treated like the VIP you are. Become one of the elite ONE members today before it's too late.
       </p>
-      <h3 class="ui red header">
+      <h3 class="ui {{config('app.primary_color')}} header">
         Additional Services we Provide Exclusively to our members
       </h3>
       <div class="ui divider">

@@ -44,7 +44,7 @@
          <div class="ui column" style="background-color:#db2828;">
            <div class="ui grid container">
              <div class="ui column">
-               <div id="menu_bar" class="ui red inverted icon menu" data-turbolinks-permanent>
+               <div id="menu_bar" class="ui {{config('app.primary_color')}} inverted icon menu" data-turbolinks-permanent>
                    <a id="home" class="item" href="/home"><i class="large home icon"></i></a>
                    <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>
                    <a id="flight" class="item" href="/flights">{{ trans('menu.flight') }}</a>

@@ -97,6 +97,8 @@ return [
 
     'log' => 'single',
 
+    'primary_color' => 'red',
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

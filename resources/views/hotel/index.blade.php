@@ -7,7 +7,7 @@
   <div class="ui grid container">
     <div class="ui row">
       <div class="ui four wide column">
-        <h1 class="ui red header" style="display:inline-block">
+        <h1 class="ui {{config('app.primary_color')}} header" style="display:inline-block">
           {{trans('hotel.title')}}
         </h1>
       </div>
