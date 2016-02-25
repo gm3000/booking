@@ -44,6 +44,10 @@ Route::group(['prefix' => '/'], function(){
 });
 
 Route::group(['prefix' => '/'], function(){
+    Route::resource('travelpackages', 'PackageController',['only' => ['index','show']]);
+});
+
+Route::group(['prefix' => '/'], function(){
     Route::get('hotels/search', 'HotelController@search');
     Route::get('hotels/city/{cid}', 'HotelController@hotelsByCity');
     Route::resource('hotels', 'HotelController',['only' => ['index','show']]);

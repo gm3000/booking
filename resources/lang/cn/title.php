@@ -1,5 +1,5 @@
 <?php
-$prefix = 'PICC - ';
+$prefix = '中国人保 - ';
 return [
 
     'home' => $prefix.'首页',
@@ -8,5 +8,5 @@ return [
     'vipprogram' => $prefix.'VIP服务',
     'activity' => $prefix.'景点',
     'flight' => $prefix.'机票',
-
+    'package' => $prefix.'旅游套餐',
 ];

@@ -28,7 +28,6 @@ class RouteServiceProvider extends ServiceProvider
 
         parent::boot($router);
 
-        $router->model('hotels','App\Hotel');
     }
 
     /**
