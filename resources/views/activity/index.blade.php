@@ -27,7 +27,7 @@
         <div class="ui divided link items">
           @foreach($activities as $activity)
           <a class="ui item" href="{{action('ActivityController@show',array($activity->id))}}">
-            <div class="ui image" style="width:120px;height:auto;">
+            <div class="ui image" style="width:200px;height:auto;">
               <img src="{{$activity->poster}}" alt="place holder" />
             </div>
             <div class="content">

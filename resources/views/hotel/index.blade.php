@@ -35,7 +35,7 @@
         <div class="ui divided link items">
           @foreach($hotels as $hotel)
           <a class="ui item" href="{{ action('HotelController@show', array($hotel->id)) }}">
-            <div class="ui image" style="width:120px;height:auto;">
+            <div class="ui image" style="width:200px;height:auto;">
               <img src="{{ $hotel->logo }}" alt="place holder" />
             </div>
             <div class="content">
