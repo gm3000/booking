@@ -7,5 +7,6 @@ return [
     'shopping' => $prefix.'购物',
     'vipprogram' => $prefix.'VIP服务',
     'activity' => $prefix.'景点',
+    'flight' => $prefix.'机票',
 
 ];

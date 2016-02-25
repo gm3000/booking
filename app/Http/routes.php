@@ -39,6 +39,9 @@ Route::group(['prefix' => '/'], function(){
     Route::resource('activities', 'ActivityController',['only' => ['index','show']]);
 });
 
+Route::group(['prefix' => '/'], function(){
+    Route::resource('flights', 'FlightController',['only' => ['index','show']]);
+});
 
 Route::group(['prefix' => '/'], function(){
     Route::get('hotels/search', 'HotelController@search');

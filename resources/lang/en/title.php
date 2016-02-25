@@ -7,4 +7,5 @@ return [
     'shopping' => $prefix.'Shopping',
     'vipprogram' => $prefix.'VIP Service',
     'activity' => $prefix.'Activity',
+    'flight' => $prefix.'Flight',
 ];
