@@ -52,7 +52,7 @@ $factory->define(App\Hotel::class, function (Faker\Generator $faker) {
     return [
         'name_en' => $name,
         'desc_en' => $desc,
-        'logo' => $faker->imageUrl(120,120),
+        'logo' => $faker->imageUrl(200,200),
         'name_cn' => '酒店:' . $name,
         'desc_cn' => '酒店简介:' . $desc
     ];
@@ -76,7 +76,7 @@ $factory->define(\App\Activity::class, function(Faker\Generator $faker){
     return [
         'name_en' => $name,
         'desc_en' => $desc,
-        'poster' => $faker->imageUrl(120,120),
+        'poster' => $faker->imageUrl(200,200),
         'name_cn' => '景点:' . $name,
         'desc_cn' => '景点简介:' . $desc
     ];

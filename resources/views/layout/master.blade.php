@@ -26,19 +26,23 @@
 </head>
 <body>
 <div id="container" class="ui grid">
-    <div id="header" class="ui three column row" data-turbolinks-permanent>
-        <div class="ui center aligned column">
-            <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
-            <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
+    <div class="ui row">
+      <div class="ui column">
+        <div class="ui grid container">
+           <div id="header" class="ui two column row" data-turbolinks-permanent>
+             <div class="ui column">
+                 <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
+                 <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
+             </div>
+             <div class="ui right aligned column">
+               <div class="basic segment" style="padding-top:7px;" data-no-turbolink>
+                   <a href="/setlanguage?lang=cn" style="margin-right:13px;"><i class="cn flag"></i>中文</a>
+                   <a href="/setlanguage?lang=en"><i class="us flag"></i>English</a>
+               </div>
+             </div>
+           </div>
         </div>
-        <div class="ui column">
-        </div>
-        <div class="ui center aligned column">
-            <div class="basic segment" style="padding-top:7px;" data-no-turbolink>
-                <a href="/setlanguage?lang=cn" style="margin-right:13px;"><i class="cn flag"></i>中文</a>
-                <a href="/setlanguage?lang=en"><i class="us flag"></i>English</a>
-            </div>
-        </div>
+      </div>
     </div>
     <div id="navigator" class="ui row">
          <div class="ui column" style="background-color:#db2828;">
