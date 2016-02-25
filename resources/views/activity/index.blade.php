@@ -2,7 +2,7 @@
 @section('title', trans('title.activity'))
 @section('content')
 {{-- change hotel sider images --}}
-@include('partial.slider',['images'=>['/images/slider/activities1.jpg','/images/slider/activities2.jpg','/images/slider/activities3.jpg'],'captions'=>['卢浮宫','迪斯尼','黄石公园',]])
+@include('partial.slider',['images'=>['/images/slider/activities1.jpg','/images/slider/activities2.jpg','/images/slider/activities3.jpg'],'captions'=>[trans('activity.louvre'),trans('activity.disney'),trans('activity.yellowstone'),]])
 <div id="activity_list" class="page_container">
   <div class="ui grid container">
     <div class="ui row">

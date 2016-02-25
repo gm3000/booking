@@ -2,7 +2,7 @@
 @section('title', trans('title.hotel'))
 @section('content')
 {{-- change hotel sider images --}}
-@include('partial.slider',['images'=>['/images/slider/hotels1.jpg','/images/slider/hotels2.jpg','/images/slider/hotels3.jpg'],'captions'=>['独享顶层公寓','花园式五星级酒店','豪华城市景观套房',]])
+@include('partial.slider',['images'=>['/images/slider/hotels1.jpg','/images/slider/hotels2.jpg','/images/slider/hotels3.jpg'],'captions'=>[trans('hotel.slider1'),trans('hotel.slider2'),trans('hotel.slider3'),]])
 <div id="hotel_list" class="page_container">
   <div class="ui grid container">
     <div class="ui row">
