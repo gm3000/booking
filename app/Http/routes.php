@@ -23,6 +23,7 @@ Route::group(['prefix' => '/'], function () {
     Route::get('about','PagesController@about');
     Route::get('about_vip','PagesController@aboutVip');
     Route::get('terms-of-use','PagesController@termsOfUse');
+    Route::get('private_policy','PagesController@privatePolicy');
 
 });
 
