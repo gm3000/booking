@@ -3,6 +3,7 @@
 @section('content')
 {{-- change hotel sider images --}}
 @include('partial.slider',['images'=>['/images/slider/activities1.jpg','/images/slider/activities2.jpg','/images/slider/activities3.jpg'],'captions'=>[trans('activity.louvre'),trans('activity.disney'),trans('activity.yellowstone'),]])
+<div id="list"></div>
 <div id="activity_list" class="page_container">
   <div class="ui grid container">
     <div class="ui two column row">
@@ -12,7 +13,7 @@
         </h1>
       </div>
       <div class="ui column">
-        <form id="searchForm" class="" action="{{ action('ActivityController@search') }}" method="get" style="display:inline;">
+        <form id="searchForm" class="" action="{{ action('ActivityController@search') }}#list" method="get" style="display:inline;">
           <div class="ui fluid icon input">
             <input type="text" name="query" value="{{ Request::input('query') }}" placeholder="{{ trans('site.search') }}">
             <i id="search" class="circular search link icon"></i>
@@ -43,7 +44,7 @@
         </div>
         <div class="ui divider">
         </div>
-        @include('partial.pagination',['items'=>$activities])
+        @include('partial.pagination',['items'=>$activities,'anchor'=>'list'])
       </div>
     </div>
   </div>
