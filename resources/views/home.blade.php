@@ -1,6 +1,6 @@
 @extends('layout.slider-page')
 @section('title', trans('title.home'))
-
+@section('rezgate_url', '/rezgate/main.html')
 @section('content')
 @include('partial.slider',['images'=>['/images/slider/travel1.jpg','/images/slider/travel2.jpg', '/images/slider/travel3.jpg'],
 'captions'=>[trans('home.cap1'),trans('home.cap2'),trans('home.cap1')]]);

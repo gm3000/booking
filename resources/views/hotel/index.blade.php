@@ -1,5 +1,7 @@
 @extends('layout.slider-page')
 @section('title', trans('title.hotel'))
+@section('rezgate_url', '/rezgate/main.html?product=3')
+
 @section('content')
 {{-- change hotel sider images --}}
 @include('partial.slider',['images'=>['/images/slider/hotels1.jpg','/images/slider/hotels2.jpg','/images/slider/hotels3.jpg'],'captions'=>[trans('hotel.slider1'),trans('hotel.slider2'),trans('hotel.slider3'),]])
