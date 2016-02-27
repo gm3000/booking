@@ -55,6 +55,13 @@ Route::group(['prefix' => '/'], function(){
     Route::resource('hotels', 'HotelController',['only' => ['index','show']]);
 });
 
+Route::group(['prefix' => '/'], function(){
+    Route::get('tops','CityController@showList');
+    Route::get('tops/{id}','CityController@showDetail');
+});
+
+
+//for API call
 Route::group(['prefix' => 'api'], function () {
     Route::resource('hotels', 'Api\HotelController', ['only' => ['index','show']]);
     Route::get('cities/hotest', 'Api\CityController@showHotest');

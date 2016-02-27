@@ -22,6 +22,17 @@ class CreateCitiesTable extends Migration
             $table->text('desc_en');
             $table->text('body_cn')->nullable();
             $table->text('body_en')->nullable();
+            $table->text('package_cn')->nullable();
+            $table->text('package_en')->nullable();
+
+            //columns for slider on detail page, each slide/caption info is separated by ";"
+            $table->text('slider_caption_cn')->nullable();
+            $table->text('slider_caption_en')->nullable();
+            $table->text('slider')->nullable();
+
+            //this column is used for the list thumbnail on the tpp destination page
+            $table->string('list_thumbnail')->nullable();
+            //this column is used for the top destination gallery.
             $table->string('thumbnail')->nullable();
             $table->softDeletes();
             $table->timestamps();
