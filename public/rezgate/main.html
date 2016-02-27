@@ -18,7 +18,189 @@
 
 <script type="text/javascript" src="js/scripts.js?v=1"></script>
 
-<script type="application/javascript">
+
+</head>
+<body onload="fillForm('I');resizeContainer();" >
+<div class="disablebg" id="disablebg"></div>
+<div class="loading_window" id="loading_window">
+  <div class="loading_window_inner">
+    <div class="loading_image desktop_show"> <img src='images/loading_bar_desktop.gif' width="300" alt="loading bar"/> </div>
+  </div>
+</div>
+<div id="mm" style="position: absolute;background-color: white;z-index: 1500;top: 0;left: 0;"></div>
+
+<div id="dialogs" style="display:none" title="Error"> Sorry we cannot provide you with any travel options. Please change your travel duration for a period less than 31days </div>
+<div id="dialogs2" style="display:none" title="Error"> Sorry we cannot provide you with any travel options. Please change your travel duration for a period greater than 2days </div>
+<div id="dialogs3" style="display:none" title="Error"> Please select two different locations for arrival & departure </div>
+<form name="ResPkgSearchForm" id="ResPkgSearchForm" method="post" action="" target="_parent">
+  <input type="hidden" id="isFlexSearch" name="isFlexSearch"/>
+  <input type="hidden" id="discountCouponNo" name="discountCouponNo" />
+  <input type="hidden" id="place" name="place" />
+  <input type="hidden" id="transectionId" name="transectionId" />
+  <input type="hidden" id="engLoaded" name="engLoaded" value="" />
+  <input type="hidden" id="checkInDate" name="checkInDate" />
+  <input type="hidden" id="selectedHotelRideCode" name="selectedHotelRideCode" />
+  <input type="hidden" id="checkOutDate" name="checkOutDate" />
+  <input type="hidden" id="checkInTime" name="checkInTime" />
+  <input type="hidden" id="checkOutTime" name="checkOutTime" />
+  <input type="hidden" id="cityCode" name="cityCode" />
+  <input type="hidden" id="cityName" name="cityName" />
+  <input type="hidden" id="countryCode" name="countryCode" />
+  <input type="hidden" id="countryName" name="countryName" />
+  <input type="hidden" id="stateCode" name="stateCode" />
+  <input type="hidden" id="startingLocationName" name="startingLocationName" />
+  <input type="hidden" id="startingLocationCode" name="startingLocationCode" />
+  <input type="hidden" id="startingCountryCode" name="startingCountryCode" />
+  <input type="hidden" id="endingCountryCode" name="endingCountryCode" />
+  <input type="hidden" id="endingLocationName" name="endingLocationName" />
+  <input type="hidden" id="endingLocationCode" name="endingLocationCode" />
+  <input type="hidden" id="startingFligtLocationTwoName" name="startingFligtLocationTwoName" />
+  <input type="hidden" id="startingFligtLocationTwoCode" name="startingFligtLocationTwoCode" />
+  <input type="hidden" id="endingFligtLocationTwoName" name="endingFligtLocationTwoName" />
+  <input type="hidden" id="endingFligtLocationTwoCode" name="endingFligtLocationTwoCode" />
+  <input type="hidden" id="flightCheckInDateTwo" name="flightCheckInDateTwo" />
+  <input type="hidden" id="flightCheckInTimeTwo" name="flightCheckInTimeTwo" />
+  <input type="hidden" id="startingFligtLocationThreeName" name="startingFligtLocationThreeName" />
+  <input type="hidden" id="startingFligtLocationThreeCode" name="startingFligtLocationThreeCode" />
+  <input type="hidden" id="endingFligtLocationThreeName" name="endingFligtLocationThreeName" />
+  <input type="hidden" id="endingFligtLocationThreeCode" name="endingFligtLocationThreeCode" />
+  <input type="hidden" id="flightCheckInDateThree" name="flightCheckInDateThree" />
+  <input type="hidden" id="flightCheckInTimeThree" name="flightCheckInTimeThree" />
+  <input type="hidden" id="startingFligtLocationFourName" name="startingFligtLocationFourName" />
+  <input type="hidden" id="startingFligtLocationFourCode" name="startingFligtLocationFourCode" />
+  <input type="hidden" id="endingFligtLocationFourName" name="endingFligtLocationFourName" />
+  <input type="hidden" id="endingFligtLocationFourCode" name="endingFligtLocationFourCode" />
+  <input type="hidden" id="flightCheckInDateFour" name="flightCheckInDateFour" />
+  <input type="hidden" id="flightCheckInTimeFour" name="flightCheckInTimeFour" />
+  <input type="hidden" id="startingFligtLocationFiveName" name="startingFligtLocationFiveName" />
+  <input type="hidden" id="startingFligtLocationFiveCode" name="startingFligtLocationFiveCode" />
+  <input type="hidden" id="endingFligtLocationFiveName" name="endingFligtLocationFiveName" />
+  <input type="hidden" id="endingFligtLocationFiveCode" name="endingFligtLocationFiveCode" />
+  <input type="hidden" id="flightCheckInDateFive" name="flightCheckInDateFive" />
+  <input type="hidden" id="flightCheckInTimeFive" name="flightCheckInTimeFive" />
+  <input type="hidden" id="numberOfNights" name="numberOfNights" />
+  <input type="hidden" id="numberOfRooms" name="numberOfRooms" />
+  <input type="hidden" id="numberOfAdults" name="numberOfAdults" />
+  <input type="hidden" id="numberOfChilds" name="numberOfChilds" />
+  <input type="hidden" id="childAges" name="childAges" />
+  <input type="hidden" id="numberOfInfants" name="numberOfInfants" />
+  <input type="hidden" id="numberOfSeniors" name="numberOfSeniors" />
+  <input type="hidden" id="portalBEC" name="portalBEC"  value="Y"/>
+  <input type="hidden" id="starRating" name="starRating" />
+  <input type="hidden" id="hotelType" name="hotelType" />
+  <input type="hidden" id="airLine" name="airLine" />
+  <input type="hidden" id="carType" name="carType" />
+  <input type="hidden" id="portal" name="portal"  value="rezbase_v3" />
+  <input type="hidden" id="userCode" name="userCode" />
+  <input type="hidden" id="userName" name="userName" />
+  <input type="hidden" id="userPassword" name="userPassword" />
+  <input type="hidden" id="forwardURL" name="forwardURL" />
+  <input type="hidden" id="userType" name="userType" />
+  <input type="hidden" id="partnerName" name="partnerName" />
+  <input type="hidden" id="partnerId" name="partnerId" />
+  <input type="hidden" id="tourOperatorLevel" name="tourOperatorLevel" />
+  <input type="hidden" id="tourOperatorName" name="tourOperatorName" />
+  <input type="hidden" id="loggedSuperAgentId" name="loggedSuperAgentId" />
+  <input type="hidden" id="partnerCode" name="partnerCode" />
+  <input type="hidden" id="partnerType" name="partnerType" value="DC" />
+  <input type="hidden" id="subAgentId" name="subAgentId" />
+  <input type="hidden" id="webSite" name="webSite" value="MAIN" />
+  <input type="hidden" id="bookingChannel" name="bookingChannel" value="WEB" />
+  <input type="hidden" id="vacationPkg" name="vacationPkg" />
+  <input type="hidden" id="cacheKey" name="cacheKey" />
+  <input type="hidden" id="sellingCurrency" name="sellingCurrency" />
+  <input type="hidden" id="sessionName" name="sessionName" />
+  <input type="hidden" id="retrieveExistingBookings" name="retrieveExistingBookings" />
+  <input type="hidden" id="existingReservationNo" name="existingReservationNo" />
+  <input type="hidden" id="isbackOfficePartnerLink" name="isbackOfficePartnerLink" />
+  <input type="hidden" id="enabledPublicDCLogin" name="enabledPublicDCLogin" />
+  <input type="hidden" id="enableConsumerRegion" name="enableConsumerRegion" />
+  <input type="hidden" id="actionTyp" name="actionTyp" />
+  <input type="hidden" id="bookType" name="bookType" />
+  <input type="hidden" id="consumerCountryId" name="consumerCountryId" />
+  <input type="hidden" id="consumerRegionId" name="consumerRegionId" />
+  <input type="hidden" id="languageCode" name="languageCode" />
+  <input type="hidden" id="consumerCurrencyCode" name="consumerCurrencyCode" />
+  <input type="hidden" id="guestList" name="guestList" />
+  <input type="hidden" id="seatClass" name="seatClass" />
+  <input type="hidden" id="tripType" name="tripType" />
+  <input type="hidden" id="actionPath" name="actionPath" />
+  <input type="hidden" id="pkgType" name="pkgType" />
+  <input type="hidden" id="affCode" name="affCode" value="-"/>
+  <input type="hidden" id="targetField" name="targetField" />
+  <input type="hidden" id="partnerCategory" name="partnerCategory" />
+  <input type="hidden" name="destinationCountry" id="destinationCountry" />
+  <input type="hidden" name="activityTypeId" id="activityTypeId" />
+  <!-- Hotel filters -->
+  <input type="hidden" id="hotelStarId" name="hotelStarId" />
+  <input type="hidden" id="hotelTypeId" name="hotelTypeId" />
+  <input type="hidden" id="hotelName" name="hotelName" />
+  <input type="hidden" id="priceLevelFrom" name="priceLevelFrom" />
+  <input type="hidden" id="priceLevelTo" name="priceLevelTo" />
+  <input type="hidden" id="availableHotels" name="availableHotels" />
+  <input type="hidden" id="onRequestHotels" name="onRequestHotels" />
+  <input type="hidden" id="starRating_Hotels" name="starRating_Hotels" />
+  <input type="hidden" id="sortHotelBy" name="sortHotelBy" />
+  <!-- For flights -->
+  <input type="hidden" id="nonStopStatus" name="nonStopStatus" />
+  <!-- For transfers -->
+  <input type="hidden" id="pickUpCode" name="pickUpCode" />
+  <input type="hidden" id="dropOffCode" name="dropOffCode" />
+  <input type="hidden" id="dropOffCityName" name="dropOffCityName" />
+  <input type="hidden" id="pickUpPointName" name="pickUpPointName" />
+  <input type="hidden" id="departPointName" name="departPointName" />
+  <input type="hidden" id="dropOffCityCode" name="dropOffCityCode" />
+  <input type="hidden" id="pickUpPointCode" name="pickUpPointCode" />
+  <input type="hidden" id="departPointCode" name="departPointCode" />
+  <input type="hidden" id="transferTime" name="transferTime" />
+  <input type="hidden" id="serviceHost" name="serviceHost" />
+  <input type="hidden" id="serviePortal" name="serviePortal" />
+  <!-- Fixed package spacific details -->
+  <input type="hidden" id="numberofdays" name="numberofdays" />
+  <input type="hidden" id="includingflight" name="includingflight" />
+  <input type="hidden" id="selectedFixedPackageTypeCode" name="selectedFixedPackageTypeCode" />
+  <input type="hidden" id="selectedFixedPackageTypeName" name="selectedFixedPackageTypeName" />
+  <input type="hidden" id="ipAddress" name="ipAddress" />
+  <input type="hidden" id="clientCountryCode" name="clientCountryCode" />
+  
+  
+</form>
+<form name="form1" method="post" action="" id="form1" >
+  <input type="hidden" name="pkgType" value="H"/>
+  <div id="bec_wrapper_div" style="display:none;" class="bec-main-wrapper">
+  <div id="tabs"> 
+  <a href="#" class="mobile-menu">Plan 旅行类别<i class="fa fa-bars fa-2"></i> </a>
+    <ul id="ribbon" class="icons  chinese-language-bec">
+      <li id="vLi"><a class="holidays mobile-hide-menu" href="holidays.html"><span class="fh-icon mobile-hide-menu">&nbsp;</span> 机票 + 酒店 </a></li>
+      <li id="fLi"><a class="flights mobile-hide-menu"  href="flights.html"><span class="flight-icon mobile-hide-menu">&nbsp;</span> 机票  </a></li>
+      <li id="hLi"><a class="hotels mobile-hide-menu"  href="hotel.html"><span class="hotel-icon mobile-hide-menu">&nbsp;</span> 酒店  </a></li>
+      <li id="aLi"><a class="activities mobile-hide-menu" href="activities.html"><span class="activity-icon mobile-hide-menu">&nbsp;</span> 景点门票</a></li>      
+    </ul>
+    <div id="holidays" class="bec_container"></div>
+    <div id="flights" class="bec_container"></div>
+    <div id="hotels" class="bec_container"></div>
+    <div id="activities" class="bec_container"></div>
+  </div>
+</form>
+<script>
+try{
+ 
+var screenH =0;
+if(navigator.appName=='Netscape'){
+	  screenH = window.innerHeight || document.body.offsetHeight;
+}else{
+	  screenH = document.documentElement.clientHeight;
+}
+var screenW = document.documentElement.clientWidth;
+//alert(screenW+"-"+screenH)
+document.getElementById('mm').style.height = screenH+"px";
+document.getElementById('mm').style.width = screenW+"px";
+
+}catch(e){
+	alert(e);
+}
+</script>
+<script type="text/javascript">
 /* This service offers a REST API allowing to get a visitor IP address and to query location information from any IP address. 
 It outputs JSON-encoded IP geolocation data, and supports both JSON and JSONP. */
 
@@ -180,186 +362,8 @@ function affiliateTimer(){
 	setTimeout('affiliateTimer()',1000);
 }
 </script>
-</head>
-<body onload="fillForm('I');resizeContainer();" >
-<div class="disablebg" id="disablebg"></div>
-<div class="loading_window" id="loading_window">
-  <div class="loading_window_inner">
-    <div class="loading_image desktop_show"> <img src='images/loading_bar_desktop.gif' width="300" alt="loading bar"/> </div>
-  </div>
-</div>
-<div id="mm" style="position: absolute;background-color: white;z-index: 1500;top: 0;left: 0;"></div>
-<script>
-try{
- 
-var screenH =0;
-if(navigator.appName=='Netscape'){
-	  screenH = window.innerHeight || document.body.offsetHeight;
-}else{
-	  screenH = document.documentElement.clientHeight;
-}
-var screenW = document.documentElement.clientWidth;
-//alert(screenW+"-"+screenH)
-document.getElementById('mm').style.height = screenH+"px";
-document.getElementById('mm').style.width = screenW+"px";
 
-}catch(e){
-	alert(e);
-}
-</script>
-<div id="dialogs" style="display:none" title="Error"> Sorry we cannot provide you with any travel options. Please change your travel duration for a period less than 31days </div>
-<div id="dialogs2" style="display:none" title="Error"> Sorry we cannot provide you with any travel options. Please change your travel duration for a period greater than 2days </div>
-<div id="dialogs3" style="display:none" title="Error"> Please select two different locations for arrival & departure </div>
-<form name="ResPkgSearchForm" id="ResPkgSearchForm" method="post" action="" target="_parent">
-  <input type="hidden" id="isFlexSearch" name="isFlexSearch"/>
-  <input type="hidden" id="discountCouponNo" name="discountCouponNo" />
-  <input type="hidden" id="place" name="place" />
-  <input type="hidden" id="transectionId" name="transectionId" />
-  <input type="hidden" id="engLoaded" name="engLoaded" value="" />
-  <input type="hidden" id="checkInDate" name="checkInDate" />
-  <input type="hidden" id="selectedHotelRideCode" name="selectedHotelRideCode" />
-  <input type="hidden" id="checkOutDate" name="checkOutDate" />
-  <input type="hidden" id="checkInTime" name="checkInTime" />
-  <input type="hidden" id="checkOutTime" name="checkOutTime" />
-  <input type="hidden" id="cityCode" name="cityCode" />
-  <input type="hidden" id="cityName" name="cityName" />
-  <input type="hidden" id="countryCode" name="countryCode" />
-  <input type="hidden" id="countryName" name="countryName" />
-  <input type="hidden" id="stateCode" name="stateCode" />
-  <input type="hidden" id="startingLocationName" name="startingLocationName" />
-  <input type="hidden" id="startingLocationCode" name="startingLocationCode" />
-  <input type="hidden" id="startingCountryCode" name="startingCountryCode" />
-  <input type="hidden" id="endingCountryCode" name="endingCountryCode" />
-  <input type="hidden" id="endingLocationName" name="endingLocationName" />
-  <input type="hidden" id="endingLocationCode" name="endingLocationCode" />
-  <input type="hidden" id="startingFligtLocationTwoName" name="startingFligtLocationTwoName" />
-  <input type="hidden" id="startingFligtLocationTwoCode" name="startingFligtLocationTwoCode" />
-  <input type="hidden" id="endingFligtLocationTwoName" name="endingFligtLocationTwoName" />
-  <input type="hidden" id="endingFligtLocationTwoCode" name="endingFligtLocationTwoCode" />
-  <input type="hidden" id="flightCheckInDateTwo" name="flightCheckInDateTwo" />
-  <input type="hidden" id="flightCheckInTimeTwo" name="flightCheckInTimeTwo" />
-  <input type="hidden" id="startingFligtLocationThreeName" name="startingFligtLocationThreeName" />
-  <input type="hidden" id="startingFligtLocationThreeCode" name="startingFligtLocationThreeCode" />
-  <input type="hidden" id="endingFligtLocationThreeName" name="endingFligtLocationThreeName" />
-  <input type="hidden" id="endingFligtLocationThreeCode" name="endingFligtLocationThreeCode" />
-  <input type="hidden" id="flightCheckInDateThree" name="flightCheckInDateThree" />
-  <input type="hidden" id="flightCheckInTimeThree" name="flightCheckInTimeThree" />
-  <input type="hidden" id="startingFligtLocationFourName" name="startingFligtLocationFourName" />
-  <input type="hidden" id="startingFligtLocationFourCode" name="startingFligtLocationFourCode" />
-  <input type="hidden" id="endingFligtLocationFourName" name="endingFligtLocationFourName" />
-  <input type="hidden" id="endingFligtLocationFourCode" name="endingFligtLocationFourCode" />
-  <input type="hidden" id="flightCheckInDateFour" name="flightCheckInDateFour" />
-  <input type="hidden" id="flightCheckInTimeFour" name="flightCheckInTimeFour" />
-  <input type="hidden" id="startingFligtLocationFiveName" name="startingFligtLocationFiveName" />
-  <input type="hidden" id="startingFligtLocationFiveCode" name="startingFligtLocationFiveCode" />
-  <input type="hidden" id="endingFligtLocationFiveName" name="endingFligtLocationFiveName" />
-  <input type="hidden" id="endingFligtLocationFiveCode" name="endingFligtLocationFiveCode" />
-  <input type="hidden" id="flightCheckInDateFive" name="flightCheckInDateFive" />
-  <input type="hidden" id="flightCheckInTimeFive" name="flightCheckInTimeFive" />
-  <input type="hidden" id="numberOfNights" name="numberOfNights" />
-  <input type="hidden" id="numberOfRooms" name="numberOfRooms" />
-  <input type="hidden" id="numberOfAdults" name="numberOfAdults" />
-  <input type="hidden" id="numberOfChilds" name="numberOfChilds" />
-  <input type="hidden" id="childAges" name="childAges" />
-  <input type="hidden" id="numberOfInfants" name="numberOfInfants" />
-  <input type="hidden" id="numberOfSeniors" name="numberOfSeniors" />
-  <input type="hidden" id="portalBEC" name="portalBEC"  value="Y"/>
-  <input type="hidden" id="starRating" name="starRating" />
-  <input type="hidden" id="hotelType" name="hotelType" />
-  <input type="hidden" id="airLine" name="airLine" />
-  <input type="hidden" id="carType" name="carType" />
-  <input type="hidden" id="portal" name="portal"  value="rezbase_v3" />
-  <input type="hidden" id="userCode" name="userCode" />
-  <input type="hidden" id="userName" name="userName" />
-  <input type="hidden" id="userPassword" name="userPassword" />
-  <input type="hidden" id="forwardURL" name="forwardURL" />
-  <input type="hidden" id="userType" name="userType" />
-  <input type="hidden" id="partnerName" name="partnerName" />
-  <input type="hidden" id="partnerId" name="partnerId" />
-  <input type="hidden" id="tourOperatorLevel" name="tourOperatorLevel" />
-  <input type="hidden" id="tourOperatorName" name="tourOperatorName" />
-  <input type="hidden" id="loggedSuperAgentId" name="loggedSuperAgentId" />
-  <input type="hidden" id="partnerCode" name="partnerCode" />
-  <input type="hidden" id="partnerType" name="partnerType" value="DC" />
-  <input type="hidden" id="subAgentId" name="subAgentId" />
-  <input type="hidden" id="webSite" name="webSite" value="MAIN" />
-  <input type="hidden" id="bookingChannel" name="bookingChannel" value="WEB" />
-  <input type="hidden" id="vacationPkg" name="vacationPkg" />
-  <input type="hidden" id="cacheKey" name="cacheKey" />
-  <input type="hidden" id="sellingCurrency" name="sellingCurrency" />
-  <input type="hidden" id="sessionName" name="sessionName" />
-  <input type="hidden" id="retrieveExistingBookings" name="retrieveExistingBookings" />
-  <input type="hidden" id="existingReservationNo" name="existingReservationNo" />
-  <input type="hidden" id="isbackOfficePartnerLink" name="isbackOfficePartnerLink" />
-  <input type="hidden" id="enabledPublicDCLogin" name="enabledPublicDCLogin" />
-  <input type="hidden" id="enableConsumerRegion" name="enableConsumerRegion" />
-  <input type="hidden" id="actionTyp" name="actionTyp" />
-  <input type="hidden" id="bookType" name="bookType" />
-  <input type="hidden" id="consumerCountryId" name="consumerCountryId" />
-  <input type="hidden" id="consumerRegionId" name="consumerRegionId" />
-  <input type="hidden" id="languageCode" name="languageCode" />
-  <input type="hidden" id="consumerCurrencyCode" name="consumerCurrencyCode" />
-  <input type="hidden" id="guestList" name="guestList" />
-  <input type="hidden" id="seatClass" name="seatClass" />
-  <input type="hidden" id="tripType" name="tripType" />
-  <input type="hidden" id="actionPath" name="actionPath" />
-  <input type="hidden" id="pkgType" name="pkgType" />
-  <input type="hidden" id="affCode" name="affCode" value="-"/>
-  <input type="hidden" id="targetField" name="targetField" />
-  <input type="hidden" id="partnerCategory" name="partnerCategory" />
-  <input type="hidden" name="destinationCountry" id="destinationCountry" />
-  <input type="hidden" name="activityTypeId" id="activityTypeId" />
-  <!-- Hotel filters -->
-  <input type="hidden" id="hotelStarId" name="hotelStarId" />
-  <input type="hidden" id="hotelTypeId" name="hotelTypeId" />
-  <input type="hidden" id="hotelName" name="hotelName" />
-  <input type="hidden" id="priceLevelFrom" name="priceLevelFrom" />
-  <input type="hidden" id="priceLevelTo" name="priceLevelTo" />
-  <input type="hidden" id="availableHotels" name="availableHotels" />
-  <input type="hidden" id="onRequestHotels" name="onRequestHotels" />
-  <input type="hidden" id="starRating_Hotels" name="starRating_Hotels" />
-  <input type="hidden" id="sortHotelBy" name="sortHotelBy" />
-  <!-- For flights -->
-  <input type="hidden" id="nonStopStatus" name="nonStopStatus" />
-  <!-- For transfers -->
-  <input type="hidden" id="pickUpCode" name="pickUpCode" />
-  <input type="hidden" id="dropOffCode" name="dropOffCode" />
-  <input type="hidden" id="dropOffCityName" name="dropOffCityName" />
-  <input type="hidden" id="pickUpPointName" name="pickUpPointName" />
-  <input type="hidden" id="departPointName" name="departPointName" />
-  <input type="hidden" id="dropOffCityCode" name="dropOffCityCode" />
-  <input type="hidden" id="pickUpPointCode" name="pickUpPointCode" />
-  <input type="hidden" id="departPointCode" name="departPointCode" />
-  <input type="hidden" id="transferTime" name="transferTime" />
-  <input type="hidden" id="serviceHost" name="serviceHost" />
-  <input type="hidden" id="serviePortal" name="serviePortal" />
-  <!-- Fixed package spacific details -->
-  <input type="hidden" id="numberofdays" name="numberofdays" />
-  <input type="hidden" id="includingflight" name="includingflight" />
-  <input type="hidden" id="selectedFixedPackageTypeCode" name="selectedFixedPackageTypeCode" />
-  <input type="hidden" id="selectedFixedPackageTypeName" name="selectedFixedPackageTypeName" />
-  <input type="hidden" id="ipAddress" name="ipAddress" />
-  <input type="hidden" id="clientCountryCode" name="clientCountryCode" />
-  
-  
-</form>
-<form name="form1" method="post" action="" id="form1" >
-  <input type="hidden" name="pkgType" value="H"/>
-  <div id="bec_wrapper_div" style="display:none;" class="bec-main-wrapper">
-  <div id="tabs"> 
-  <a href="#" class="mobile-menu">Plan 旅行类别<i class="fa fa-bars fa-2"></i> </a>
-    <ul id="ribbon" class="icons  chinese-language-bec">
-      <li id="vLi"><a class="holidays mobile-hide-menu" href="holidays.html"><span class="fh-icon mobile-hide-menu">&nbsp;</span> 机票 + 酒店 </a></li>
-      <li id="fLi"><a class="flights mobile-hide-menu"  href="flights.html"><span class="flight-icon mobile-hide-menu">&nbsp;</span> 机票  </a></li>
-      <li id="hLi"><a class="hotels mobile-hide-menu"  href="hotel.html"><span class="hotel-icon mobile-hide-menu">&nbsp;</span> 酒店  </a></li>
-      <li id="aLi"><a class="activities mobile-hide-menu" href="activities.html"><span class="activity-icon mobile-hide-menu">&nbsp;</span> 景点门票</a></li>      
-    </ul>
-    <div id="holidays" class="bec_container"></div>
-    <div id="flights" class="bec_container"></div>
-    <div id="hotels" class="bec_container"></div>
-    <div id="activities" class="bec_container"></div>
-  </div>
-</form >
+
 <script>
 try{
 if(!internalBEC){
