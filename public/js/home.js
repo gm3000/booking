@@ -9,7 +9,7 @@ $('.partner').dimmer({
 
         $.each(data, function(idex,item){
             items.push({
-                src:'/cities/'+item.id,
+                src:'/tops/'+item.id,
                 srct:item.thumbnail,
                 title: item.name
             });

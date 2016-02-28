@@ -57,6 +57,8 @@ class CityController extends Controller
 
         $city = \App\City::findOrNew($id, $this->detail_fields);
 
+        $this->incrementHeat($id);
+
         //substract sliders and captions
         $city['slider_list'] = explode(';', $city['slider']);
         $city['caption_list'] = explode(';', $city['slider_caption']);
@@ -80,5 +82,11 @@ class CityController extends Controller
             ->paginate(15,$this->list_fields);
 
         return view('city.index',compact('cities'));
+    }
+
+    private function incrementHeat($id){
+        $city = \App\City::find($id);
+        $city->heat += 1;
+        $city->save();
     }
 }

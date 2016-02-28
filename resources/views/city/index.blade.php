@@ -1,10 +1,10 @@
 @extends('layout.slider-page')
-@section('title', trans('title.hotel'))
+@section('title', trans('title.city'))
 @section('rezgate_url', '/rezgate/main.html?product=1')
 
 @section('content')
     {{-- change city sider images --}}
-    @if(nullOrEmptyString($cities[0]['slider']))
+    @if($cities[0]['slider']==="" || $cities[0]['slider']===null)
         @include('partial.slider',['images'=>explode(';',trans('city.default_slider')),
              'captions'=>explode(';',trans('city.default_slider_cap'))])
     @else
@@ -86,6 +86,7 @@
         $('.city_flag').popup({
             hoverable: true,
             position : 'bottom center',
+            transition: 'vertical flip'
         });
     </script>
 @endsection
