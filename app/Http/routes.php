@@ -58,6 +58,7 @@ Route::group(['prefix' => '/'], function(){
 Route::group(['prefix' => '/'], function(){
     Route::get('tops','CityController@showList');
     Route::get('tops/{id}','CityController@showDetail');
+    Route::get('search','CityController@search');
 });
 
 

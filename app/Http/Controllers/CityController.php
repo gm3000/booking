@@ -20,7 +20,7 @@ class CityController extends Controller
             ->orderBy('heat', 'desc')
             ->get()
             ->all();
-
+        dd($cities);
         return view('city.index', compact('cities'));
     }
 
@@ -42,8 +42,12 @@ class CityController extends Controller
         $city['slider_list'] = explode(';', $city['slider']);
         $city['caption_list'] = explode(';', $city['slider_caption']);
 
-        //dd($city);
+        dd($city);
         return view('city.detail', compact('store'));
+
+    }
+
+    public function search(Request $request){
 
     }
 }
