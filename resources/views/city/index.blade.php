@@ -15,11 +15,11 @@
     <div id="list"></div>
     <div id="city_list" class="page_container">
         <div class="ui vertically divided grid container">
-            <div class="row">
-                <div class="left floated five wide column">
+            <div class="ui two column row">
+                <div class="ui column">
                     <h1 class="ui {{config('app.primary_color')}} header">{{trans('city.top_dest')}}</h1>
                 </div>
-                <div class="right floated right aligned five wide column">
+                <div class="ui column">
                     <form id="searchForm" class="" action="{{ action('CityController@search') }}#list" method="get" style="display:inline;">
                         <div class="ui fluid icon input">
                             <input type="text" name="query" value="{{ Request::input('query') }}" placeholder="{{ trans('site.search') }}">

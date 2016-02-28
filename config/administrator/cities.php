@@ -54,6 +54,18 @@ return array(
             'title' => '中文描述',
             'type' => 'textarea',
         ),
+        'slider' => array(
+            'title' => 'slider image path',
+            'type' => 'text',
+        ),
+        'slider_caption_en' => array(
+          'title' => 'Slider Text',
+          'type' => 'textarea',
+        ),
+        'slider_caption_cn' => array(
+          'title' => '幻灯图片文字',
+          'type' => 'textarea',
+        ),
         'body_en' => array(
             'title' => 'Detailed Description',
             'type' => 'wysiwyg',
