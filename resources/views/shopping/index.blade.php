@@ -5,9 +5,10 @@
     <div id="shopping-list" class="ui grid container">
         <div class="row">
             <div class="column">
-                <h1 class="ui header">{{trans('shopping.title')}}</h1>
+                <h1 class="ui {{config('app.primary_color')}} header">{{trans('shopping.title')}}</h1>
             </div>
         </div>
+        <div class="ui divider"></div>
         <div class="row">
             <div class="column">
                 <div class="ui divided link items">
