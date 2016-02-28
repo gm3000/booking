@@ -1,0 +1,24 @@
+ul > li > div > div {
+	margin-bottom:0.5em;
+}
+
+ul.date-time-block, ul.location-inputs, ul.row10, ul.hotel-date-time-block, ul.activity-dates-block, ul.activity-main-block{
+	margin-top:1em;
+}
+
+div.option-sub-label, label.option-sub-label , ul.activity-destination-country > li > h1{
+	color: white;
+}
+
+div.option-main-label  > h1, li.option-main-label > h1, div.hotel-passenger-block > ul  > li.hotel-passenger-label-text {
+	color: white;
+}
+
+div.polka-dots {
+	margin-bottom:1em;
+}
+
+ul.activity-dates-block > li > div > input {
+	width:139px;
+}
+
