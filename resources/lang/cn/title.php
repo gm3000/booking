@@ -9,4 +9,5 @@ return [
     'activity' => $prefix.'景点',
     'flight' => $prefix.'机票',
     'package' => $prefix.'旅游套餐',
+    'city' => $prefix.'最佳目的地',
 ];

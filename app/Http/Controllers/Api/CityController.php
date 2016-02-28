@@ -90,6 +90,6 @@ class CityController extends Controller
     public function showHotest(){
 
         $lang = \App::getLocale();
-        return City::where('heat','<',5)->select('id','name_'.$lang.' as name','thumbnail')->get();
+        return City::orderBy('heat', 'desc')->select('id','name_'.$lang.' as name','thumbnail')->take(9)->get();
     }
 }

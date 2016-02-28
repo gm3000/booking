@@ -9,4 +9,5 @@ return [
     'activity' => $prefix.'Activity',
     'flight' => $prefix.'Flight',
     'package' => $prefix.'Travel Packages',
+    'city' => $prefix.'Top Destinations'
 ];

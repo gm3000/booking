@@ -31,7 +31,7 @@ class CreateCitiesTable extends Migration
             $table->text('slider')->nullable();
 
             //this column is used for the list thumbnail on the tpp destination page
-            $table->string('list_thumbnail')->nullable();
+            $table->string('logo')->nullable();
             //this column is used for the top destination gallery.
             $table->string('thumbnail')->nullable();
             $table->softDeletes();
