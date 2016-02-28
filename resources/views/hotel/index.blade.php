@@ -17,7 +17,7 @@
       <div class="ui seven wide left aligned column">
         <div id="city_list" class="ui horizontal list" style="font-weight:bold;">
           @foreach($cities as $city)
-            <a class="item" href="{{ action('HotelController@hotelsByCity',array($city->id)) }}">{{$city->name}}</a>
+            <a class="item" href="{{ action('HotelController@hotelsByCity',array($city->id)) }}#list">{{$city->name}}</a>
           @endforeach
         </div>
       </div>
