@@ -4,7 +4,7 @@
 
 @section('content')
 {{-- change hotel sider images --}}
-@include('partial.slider',['images'=>['/images/slider/activities1.jpg','/images/slider/activities2.jpg','/images/slider/activities3.jpg'],'captions'=>[trans('activity.louvre'),trans('activity.disney'),trans('activity.yellowstone'),]])
+@include('partial.slider',['images'=>['/images/slider/activities1.jpg','/images/slider/activities2.jpg','/images/slider/activities3.jpg'],'captions'=>[trans('activity.louvre'),trans('activity.disney'),trans('activity.mount_rushmore'),]])
 <div id="list"></div>
 <div id="activity_list" class="page_container">
   <div class="ui grid container">
