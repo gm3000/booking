@@ -52,5 +52,7 @@
 
 @section('scripts')
     @parent
-    <script src="/js/shopping.js"></script>
+    <script type="text/javascript">
+        $('#shopping').addClass('active');
+    </script>
 @endsection
