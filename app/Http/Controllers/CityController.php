@@ -20,8 +20,10 @@ class CityController extends Controller
             'slider_caption_'.$lang.' as slider_caption',
             'slider',
             'logo',
-            'heat'
+            'heat',
+            'country_id'
         ];
+
         $this->detail_fields=[
             'id',
             'name_'.$lang.' as name',
@@ -36,22 +38,31 @@ class CityController extends Controller
 
     public function showList(){
 
-        $cities = \App\City::with('country')->orderBy('heat', 'desc')->paginate(15,$this->list_fields);
-        //dd($cities[0]);
+        $cities = \App\City::with('country')
+            ->orderBy('heat', 'desc')
+            ->with([
+                'country'=>function($query){
+                    $query->select(
+                        'id',
+                        'name_'.$this->lang.' as name',
+                        'name_en');
+                }
+            ])
+            ->paginate(15,$this->list_fields);
+        //dd($cities[0]->country->name);
         return view('city.index', compact('cities'));
     }
 
     public function showDetail($id){
 
-        $city = \App\City::findOrNew($id, $this->detail_fields)
-            ->toArray();
+        $city = \App\City::findOrNew($id, $this->detail_fields);
 
         //substract sliders and captions
         $city['slider_list'] = explode(';', $city['slider']);
         $city['caption_list'] = explode(';', $city['slider_caption']);
 
-        //dd($city);
-        return view('city.detail', compact('store'));
+        //dd($city->country());
+        return view('city.detail', compact('city'));
 
     }
 

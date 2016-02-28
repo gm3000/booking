@@ -22,7 +22,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Country::class, function (Faker\Generator $faker) {
     $countries_cn = ['中国','美国','英国','澳大利亚','日本',];
-    $countries_en = ['Chinese','USA','England','Australia','Japan',];
+    $countries_en = ['China','United States','United Kingdom','Australia','Japan',];
     $index = $faker->numberBetween(0,4);
     $desc = $faker->paragraph;
     return [

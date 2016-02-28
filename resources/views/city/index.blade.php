@@ -4,8 +4,13 @@
 
 @section('content')
     {{-- change city sider images --}}
-    @include('partial.slider',['images'=>explode(';',$cities[0]['slider']),
+    @if(nullOrEmptyString($cities[0]['slider']))
+        @include('partial.slider',['images'=>explode(';',trans('city.default_slider')),
+             'captions'=>explode(';',trans('city.default_slider_cap'))])
+    @else
+        @include('partial.slider',['images'=>explode(';',$cities[0]['slider']),
              'captions'=>explode(';',$cities[0]['slider_caption'])])
+    @endif
 
     <div id="list"></div>
     <div id="city_list" class="page_container">
@@ -26,21 +31,37 @@
             </div>
             <div class="row">
                 <div class="column">
-                    <div class="ui divided link items">
+                    <div class="ui divided items">
                         @foreach($cities as $city)
-                            <a class="ui item" href="{{ action('CityController@showDetail', array($city->id)) }}">
+                            <div class="ui item">
                                 <div class="ui image" style="width:200px;height:auto;">
-                                    <img src="{{ $city->logo }}" alt="place holder" />
+                                    <a href="{{ action('CityController@showDetail', array($city->id)) }}">
+                                        <img src="{{ $city->logo }}" alt="place holder" />
+                                    </a>
                                 </div>
                                 <div class="content">
-                                    <div class="header">{{$city->name}}</div>
+                                    <div class="header">
+                                        <a href="{{ action('CityController@showDetail', array($city->id)) }}">
+                                            {{$city->name}}
+                                        </a>
+                                    </div>
+                                    <div class="meta">
+                                        <span>
+                                            <i class="{{strtolower($city->country->name_en)}} flag city_flag"></i>
+                                            <div class="ui flowing popup top left transition visible animating scale out">
+                                                {{$city->country->name}}: <a href="#">{{trans('city.more_city')}}</a>
+                                            </div>
+                                        </span>
+                                        <span> </span>
+                                        <span>{{$city->heat.' '.trans('city.views')}}</span>
+                                    </div>
                                     <div class="description">
                                         <p>
                                             {{$city->desc}}
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         @endforeach
                     </div>
                 </div>
@@ -61,6 +82,10 @@
         $('#tops').addClass('active');
         $('#search').click(function(){
             $('#searchForm').submit();
+        });
+        $('.city_flag').popup({
+            hoverable: true,
+            position : 'bottom center',
         });
     </script>
 @endsection
