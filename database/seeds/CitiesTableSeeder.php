@@ -20,7 +20,7 @@ class CitiesTableSeeder extends Seeder
                 'thumbnail'=> '/images/thumbnails/lasvegas.jpg',
                 'logo' => '/images/thumbnails/lasvegas.jpg',
                 'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
-                'slider_caption_cn' => '法克;由',
+                'slider_caption_cn' => '欢迎来到拉斯维加斯;出发前请及早预定以获得最佳优惠',
                 'slider_caption_en' => 'Welcome to Las Vegas;Book your Activities and Sightseeing Tours before you go.',
                 'body_cn' => '<p>拉斯维加斯位于内华达州的莫哈韦沙漠里，是一个以拥有不懈活力而闻名的度假胜地，有24小时营业的娱乐场和无尽的娱乐项目。其焦点是在拉斯维加斯大道，仅有4个多英里长，但是遍布精致的主题酒店，如金字塔形的卢克索酒店和有完整大运河的威尼斯酒店;以及豪华度假村包括有标志性音乐喷泉的贝拉吉欧酒店等;当然还有拉斯维加斯最出名的无数娱乐场。</p>
                     <p>也许最早到达拉斯维加斯地区的游客是游牧的古印第安人，他们在这里走过并留下一万年前的岩画。</p>
@@ -56,7 +56,7 @@ class CitiesTableSeeder extends Seeder
                             <tr>
                                 <td>
                                     <i class="large green checkmark icon"></i>
-                                    大运河商场购物
+                                    享受大运河商场购物折扣
                                 </td>
                                 <td>
                                     <i class="large green checkmark icon"></i>
