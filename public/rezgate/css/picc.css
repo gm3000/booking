@@ -2,8 +2,12 @@ ul > li > div > div {
 	margin-bottom:0.5em;
 }
 
-ul.date-time-block, ul.location-inputs, ul.row10, ul.hotel-date-time-block, ul.activity-dates-block, ul.activity-main-block{
-	margin-top:1em;
+ul.date-time-block, ul.location-inputs, ul.row10, ul.hotel-date-time-block, ul.activity-dates-block {
+	margin-top:0.5em;
+}
+
+ul.activity-main-block {
+	margin-top:0.85em;
 }
 
 div.option-sub-label, label.option-sub-label , ul.activity-destination-country > li > h1{
