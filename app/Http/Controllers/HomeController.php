@@ -18,7 +18,7 @@ class HomeController extends Controller
             ->get()->all();
 
         foreach($cities as $city){
-            $cities_url[$city->name] = '/cities/'.$city->id;
+            $cities_url[$city->name] = '/tops/'.$city->id;
         }
 
         return view('home', compact('cities_url'));
