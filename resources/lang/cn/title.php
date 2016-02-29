@@ -1,5 +1,5 @@
 <?php
-$prefix = '中国人保 - ';
+$prefix = '中国人民保险集团股份有限公司 - ';
 return [
 
     'home' => $prefix.'首页',
