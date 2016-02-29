@@ -39,115 +39,119 @@ class ShoppingsTableSeeder extends Seeder
                                     <p></p>
                                     <img class="ui fluid image" src="/images/shopping/fashion-show-plaza.jpg">',
                     'logo' => '/images/shopping/fashion-show.png',
-                    'offers_cn' => '<table style="width: 332px; height: 376px;" data-ruleset="gr.alterora.elemental_2_blue.xml:gr.alterora.elemental_2_blue_1s3">
-<tbody>
-<tr class="tabrow ">
-<td class="tabcol"><strong>商店</strong></td>
-<td class="tabcol"><strong>优惠</strong></td>
+                    'offers_cn' => '<table class="ui very basic table">
+                    <thead>
+                      <tr>
+                        <th>商店</th>
+                        <th>优惠</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+ <tr>
+<td>7 For All Mankind</td>
+<td>消费250美金及以上，可以减50美金。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">7 For All Mankind</td>
-<td class="tabcol" colspan="2">消费250美金及以上，可以减50美金。</td>
+ <tr>
+<td>ABC Stores</td>
+<td>消费50美金及以上，可以获赠ABC独家设计的咖啡杯、环保购物袋或日历。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">ABC Stores</td>
-<td class="tabcol" colspan="2">消费50美金及以上，可以获赠ABC独家设计的咖啡杯、环保购物袋或日历。</td>
+ <tr>
+<td>Aerosoles</td>
+<td>注册成为VIP会员，即可享受10%折扣</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Aerosoles</td>
-<td class="tabcol" colspan="2">注册成为VIP会员，即可享受10%折扣</td>
+ <tr>
+<td>Aldo</td>
+<td>任何正价商品享有10%折扣。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Aldo</td>
-<td class="tabcol" colspan="2">任何正价商品享有10%折扣。</td>
+ <tr>
+<td>Ann Taylor</td>
+<td>全场九折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Ann Taylor</td>
-<td class="tabcol" colspan="2">全场九折优惠</td>
+ <tr>
+<td>bebe</td>
+<td>全场正价商品八折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">bebe</td>
-<td class="tabcol" colspan="2">全场正价商品八折优惠</td>
+ <tr>
+<td>Ben Bridge Jeweler</td>
+<td>购买任何商品，即赠送珠宝清洗套装。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Ben Bridge Jeweler</td>
-<td class="tabcol" colspan="2">购买任何商品，即赠送珠宝清洗套装。</td>
+ <tr>
+<td>Berger &amp; Son</td>
+<td>全场珠宝（包括婚戒）五折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Berger &amp; Son</td>
-<td class="tabcol" colspan="2">全场珠宝（包括婚戒）五折优惠</td>
+ <tr>
+<td>Boot Star Vegas</td>
+<td>全场九折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Boot Star Vegas</td>
-<td class="tabcol" colspan="2">全场九折优惠</td>
+ <tr>
+<td>Brighton Collectibles</td>
+<td>进门无需购物即享贵宾待遇。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Brighton Collectibles</td>
-<td class="tabcol" colspan="2">进门无需购物即享贵宾待遇。</td>
+ <tr>
+<td>BROOKSTONE</td>
+<td>消费50美金及以上，获得免费小灯一个。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">BROOKSTONE</td>
-<td class="tabcol" colspan="2">消费50美金及以上，获得免费小灯一个。</td>
-</tr>
-<tr class="tabrow ">
-<td class="tabcol">Buckle</td>
-<td class="tabcol" colspan="2">一件饰品九折优惠或任一件特价品额外九折优惠。</td>
+ <tr>
+<td>Buckle</td>
+<td>一件饰品九折优惠或任一件特价品额外九折优惠。</td>
 </tr>
 </tbody>
 </table>',
-                    'offers_en' => '<table style="width: 332px; height: 376px;" data-ruleset="gr.alterora.elemental_2_blue.xml:gr.alterora.elemental_2_blue_1s3">
+                    'offers_en' => '<table class="ui very basic table">
+                    <thead>
+                      <tr>
+                        <th>STORE</th>
+                        <th>OFFER</th>
+                      </tr>
+                    </thead>
                     <tbody>
-                    <tr class="tabrow ">
-                        <td class="tabcol"><strong>STORE</strong></td>
-                        <td class="tabcol"><strong>OFFER</strong></td>
+                     <tr>
+                        <td>7 For All Mankind</td>
+                        <td>$50 of f a purchase of $250 or more.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">7 For All Mankind</td>
-                        <td class="tabcol">$50 of f a purchase of $250 or more.</td>
+                     <tr>
+                        <td>ABC Stores</td>
+                        <td>Receive a complimentary exclusive ABC design coffee mug, recycle tote bag or calendar when<br>purchasing $50 or more.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">ABC Stores</td>
-                        <td class="tabcol">Receive a complimentary exclusive ABC design coffee mug, recycle tote bag or calendar when<br>purchasing $50 or more.</td>
+                     <tr>
+                        <td>Aerosoles</td>
+                        <td>Take 10% off when you become<br>a VIP Rewards member</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Aerosoles</td>
-                        <td class="tabcol">Take 10% off when you become<br>a VIP Rewards member</td>
+                     <tr>
+                        <td>Aldo</td>
+                        <td>10% off regular-priced merchandise.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Aldo</td>
-                        <td class="tabcol">10% off regular-priced merchandise.</td>
+                     <tr>
+                        <td>Ann Taylor</td>
+                        <td>10% off your full-price purchase.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Ann Taylor</td>
-                        <td class="tabcol">10% off your full-price purchase.</td>
+                     <tr>
+                        <td>bebe</td>
+                        <td>20% off your entire regular-priced purchase</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">bebe</td>
-                        <td class="tabcol">20% off your entire regular-priced purchase</td>
+                     <tr>
+                        <td>Ben Bridge Jeweler</td>
+                        <td>Complimentary jewelry cleaning kit with any purchase.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Ben Bridge Jeweler</td>
-                        <td class="tabcol">Complimentary jewelry cleaning kit with any purchase.</td>
+                     <tr>
+                        <td>Berger &amp; Son</td>
+                        <td>50% off entire fine jewelry<br>collection including wedding rings.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Berger &amp; Son</td>
-                        <td class="tabcol">50% off entire fine jewelry<br>collection including wedding rings.</td>
+                     <tr>
+                        <td>Boot Star Vegas</td>
+                        <td>10% off your entire purchase.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Boot Star Vegas</td>
-                        <td class="tabcol">10% off your entire purchase.</td>
+                     <tr>
+                        <td>Brighton Collectibles</td>
+                        <td>Come in and see the new arrivals! Receive a treat from Brighton just for stopping by.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Brighton Collectibles</td>
-                        <td class="tabcol">Come in and see the new arrivals! Receive a treat from Brighton just for stopping by.</td>
+                     <tr>
+                        <td>BROOKSTONE</td>
+                        <td>FREE Astro Light or Tipsy Light with $50 purchase.</td>
                     </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">BROOKSTONE</td>
-                        <td class="tabcol">FREE Astro Light or Tipsy Light with $50 purchase.</td>
-                    </tr>
-                    <tr class="tabrow ">
-                        <td class="tabcol">Buckle</td>
-                        <td class="tabcol">10% off one accessory or<br>additional 10% off one sale item.</td>
+                     <tr>
+                        <td>Buckle</td>
+                        <td>10% off one accessory or<br>additional 10% off one sale item.</td>
                     </tr>
                     </tbody>
                 </table>',
@@ -187,95 +191,99 @@ class ShoppingsTableSeeder extends Seeder
                                   <p></p>
                                   <img class="ui fluid image" src="/images/shopping/Grand-Canal-Shoppes---gondola.jpg">',
                     'logo' => '/images/shopping/grand-canal-shoppes.png',
-                    'offers_cn' => '<table>
+                    'offers_cn' => '<table class="ui very basic table">
+                    <thead>
+                      <tr>
+                        <th>商店</th>
+                        <th>优惠</th>
+                      </tr>
+                    </thead>
 <tbody>
-<tr class="tabrow ">
-<td class="tabcol"><strong>商店</strong></td>
-<td class="tabcol"><strong>优惠</strong></td>
+ <tr>
+<td>7 For All Mankind</td>
+<td>消费满250美金减50美金。</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">7 For All Mankind</td>
-<td class="tabcol" colspan="2">消费满250美金减50美金。</td>
+ <tr>
+<td>Acc a Kappa</td>
+<td>全场九折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Acc a Kappa</td>
-<td class="tabcol" colspan="2">全场九折优惠</td>
+ <tr>
+<td>Andrew s Milano</td>
+<td>三条领带售120美金（适用于某些款式）</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Andrew s Milano</td>
-<td class="tabcol" colspan="2">三条领带售120美金（适用于某些款式）</td>
+ <tr>
+<td>Ann Taylor</td>
+<td>正价商品九折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Ann Taylor</td>
-<td class="tabcol" colspan="2">正价商品九折优惠</td>
+ <tr>
+<td>Aquaknox</td>
+<td>食品八五折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Aquaknox</td>
-<td class="tabcol" colspan="2">食品八五折优惠</td>
+ <tr>
+<td>Art of Venice</td>
+<td>正价商品九折优惠</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Art of Venice</td>
-<td class="tabcol" colspan="2">正价商品九折优惠</td>
+ <tr>
+<td>Barney s New York</td>
+<td>免费私人购物体验</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Barney s New York</td>
-<td class="tabcol" colspan="2">免费私人购物体验</td>
+ <tr>
+<td>Barney s New York</td>
+<td>消费满50美金减10美金</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Barney s New York</td>
-<td class="tabcol" colspan="2">消费满50美金减10美金</td>
+ <tr>
+<td>Basin White</td>
+<td>消费满30美金减5美金</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Basin White</td>
-<td class="tabcol" colspan="2">消费满30美金减5美金</td>
-</tr>
-<tr class="tabrow ">
-<td class="tabcol">BCBG MAX AZRIA</td>
-<td class="tabcol" colspan="2">正价商品消费满200美金可以享受九折优惠</td>
+ <tr>
+<td>BCBG MAX AZRIA</td>
+<td>正价商品消费满200美金可以享受九折优惠</td>
 </tr>
 </tbody>
 </table>',
-                    'offers_en' => '<table>
+                    'offers_en' => '<table class="ui very basic table">
+                    <thead>
+                      <tr>
+                        <th>STORE</th>
+                        <th>OFFER</th>
+                      </tr>
+                    </thead>
 <tbody>
-<tr class="tabrow ">
-<td class="tabcol"><strong>STORE</strong></td>
-<td class="tabcol"><strong>OFFER</strong></td>
+ <tr>
+<td>7 For All Mankind</td>
+<td>$50 of f a purchase of $250 or more.</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">7 For All Mankind</td>
-<td class="tabcol">$50 of f a purchase of $250 or more.</td>
+ <tr>
+<td>Acc a Kappa</td>
+<td>10% discount off your purchase</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Acc a Kappa</td>
-<td class="tabcol">10% discount off your purchase</td>
+ <tr>
+<td>Andrew s Milano</td>
+<td>Three ties for $120 (select styles)</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Andrew s Milano</td>
-<td class="tabcol">Three ties for $120 (select styles)</td>
+ <tr>
+<td>Ann Taylor</td>
+<td>10% off your full-price purchase.</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Ann Taylor</td>
-<td class="tabcol">10% off your full-price purchase.</td>
+ <tr>
+<td>Aquaknox</td>
+<td>Enjoy 15% off your food bill.</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Aquaknox</td>
-<td class="tabcol">Enjoy 15% off your food bill.</td>
+ <tr>
+<td>Art of Venice</td>
+<td>10% off on regular-priced masks.</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Art of Venice</td>
-<td class="tabcol">10% off on regular-priced masks.</td>
+ <tr>
+<td>Barney s New York</td>
+<td>Complimentary personal shopping experience</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Barney s New York</td>
-<td class="tabcol">Complimentary personal shopping experience</td>
+ <tr>
+<td>Basin White</td>
+<td>$10 of f a $50 purchase.<br>$5 off a $30 purchase.</td>
 </tr>
-<tr class="tabrow ">
-<td class="tabcol">Basin White</td>
-<td class="tabcol">$10 of f a $50 purchase.<br>$5 off a $30 purchase.</td>
-</tr>
-<tr class="tabrow ">
-<td class="tabcol">BCBG MAX AZRIA</td>
-<td class="tabcol">10% off a regularly priced purchase of $200 or more</td>
+ <tr>
+<td>BCBG MAX AZRIA</td>
+<td>10% off a regularly priced purchase of $200 or more</td>
 </tr>
 </tbody>
 </table>',
