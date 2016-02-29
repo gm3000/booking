@@ -9,8 +9,7 @@
               PICC VIP 旅游使得所有的出境游变得容易得多。我们拥有全球30多万家酒店，并保证最低价格。我们可以向中国人民保险客户定制旅游行程，也可以让这些用户自行在我们的预定系统里直接预定全球机票和酒店，还可以提供全球各地的旅游套餐。
             </p>
             <div style="background-color:white;text-align:center;">
-              <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
-              <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
+              <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
             </div>
         </div>
         <div class="ui column">

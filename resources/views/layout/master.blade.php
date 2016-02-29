@@ -19,12 +19,12 @@
 </head>
 <body>
 <div id="container" class="ui grid">
-    <div class="ui row">
+    <div class="ui row" style="background-color:white;">
       <div class="ui column">
         <div class="ui grid container">
            <div id="header" class="ui two column row">
              <div class="ui column">
-                 <img src="/images/PICC_logo.png" alt="PICC logo" style="margin-right:0.618em;"/>
+                 <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
                  <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
              </div>
              <div class="ui right aligned column">

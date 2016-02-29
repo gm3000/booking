@@ -44,7 +44,7 @@
            </a>
           @endforeach
         </div>
-        @if(empty($found))
+        @if(isset($found) && !$found)
           @include('partial.nothing_found',['query'=>Request::input('query')])
         @else
           <div class="ui divider"></div>
