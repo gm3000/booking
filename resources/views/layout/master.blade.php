@@ -66,7 +66,7 @@
          <div class="ui row">
             <div class="ui seven wide column">
             </div>
-            <div class="ui nine wide column">
+            <div class="ui center aligned nine wide column">
               <iframe id="bec_container_frame" frameborder="0" src="@yield('rezgate_url')" scrolling="no" width="640"></iframe>
             </div>
          </div>
