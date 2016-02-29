@@ -99,7 +99,8 @@ class ActivityController extends Controller
                                       ->orWhere('desc_en','like','%'.$query.'%')
                                       ->orWhere('desc_cn','like','%'.$query.'%')
                                       ->paginate(config('app.page_size'),['id','name_'.$this->lang.' as name','desc_'.$this->lang.' as desc','poster']);
-      return view('activity.index',compact('activities'));
+      $found = !($activities->total() == 0);
+      return view('activity.index',compact('activities','found'));
     }
 
 }

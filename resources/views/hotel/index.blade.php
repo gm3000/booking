@@ -52,8 +52,11 @@
            </a>
           @endforeach
         </div>
-        <div class="ui divider">
-        </div>
+        @if(isset($found) && !$found)
+          @include('partial.nothing_found',['query'=>Request::input('query')])
+        @else
+          <div class="ui divider"></div>
+        @endif
         @include('partial.pagination',['items'=>$hotels,'anchor'=>'list'])
       </div>
     </div>

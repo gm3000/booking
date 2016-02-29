@@ -31,8 +31,7 @@ class ShoppingController extends Controller
             'hours_'.$lang.' as hours',
             'address_'.$lang.' as address',
             'website',
-            'logo'])->toArray();
-        //dd($store);
+            'logo']);
         return view('shopping.detail', compact('store'));
 
     }

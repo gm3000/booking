@@ -102,8 +102,9 @@ class HotelController extends Controller
                                       ->orWhere('desc_en','like','%'.$query.'%')
                                       ->orWhere('desc_cn','like','%'.$query.'%')
                                       ->paginate(config('app.page_size'),['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
+      $found = !($hotels->total() == 0);
       $cities = $this->city_list();
-      return view('hotel.index',compact(['hotels','cities']));
+      return view('hotel.index',compact(['hotels','cities','found']));
     }
 
     protected function city_list(){
@@ -130,7 +131,7 @@ class HotelController extends Controller
       $hotel = \App\Hotel::findOrNew($id,[
                   'name_'.$lang.' as name',
                   'desc_'.$lang.' as desc',
-                  'body_'.$lang.' as body'])->toArray();
+                  'body_'.$lang.' as body']);
        //dd($hotel);
        return view('hotel.detail', compact('hotel'));
     }
