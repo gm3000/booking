@@ -17,8 +17,7 @@ class ActivityController extends Controller
      */
     public function index()
     {
-      $lang = \App::getLocale();
-      $activities = Activity::orderBy('name')->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','poster']);
+      $activities = Activity::orderBy('name')->paginate(config('app.page_size'),['id','name_'.$this->lang.' as name','desc_'.$this->lang.' as desc','poster']);
       return view('activity.index',compact('activities'));
     }
 
@@ -95,12 +94,11 @@ class ActivityController extends Controller
       {
         return redirect('/activities');
       }
-      $lang = \App::getLocale();
       $activities = Activity::orderBy('name')->where('name_en','like','%'.$query.'%')
                                       ->orWhere('name_cn','like','%'.$query.'%')
                                       ->orWhere('desc_en','like','%'.$query.'%')
                                       ->orWhere('desc_cn','like','%'.$query.'%')
-                                      ->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','poster']);
+                                      ->paginate(config('app.page_size'),['id','name_'.$this->lang.' as name','desc_'.$this->lang.' as desc','poster']);
       return view('activity.index',compact('activities'));
     }
 

@@ -99,6 +99,8 @@ return [
 
     'primary_color' => 'red',
 
+    'page_size' => 15,
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

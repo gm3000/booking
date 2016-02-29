@@ -11,8 +11,8 @@ class CityController extends Controller
 {
 
     function __construct() {
-
-        $this->lang = $lang = \App::getLocale();
+        parent::__construct();
+        $lang = $this->lang;
         $this->list_fields = [
             'id',
             'name_'.$lang.' as name',
@@ -48,7 +48,7 @@ class CityController extends Controller
                         'name_en');
                 }
             ])
-            ->paginate(15,$this->list_fields);
+            ->paginate(config('app.page_size'),$this->list_fields);
         //dd($cities[0]->country->name);
         return view('city.index', compact('cities'));
     }
@@ -79,7 +79,7 @@ class CityController extends Controller
             ->orWhere('name_cn','like','%'.$query.'%')
             ->orWhere('desc_en','like','%'.$query.'%')
             ->orWhere('desc_cn','like','%'.$query.'%')
-            ->paginate(15,$this->list_fields);
+            ->paginate(config('app.page_size'),$this->list_fields);
 
         return view('city.index',compact('cities'));
     }
