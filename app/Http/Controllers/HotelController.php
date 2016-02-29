@@ -124,4 +124,15 @@ class HotelController extends Controller
       $cities = $this->city_list();
       return view('hotel.index',compact(['hotels','cities']));
     }
+
+    public function showDetail($id)
+    {
+      $lang = \App::getLocale();
+      $hotel = \App\Hotel::findOrNew($id,[
+                  'name_'.$lang.' as name',
+                  'desc_'.$lang.' as desc',
+                  'body_'.$lang.' as body'])->toArray();
+       //dd($hotel);
+       return view('hotel.detail', compact('hotel'));
+    }
 }
