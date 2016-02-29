@@ -28,7 +28,19 @@ ul.activity-dates-block > li > div > input {
 
 a.search-button {
 	margin-right:20px;
-	margin-bottom:10px;
+	margin-bottom:10px;	
+}
+
+a.search-button > div {
+	background-color: #108acc;
+}
+
+.search-button > div:hover {
+	background-color: #61A6CB!important;
+}
+
+.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-top li:hover {
+	background-color: #61A6CB!important;
 }
 
 li.width-fix-hotels{
@@ -45,4 +57,8 @@ li.width-fix-hotels{
 
 label.label-bg-common {
 	background-color:#db2828;
+}
+
+li.ui-state-default.ui-tabs-selected.ui-state-active.ui-corner-left {
+	background-color: #108acc;
 }
