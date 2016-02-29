@@ -85,8 +85,6 @@ class CityController extends Controller
     }
 
     private function incrementHeat($id){
-        $city = \App\City::find($id);
-        $city->heat += 1;
-        $city->save();
+        \DB::table('cities')->increment('heat');
     }
 }
