@@ -9,7 +9,7 @@
     <!-- Site Properties -->
     <title>@yield('title')</title>
     @section('styles')
-    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/css/lightslider.min.css">
     <link rel="stylesheet" href="/css/nanoGALLERY/nanogallery.min.css">
     <link rel="stylesheet" href="/css/nanoGALLERY/themes/light/nanogallery_light.min.css">
@@ -74,8 +74,8 @@
     @show
 </div>
 @section('scripts')
-<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/semantic.min.js"></script>
 <script type="text/javascript" src="/js/menu.js"></script>
 @show
 </body>
