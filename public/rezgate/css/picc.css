@@ -25,3 +25,8 @@ div.polka-dots {
 ul.activity-dates-block > li > div > input {
 	width:139px;
 }
+
+a.search-button {
+	margin-right:20px;
+	margin-bottom:10px;
+}
