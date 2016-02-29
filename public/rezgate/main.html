@@ -163,19 +163,19 @@
   <input type="hidden" id="selectedFixedPackageTypeName" name="selectedFixedPackageTypeName" />
   <input type="hidden" id="ipAddress" name="ipAddress" />
   <input type="hidden" id="clientCountryCode" name="clientCountryCode" />
-  
-  
+
+
 </form>
 <form name="form1" method="post" action="" id="form1" >
   <input type="hidden" name="pkgType" value="H"/>
   <div id="bec_wrapper_div" style="display:none;" class="bec-main-wrapper">
-  <div id="tabs"> 
+  <div id="tabs" style="width:640px;"> 
   <a href="#" class="mobile-menu">Plan 旅行类别<i class="fa fa-bars fa-2"></i> </a>
     <ul id="ribbon" class="icons  chinese-language-bec">
       <li id="vLi"><a class="holidays mobile-hide-menu" href="holidays.html"><span class="fh-icon mobile-hide-menu">&nbsp;</span> 机票 + 酒店 </a></li>
       <li id="fLi"><a class="flights mobile-hide-menu"  href="flights.html"><span class="flight-icon mobile-hide-menu">&nbsp;</span> 机票  </a></li>
       <li id="hLi"><a class="hotels mobile-hide-menu"  href="hotel.html"><span class="hotel-icon mobile-hide-menu">&nbsp;</span> 酒店  </a></li>
-      <li id="aLi"><a class="activities mobile-hide-menu" href="activities.html"><span class="activity-icon mobile-hide-menu">&nbsp;</span> 景点门票</a></li>      
+      <li id="aLi"><a class="activities mobile-hide-menu" href="activities.html"><span class="activity-icon mobile-hide-menu">&nbsp;</span> 景点门票</a></li>
     </ul>
     <div id="holidays" class="bec_container"></div>
     <div id="flights" class="bec_container"></div>
@@ -185,7 +185,7 @@
 </form>
 <script>
 try{
- 
+
 var screenH =0;
 if(navigator.appName=='Netscape'){
 	  screenH = window.innerHeight || document.body.offsetHeight;
@@ -202,7 +202,7 @@ document.getElementById('mm').style.width = screenW+"px";
 }
 </script>
 <script type="text/javascript">
-/* This service offers a REST API allowing to get a visitor IP address and to query location information from any IP address. 
+/* This service offers a REST API allowing to get a visitor IP address and to query location information from any IP address.
 It outputs JSON-encoded IP geolocation data, and supports both JSON and JSONP. */
 
 var subUrl= "http://ct-stg.secure-reservation.com/ctReservations/";
@@ -210,18 +210,18 @@ var subUrl= "http://ct-stg.secure-reservation.com/ctReservations/";
 $(document).ready(function() {
 	$.ajax({
 		url : subUrl+'ComponentSupportAction.do?method=getGEOLocation',
-          method : 'post',	  
+          method : 'post',
 	      dataType: "text",
 	      data : {
         	  method : "getGEOLocation",
-        	  transectionId : $('#transectionId').val()	                            
+        	  transectionId : $('#transectionId').val()
           },
           success: function(data){
         	var locationList = eval(data);
 		    if (locationList.length > 0) {
-		    	$('#ipAddress').val(locationList[0].ipAddress);	
+		    	$('#ipAddress').val(locationList[0].ipAddress);
 		    	$('#clientCountryCode').val(locationList[0].clientCountryCode);
-		    }	            	  
+		    }
           }
        });
 });
@@ -237,17 +237,17 @@ try{
 //$("#tabs").tabs()
 //loadTab();
 
-	setTimeout(function(){ 
+	setTimeout(function(){
 		 loadTab();
 	},10);
 	// $("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
 	// $("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
 	 $("#ribbon").removeClass('ui-corner-all').addClass('ui-corner-top');
-	 
-	 
+
+
 }catch(e){
 		alert(e);
-} 
+}
 
 try{
 	var w = getUrlVars()["wjt"];
@@ -264,21 +264,21 @@ function createXMLHttpRequest() {
 	return null;
 }
 
-function loadTab(){	
+function loadTab(){
 	var portal= $('#portal').val();
-	var appProdDefProdCookie = $.cookie( portal+'_app_prod_def_prod' );	
-	
+	var appProdDefProdCookie = $.cookie( portal+'_app_prod_def_prod' );
+
 	if(appProdDefProdCookie ==null || appProdDefProdCookie =='' || appProdDefProdCookie == undefined) {
 		var product = "F";
 		var reservationProduct = "VFHACTP";
-		
+
 		$(document).ready(function(){
 			$.ajax({
 	              url : subURL+'ComponentSupportAction.do?method=getDefaultProduct',
 	              method : 'post',
 	              data : {
 	            	  method : "getDefaultProduct",
-	            	  transectionId : $('#transectionId').val()	                            
+	            	  transectionId : $('#transectionId').val()
 	              },
 	              dataType: "text",
 	              success: function(data){
@@ -287,23 +287,23 @@ function loadTab(){
 				    	product = defaultProductList[0].default_product;
 				    	$('#engLoaded').val(product);
 				    	reservationProduct = defaultProductList[0].reservation_product;
-				    	
+
 				    	/**Setting defalut tab and loading reservation product here*/
 				    	$.cookie(portal+'_app_prod_def_prod',JSON.stringify(defaultProductList[0]));
 				    	initTabs(defaultProduct(product))
 				    	setTabs(reservationProduct);
 				    	$.cookie(portal+'_reservation_prod',reservationProduct);
-				    }	            	  
+				    }
 	              }
 	          });
-		});		
+		});
 	}else{
-		appProdDefProdCookie = JSON.parse(appProdDefProdCookie);		
+		appProdDefProdCookie = JSON.parse(appProdDefProdCookie);
 		var selectedProduct = 'H';
 		try{
 			var selectedProduct = window.location.toString().split('?')[1].split('product=')[1];
 		}catch(e){}
-		
+
 		initTabs(selectedProduct != '' ? selectedProduct : defaultProduct(appProdDefProdCookie.default_product));
 		setTabs(appProdDefProdCookie.reservation_product);
 		$.cookie(portal+'_reservation_prod',appProdDefProdCookie.reservation_product);
@@ -311,9 +311,9 @@ function loadTab(){
 }
 
 function setTabs(products){
-	
+
 	if(products.indexOf('V')==-1){
-		$("#vLi").hide();		
+		$("#vLi").hide();
 	}
 	if(products.indexOf('F')==-1){
 		$("#fLi").hide();
@@ -329,12 +329,12 @@ function setTabs(products){
 	}
 	if(products.indexOf('T')==-1){
 		$("#tLi").hide();
-	} 
+	}
 	if(products.indexOf('P')==-1){
 		$("#pLi").hide();
-	}	
+	}
 }
-function defaultProduct(product){	
+function defaultProduct(product){
 	var tab = 0;
 	switch (product){
 		case 'F': tab = 0; break;
@@ -344,7 +344,7 @@ function defaultProduct(product){
 		case 'A': tab = 4; break;
 		case 'V': tab = 5; break;
 		case 'P': tab = 6; break;
-	} 
+	}
 	return tab;
 }
 
@@ -354,7 +354,7 @@ function affiliateTimer(){
 	if('AFF'==$('#partnerType').val()){
 		try{$('.discountcoupon').hide();}catch(e){}
 		try{$('#promotionCodeDiv_F').hide();}catch(e){}
-		
+
 	}else{
 		try{$('.discountcoupon').show();}catch(e){}
 		try{$('#promotionCodeDiv_F').show();}catch(e){}
@@ -384,10 +384,10 @@ try{
 <script src="js/prefixfree.min.js"></script>
 <script>
 $(document).ready(function(){
-if ($(window).width() < 610) {     
+if ($(window).width() < 610) {
 	$(".mobile-hide-menu").on('click',function(){
 	    $("#ribbon").hide(1000);
-	  });	
+	  });
 	}
 });
 </script>
