@@ -9,3 +9,11 @@
         </div>
     </div>
 @endsection
+
+
+@section('scripts')
+    @parent
+    <script type="text/javascript">
+        $('#hotel').addClass('active');
+    </script>
+@endsection
