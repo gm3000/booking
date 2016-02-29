@@ -5,19 +5,7 @@ use App\Hotel;
 
 Route::group(['prefix' => '/'], function () {
 
-    Route::get('setlanguage', function(){
-        $language = Request::input('lang');
-        $backUrl = URL::previous();
-        if(str_contains($backUrl,'/setlanguage'))
-        {
-            return redirect('/')->withCookie('lang',$language);
-        }
-        else
-        {
-            return redirect($backUrl)->withCookie('lang',$language);
-        }
-    });
-
+    Route::get('setlanguage', 'SwitchLanguageController@switchLanguage');
     Route::get('/', 'HomeController@show');
     Route::get('home', 'HomeController@show');
     Route::get('about','PagesController@about');
