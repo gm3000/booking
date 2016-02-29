@@ -11,7 +11,7 @@ class ShoppingController extends Controller
 {
     public function showList(){
 
-        $lang = \App::getLocale();
+        $lang = $this->lang;
         $shoppings = \App\Shopping::select(
             'name_'.$lang.' as name',
             'desc_'.$lang.' as desc',
@@ -22,7 +22,7 @@ class ShoppingController extends Controller
 
     public function showDetail($id){
 
-        $lang = \App::getLocale();
+        $lang = $this->lang;
         $store = \App\Shopping::findOrNew($id,[
             'name_'.$lang.' as name',
             'desc_'.$lang.' as desc',

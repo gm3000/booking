@@ -11,25 +11,21 @@ class PagesController extends Controller
 {
     public function about()
     {
-        $lang = \App::getLocale();
-        return view('pages.'.$lang.'.about');
+        return view('pages.'.$this->lang.'.about');
     }
 
     public function aboutVip()
     {
-        $lang = \App::getLocale();
-        return view('pages.'.$lang.'.about_vip');
+        return view('pages.'.$this->lang.'.about_vip');
     }
 
     public function termsOfUse()
     {
-        $lang = \App::getLocale();
-        return view('pages.'.$lang.'.terms_of_use');
+        return view('pages.'.$this->lang.'.terms_of_use');
     }
 
     public function privatePolicy()
     {
-        $lang = \App::getLocale();
-        return view('pages.'.$lang.'.private_policy');
+        return view('pages.'.$this->lang.'.private_policy');
     }
 }

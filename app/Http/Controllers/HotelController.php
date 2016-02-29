@@ -18,8 +18,7 @@ class HotelController extends Controller
      */
     public function index()
     {
-        $lang = \App::getLocale();
-        $hotels = Hotel::orderBy('name')->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
+        $hotels = Hotel::orderBy('name')->paginate(config('app.page_size'),['id','name_'.$this->lang.' as name','desc_'.$this->lang.' as desc','logo']);
         $cities = $this->city_list();
         return view('hotel.index',compact(['hotels','cities']));
     }
@@ -97,18 +96,18 @@ class HotelController extends Controller
       {
         return redirect('/hotels');
       }
-      $lang = \App::getLocale();
+      $lang = $this->lang;
       $hotels = Hotel::orderBy('name')->where('name_en','like','%'.$query.'%')
                                       ->orWhere('name_cn','like','%'.$query.'%')
                                       ->orWhere('desc_en','like','%'.$query.'%')
                                       ->orWhere('desc_cn','like','%'.$query.'%')
-                                      ->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
+                                      ->paginate(config('app.page_size'),['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
       $cities = $this->city_list();
       return view('hotel.index',compact(['hotels','cities']));
     }
 
     protected function city_list(){
-      $lang = \App::getLocale();
+      $lang = $this->lang;
       $cities = \DB::table('cities')->join('hotels','cities.id','=','hotels.city_id')
                                     ->select('cities.id as id','cities.name_'.$lang.' as name')
                                     ->groupBy('city_id')
@@ -119,9 +118,20 @@ class HotelController extends Controller
 
     function hotelsByCity($cid)
     {
-      $lang = \App::getLocale();
-      $hotels = Hotel::orderBy('name')->where('city_id',$cid)->paginate(15,['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
+      $lang = $this->lang;
+      $hotels = Hotel::orderBy('name')->where('city_id',$cid)->paginate(config('app.page_size'),['id','name_'.$lang.' as name','desc_'.$lang.' as desc','logo']);
       $cities = $this->city_list();
       return view('hotel.index',compact(['hotels','cities']));
+    }
+
+    public function showDetail($id)
+    {
+      $lang = $this->lang;
+      $hotel = \App\Hotel::findOrNew($id,[
+                  'name_'.$lang.' as name',
+                  'desc_'.$lang.' as desc',
+                  'body_'.$lang.' as body'])->toArray();
+       //dd($hotel);
+       return view('hotel.detail', compact('hotel'));
     }
 }

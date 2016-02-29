@@ -74,6 +74,10 @@ return array(
             'title' => '详细中文描述',
             'type' => 'wysiwyg',
         ),
+        'website' => array(
+            'title' => '网站链接',
+            'type' => 'text',
+        ),
     ),
 
 );

@@ -11,7 +11,6 @@ class VipProgramController extends Controller
 {
     public function index()
     {
-      $lang = \App::getLocale();
-      return view('vipprogram.'.$lang.'.index');
+      return view('vipprogram.'.$this->lang.'.index');
     }
 }
