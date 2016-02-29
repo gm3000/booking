@@ -11,8 +11,8 @@ class SwitchLanguageController extends Controller
 {
     public function switchLanguage()
     {
-        $language = Request::input('lang');
-        $backUrl = URL::previous();
+        $language = \Input::get('lang');
+        $backUrl = \URL::previous();
         if(str_contains($backUrl,'/setlanguage'))
         {
             return redirect('/')->withCookie('lang',$language);
