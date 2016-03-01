@@ -7,19 +7,19 @@
 <div id="home-detail">
     <div class="ui grid container">
         <div class="eleven wide column">
-            <h3 class="ui left floated red header">{{ trans('home.hot_place') }}</h3>
+            <h3 class="ui left floated {{config('app.primary_color')}} header">{{ trans('home.hot_place') }}</h3>
             <div class="ui clearing divider"></div>
             <div id="home-gallery"></div>
         </div>
         <div class="five wide column" style="padding-left:5em;">
-            <h3 class="ui left floated red header">{{ trans('home.partner') }}</h3>
+            <h3 class="ui left floated {{config('app.primary_color')}} header">{{ trans('home.partner') }}</h3>
             <div class="ui clearing divider"></div>
             <div id="home-partner">
                 <div class="partner blurring dimmable image">
                     <div class="ui dimmer">
                         <div class="content">
                             <div class="center">
-                                <h3><a class="ui red header" href="{{$cities_url['LasVegas']}}">{{trans('home.partner_vegas')}}</a></h3>
+                                <h3><a class="ui {{config('app.primary_color')}} header" href="{{$cities_url['LasVegas']}}">{{trans('home.partner_vegas')}}</a></h3>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                     <div class="ui dimmer">
                         <div class="content">
                             <div class="center">
-                                <h3><a class="ui red header" href="{{$cities_url['NewYork']}}">{{trans('home.partner_newyork')}}</a></h3>
+                                <h3><a class="ui {{config('app.primary_color')}} header" href="{{$cities_url['NewYork']}}">{{trans('home.partner_newyork')}}</a></h3>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                     <div class="ui dimmer">
                         <div class="content">
                             <div class="center">
-                                <h3><a class="ui red header" href="{{$cities_url['Chicago']}}">{{trans('home.partner_chicago')}}</a></h3>
+                                <h3><a class="ui {{config('app.primary_color')}} header" href="{{$cities_url['Chicago']}}">{{trans('home.partner_chicago')}}</a></h3>
                             </div>
                         </div>
                     </div>

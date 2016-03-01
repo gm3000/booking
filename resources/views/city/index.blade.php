@@ -49,7 +49,7 @@
                                         <span>
                                             <i class="{{strtolower($city->country->name_en)}} flag city_flag"></i>
                                             <div class="ui flowing popup top left transition visible animating scale out">
-                                                {{$city->country->name}}: <a href="#">{{trans('city.more_city')}}</a>
+                                                {{$city->country->name}}{{--: <a href="#">{{trans('city.more_city')}}</a>--}}
                                             </div>
                                         </span>
                                         <span> </span>

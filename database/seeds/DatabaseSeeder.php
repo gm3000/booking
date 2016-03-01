@@ -35,6 +35,9 @@ class DatabaseSeeder extends Seeder
         //hotel data
         $this->call(HotelsTableSeeder::class);
 
+        //activity
+        $this->call(ActivitiesTableSeeder::class);
+
         Model::reguard();
     }
 }

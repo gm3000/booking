@@ -12,6 +12,6 @@ abstract class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function __construct()
     {
-      $this->lang = \App::getLocale();
+        $this->lang = \App::getLocale();
     }
 }

@@ -50,7 +50,16 @@ class ActivityController extends Controller
      */
     public function show($id)
     {
-        abort(404);
+        $activity = Activity::where('id', $id)->get(
+            [
+                'id',
+                'name_'.$this->lang.' as name',
+                'desc_'.$this->lang.' as desc',
+                'gallery'
+            ]
+        );
+
+        return view('activity.detail', compact('acitvity'));
     }
 
     /**
