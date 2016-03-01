@@ -22,6 +22,7 @@ class CreateActivitiesTable extends Migration
             $table->text('body_cn')->nullable();
             $table->text('body_en')->nullable();
             $table->string('poster')->nullable();
+            $table->text('gallery')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
