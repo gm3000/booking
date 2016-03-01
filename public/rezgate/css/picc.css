@@ -28,7 +28,7 @@ ul.activity-dates-block > li > div > input {
 
 a.search-button {
 	margin-right:20px;
-	margin-bottom:10px;	
+	margin-bottom:10px;
 }
 
 a.search-button > div {
@@ -61,4 +61,20 @@ label.label-bg-common {
 
 li.ui-state-default.ui-tabs-selected.ui-state-active.ui-corner-left {
 	background-color: #108acc;
+}
+
+input.user-country-select {
+  height:27px;
+}
+
+input.user-date-select.hasDatepicker {
+	height:27px;
+}
+
+input#V_RetLoc {
+	height:28px;
+}
+
+select.user-time-select {
+	height:27px;
 }
