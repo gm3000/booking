@@ -63,18 +63,10 @@ li.ui-state-default.ui-tabs-selected.ui-state-active.ui-corner-left {
 	background-color: #108acc;
 }
 
-input.user-country-select {
+input.user-country-select,input.user-date-select.hasDatepicker,input#V_RetLoc,select.user-time-select,input.user-country-select-hotel {
   height:27px;
 }
 
-input.user-date-select.hasDatepicker {
-	height:27px;
-}
-
-input#V_RetLoc {
-	height:27px;
-}
-
-select.user-time-select {
-	height:27px;
+input.activity-country-select {
+	height:18px;
 }
