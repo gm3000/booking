@@ -7,7 +7,7 @@
 <script type="text/javascript"src="js/scripts.js?v=1"></script>
 <script type="text/javascript">
 /*$(function(){
-			
+
 			$('select#Air_cmbNoOfInfants').selectmenu({style:'dropdown',maxHeight: 150});
 			$('select#Air_cmbNoOfChildren').selectmenu({style:'dropdown',maxHeight: 150});
 			$('select#Air_cmbNoOfAdults').selectmenu({style:'dropdown',maxHeight: 150});
@@ -26,129 +26,129 @@ var addressFormatting = function(text){
 				{find:/([^\|><\(\)]+)$/g, rep: '<span class="ui-selectmenu-item-content">$1</span>'},
 				{find:/(\([^\|><]+\))$/g, rep: '<span class="ui-selectmenu-item-footer">$1</span>'}
 			];
-			
+
 			for(var i in findreps){
 				newText = newText.replace(findreps[i].find, findreps[i].rep);
 			}
 			return newText;
-		}	*/	   
-		   
+		}	*/
+
 var DatePicked = function() {
-		 
+
 		 		var departure = $("#air_departure_temp");
 		 		var arrival = $("#air_arrival_temp");
 				var nights = $("#air_nights");
 				var triggeringElement = $(this);
 				var minArrivalDate = new Date();
-								
-				var departureDate= departure.datepicker("getDate") ;	
-				
-				if (departureDate != null) {						
-					departureDate.setDate(departureDate.getDate() + 1);		
-					arrival.datepicker('option', 'minDate',departureDate);	
+
+				var departureDate= departure.datepicker("getDate") ;
+
+				if (departureDate != null) {
+					departureDate.setDate(departureDate.getDate() + 1);
+					arrival.datepicker('option', 'minDate',departureDate);
 				} else {
 					minArrivalDate.setDate(minArrivalDate.getDate() +3);
 					var month = minArrivalDate.getMonth() + 1;
 					month = ((""+String(month).length ==1) ? ("0"+month) : month);
    					var todDate = month + '/' + minArrivalDate.getDate() + '/' + minArrivalDate.getFullYear();
 					arrival.val(todDate);
-						 
+
 				    var myDate = new Date();
 				    myDate.setDate(myDate.getDate() +2);
   					var month = myDate.getMonth() + 1;
   					month = ((""+String(month).length ==1) ? ("0"+month) : month);
    					var todDates = month + '/' + myDate.getDate()+ '/' + myDate.getFullYear();
   					departure.val(todDates);
-										
-				}						
-									
-				var arrivalDate = arrival.datepicker("getDate");			
-			   
+
+				}
+
+				var arrivalDate = arrival.datepicker("getDate");
+
 				if (departureDate != null && arrivalDate != null && triggeringElement.attr("id") != "air_nights") {
-						
+
 					var oneDay = 1000*60*60*24;
                     var arDateVal = Date.UTC(arrivalDate.getFullYear(),arrivalDate.getMonth(),arrivalDate.getDate(),0,0,0);
                     var depDateVal = Date.UTC(departureDate.getFullYear(),departureDate.getMonth(),departureDate.getDate(),0,0,0);
                     var difference = Math.ceil(((arDateVal - depDateVal) / oneDay)+1);
-                    nights.val(difference);  
-					  
+                    nights.val(difference);
+
 					if (difference>30) {
 						//$( "#dialogs" ).dialog({ resizable: false,modal: true });
 						nights.val("1");
 						var newArrivalDate = new Date();
                       	arrival.datepicker("setDate", newArrivalDate);
-					}	
+					}
 					$("#air_departure").val(getOriginalDateFormat(departure.datepicker("getDate")));
-			        $("#air_arrival").val(getOriginalDateFormat(arrival.datepicker("getDate")));	
-						
+			        $("#air_arrival").val(getOriginalDateFormat(arrival.datepicker("getDate")));
+
                 } else if (departureDate != null && arrivalDate != null &&  triggeringElement.attr("id") == "air_nights") {
                     var nightsEntered = parseInt(nights.val());
-					
+
                     if (nightsEntered <= 30 ) {
 						minArrivalDate.setDate(minArrivalDate.getDate() +nightsEntered + 1);
-						arrival.datepicker("setDate", minArrivalDate);	
-					} 
+						arrival.datepicker("setDate", minArrivalDate);
+					}
 					/*else {
-                    
+
 						$( "#dialogs" ).dialog({ resizable: false,modal: true });
 						nights.val("1");
                  	}*/
                     $("#air_departure").val(getOriginalDateFormat(departure.datepicker("getDate")));
 			        $("#air_arrival").val(getOriginalDateFormat(arrival.datepicker("getDate")));
-                }	
-				
-				/**for multi destination*/					
+                }
+
+				/**for multi destination*/
 				if($("#trip_type").val() == 'M'){
-					DatePickedTwo();					
+					DatePickedTwo();
 				}
         }
-		
+
 	 var DatePickedTwo = function() {
-		var departure = $("#air_departure_temp");	
+		var departure = $("#air_departure_temp");
 		var departure_2 = $("#air_departure_2_temp");
-		
+
 		var departureDate = departure.datepicker("getDate");
 		var departureDate_2 = departure_2.datepicker("getDate");
-		
+
 
 		if(null !=  departureDate && null != departureDate_2 ){
-			if(departureDate.getTime() > departureDate_2.getTime()){			
+			if(departureDate.getTime() > departureDate_2.getTime()){
 				departureDate_2 = departure.datepicker("getDate");
-				if (departureDate_2 != null) {						
-					departureDate_2.setDate(departureDate_2.getDate() + 1);						
+				if (departureDate_2 != null) {
+					departureDate_2.setDate(departureDate_2.getDate() + 1);
 				}
 			}else{
 				departureDate_2 = departure_2.datepicker("getDate");
-			}				
+			}
 		}
 		departure_2.datepicker( "setDate", departureDate_2);
 		departure_2.datepicker('option', 'minDate', departure.datepicker("getDate"));
-		
+
 		$("#air_departure_2_temp").val(getDateFormat($("#air_departure_2_temp").datepicker("getDate")));
 		$("#air_departure_2").val(getOriginalDateFormat($("#air_departure_2_temp").datepicker("getDate")));
-		DatePickedThree();	
+		DatePickedThree();
 	}
 
 	var DatePickedThree = function () {
 		var departure_2 = $("#air_departure_2_temp");
 		var departure_3 = $("#air_departure_3_temp");
-		
+
 		var departureDate_2 = departure_2.datepicker("getDate");
 		var departureDate_3 = departure_3.datepicker("getDate");
-		
+
 		if(null !=  departureDate_2 && null != departureDate_3 ){
-			if(departureDate_2.getTime() > departureDate_3.getTime()){			
+			if(departureDate_2.getTime() > departureDate_3.getTime()){
 				departureDate_3 = departure_2.datepicker("getDate");
-				if (departureDate_3 != null) {						
-					departureDate_3.setDate(departureDate_3.getDate() + 1);						
+				if (departureDate_3 != null) {
+					departureDate_3.setDate(departureDate_3.getDate() + 1);
 				}
 			}else{
 				departureDate_3 = departure_3.datepicker("getDate");
-			}			
+			}
 		}
 		departure_3.datepicker( "setDate", departureDate_3);
 		departure_3.datepicker('option', 'minDate', departure_2.datepicker("getDate"));
-		
+
 		$("#air_departure_3_temp").val(getDateFormat($("#air_departure_3_temp").datepicker("getDate")));
 		$("#air_departure_3").val(getOriginalDateFormat($("#air_departure_3_temp").datepicker("getDate")));
 		DatePickedFour();
@@ -157,53 +157,53 @@ var DatePicked = function() {
 	var DatePickedFour = function() {
 		var departure_3 = $("#air_departure_3_temp");
 		var departure_4 = $("#air_departure_4_temp");
-		
+
 		var departureDate_3 = departure_3.datepicker("getDate");
 		var departureDate_4 = departure_4.datepicker("getDate");
-		
+
 		if(null !=  departureDate_3 && null != departureDate_4 ){
-			if(departureDate_3.getTime() > departureDate_4.getTime()){			
+			if(departureDate_3.getTime() > departureDate_4.getTime()){
 				departureDate_4 = departure_3.datepicker("getDate");
-				if (departureDate_4 != null) {						
-					departureDate_4.setDate(departureDate_4.getDate() + 1);						
+				if (departureDate_4 != null) {
+					departureDate_4.setDate(departureDate_4.getDate() + 1);
 				}
 			}else{
 				departureDate_4 = departure_4.datepicker("getDate");
 			}
 		}
 		departure_4.datepicker( "setDate", departureDate_4);
-		departure_4.datepicker('option', 'minDate',departure_3.datepicker("getDate"));	
+		departure_4.datepicker('option', 'minDate',departure_3.datepicker("getDate"));
 		$("#air_departure_4_temp").val(getDateFormat($("#air_departure_4_temp").datepicker("getDate")));
 		$("#air_departure_4").val(getOriginalDateFormat($("#air_departure_4_temp").datepicker("getDate")));
-		DatePickedFive();		
+		DatePickedFive();
 	}
 
 	var DatePickedFive = function() {
 		var departure_4 = $("#air_departure_4_temp");
 		var departure_5 = $("#air_departure_5_temp");
-	
+
 		var departureDate_4 = departure_4.datepicker("getDate");
 		var departureDate_5 = departure_5.datepicker("getDate");
-		
+
 		if(null !=  departureDate_4 && null != departureDate_5 ){
-			if(departureDate_4.getTime() > departureDate_5.getTime()){			
+			if(departureDate_4.getTime() > departureDate_5.getTime()){
 				departureDate_5 = departure_4.datepicker("getDate");
-				if (departureDate_5 != null) {						
-					departureDate_5.setDate(departureDate_5.getDate() + 1);						
+				if (departureDate_5 != null) {
+					departureDate_5.setDate(departureDate_5.getDate() + 1);
 				}
 			}else{
 				departureDate_5 = departure_5.datepicker("getDate");
 			}
 		}
 		departure_5.datepicker( "setDate", departureDate_5);
-		departure_5.datepicker('option', 'minDate',departure_4.datepicker("getDate"));	
+		departure_5.datepicker('option', 'minDate',departure_4.datepicker("getDate"));
 		$("#air_departure_5_temp").val(getDateFormat($("#air_departure_5_temp").datepicker("getDate")));
 		$("#air_departure_5").val(getOriginalDateFormat($("#air_departure_5_temp").datepicker("getDate")));
 	}
- 
+
 		$(function() {
 				$("#air_arrival_temp").datepicker({
-					dateFormat: dateFormatKey,	
+					dateFormat: dateFormatKey,
 					defaultDate: +3,
 					onSelect: DatePicked,
 					showAnim:'slide',
@@ -216,102 +216,102 @@ var DatePicked = function() {
 					showAnim:'slide',
 					minDate: '2d'
 				});
-				$("#air_departure_temp").datepicker('option', 'minDate', '+2d');	
+				$("#air_departure_temp").datepicker('option', 'minDate', '+2d');
 	           	$("#air_arrival_temp").datepicker('option', 'minDate','+3d');
 				$("#air_nights").change(DatePicked);
 				DatePicked();
 		});
- 
+
 		$("#air_departure_temp").val(getDateFormat($("#air_departure_temp").datepicker("getDate")));
 		$("#air_departure").val(getOriginalDateFormat($("#air_departure_temp").datepicker("getDate")));
         $("#air_arrival_temp").val(getDateFormat($("#air_arrival_temp").datepicker("getDate")));
         $("#air_arrival").val(getOriginalDateFormat($("#air_arrival_temp").datepicker("getDate")));
- 		 
-			
-			
-           	
-			//Multi date 2			
+
+
+
+
+			//Multi date 2
 			var departure = $("#air_departure_2_temp");
             var arrival = $("#air_arrival_2_temp");
 			var nights = $("#air_nights_2");
 			var triggeringElement = $(this);
 			var minArrivalDate = new Date();
-							
-			var departureDate= departure.datepicker("getDate") ;				
-			
-			if (departureDate != null) {					
+
+			var departureDate= departure.datepicker("getDate") ;
+
+			if (departureDate != null) {
 				departureDate.setDate(departureDate.getDate() + 1);
-										
-			} else {                       
-				minArrivalDate.setDate(minArrivalDate.getDate() +2);					
+
+			} else {
+				minArrivalDate.setDate(minArrivalDate.getDate() +2);
 				var month = minArrivalDate.getMonth() + 1;
 				month = ((""+String(month).length ==1) ? ("0"+month) : month);
   				var todDate = month + '/' + minArrivalDate.getDate() + '/' + minArrivalDate.getFullYear();
 				arrival.val(todDate);
-					 
+
 			    var myDate = new Date();
 
 
  				var month = myDate.getMonth() + 1;
   				var todDates = month + '/' + myDate.getDate()+ '/' + myDate.getFullYear();
  				departure.val(todDates);
-								
+
 			}
  		$(function () {
 				$("#air_departure_2_temp").datepicker({
-				dateFormat: dateFormatKey,	
+				dateFormat: dateFormatKey,
 				defaultDate: +3,
 				onSelect: DatePicked,
 				showAnim:'slide',
 				minDate: '2d'
 				});
-				
-				$("#air_departure_2_temp").change(DatePickedThree);							
+
+				$("#air_departure_2_temp").change(DatePickedThree);
            });
- 		
+
 	 		$("#air_departure_temp").val(getDateFormat($("#air_departure_temp").datepicker("getDate")));
 			$("#air_departure").val(getOriginalDateFormat($("#air_departure_temp").datepicker("getDate")));
 	        $("#air_arrival_temp").val(getDateFormat($("#air_arrival_temp").datepicker("getDate")));
 	        $("#air_arrival").val(getOriginalDateFormat($("#air_arrival_temp").datepicker("getDate")));
- 			
+
  			$("#air_departure_2_temp").datepicker( "setDate", '+3d');
-			$("#air_departure_2_temp").datepicker('option', 'minDate', '+2d');	
-			
-			//Multi date 3			
+			$("#air_departure_2_temp").datepicker('option', 'minDate', '+2d');
+
+			//Multi date 3
 			var departure = $("#air_departure_3_temp");
             var arrival = $("#air_arrival_3_temp");
 			var nights = $("#air_nights_3");
 			var triggeringElement = $(this);
 			var minArrivalDate = new Date();
-								
-			var departureDate= departure.datepicker("getDate") ;				
-				
-			if (departureDate != null) {						
-				departureDate.setDate(departureDate.getDate() + 1);				
+
+			var departureDate= departure.datepicker("getDate") ;
+
+			if (departureDate != null) {
+				departureDate.setDate(departureDate.getDate() + 1);
 			} else {
-				minArrivalDate.setDate(minArrivalDate.getDate() +2);						
+				minArrivalDate.setDate(minArrivalDate.getDate() +2);
 				var month = minArrivalDate.getMonth() + 1;
 				month = ((""+String(month).length ==1) ? ("0"+month) : month);
   				var todDate = month + '/' + minArrivalDate.getDate() + '/' + minArrivalDate.getFullYear();
 				arrival.val(todDate);
-					 
+
 			    var myDate = new Date();
  				var month = myDate.getMonth() + 1;
   				var todDates = month + '/' + myDate.getDate()+ '/' + myDate.getFullYear();
  				departure.val(todDates);
-										
+
 			}
  		$(function () {
 				$("#air_departure_3_temp").datepicker({
-				dateFormat: dateFormatKey,	
+				dateFormat: dateFormatKey,
 				defaultDate: +4,
 				onSelect: DatePicked,
 				showAnim:'slide',
 				minDate: '3d'
-				});	
-				
-				$("#air_departure_3_temp").change(DatePickedFour);				
-				
+				});
+
+				$("#air_departure_3_temp").change(DatePickedFour);
+
          });
  			$("#air_departure_3_temp").datepicker( "setDate", '+4d');
 			$("#air_departure_3_temp").datepicker('option', 'minDate', '+3d');
@@ -319,39 +319,39 @@ var DatePicked = function() {
 			$("#air_departure").val(getOriginalDateFormat($("#air_departure_temp").datepicker("getDate")));
 	        $("#air_arrival_temp").val(getDateFormat($("#air_arrival_temp").datepicker("getDate")));
 	        $("#air_arrival").val(getOriginalDateFormat($("#air_arrival_temp").datepicker("getDate")));
-			
-			//Multi date 4			
+
+			//Multi date 4
 			var departure = $("#air_departure_4_temp");
             var arrival = $("#air_arrival_4_temp");
 			var nights = $("#air_nights_4");
 			var triggeringElement = $(this);
-			var minArrivalDate = new Date();								
-			var departureDate= departure.datepicker("getDate") ;				
-				
-			if (departureDate != null) {						
+			var minArrivalDate = new Date();
+			var departureDate= departure.datepicker("getDate") ;
+
+			if (departureDate != null) {
 				departureDate.setDate(departureDate.getDate() + 1);
-												
-			} else {                        
-				minArrivalDate.setDate(minArrivalDate.getDate() +2);						
+
+			} else {
+				minArrivalDate.setDate(minArrivalDate.getDate() +2);
 				var month = minArrivalDate.getMonth() + 1;
   				var todDate = month + '/' + minArrivalDate.getDate() + '/' + minArrivalDate.getFullYear();
 				arrival.val(todDate);
-					 
+
 			    var myDate = new Date();
  				var month = myDate.getMonth() + 1;
   				var todDates = month + '/' + myDate.getDate()+ '/' + myDate.getFullYear();
  				departure.val(todDates);
-										
+
 			}
  		$(function () {
 				$("#air_departure_4_temp").datepicker({
-				dateFormat: dateFormatKey,	
+				dateFormat: dateFormatKey,
 				defaultDate: +5,
 				onSelect: DatePicked,
 				showAnim:'slide',
 				minDate: '4d'
-				});				
-				$("#air_departure_4_temp").change(DatePickedFive);				
+				});
+				$("#air_departure_4_temp").change(DatePickedFive);
          });
  			$("#air_departure_4_temp").datepicker( "setDate", '+5d');
 			$("#air_departure_4_temp").datepicker('option', 'minDate', '+4d');
@@ -360,67 +360,67 @@ var DatePicked = function() {
 	        $("#air_arrival_temp").val(getDateFormat($("#air_arrival_temp").datepicker("getDate")));
 	        $("#air_arrival").val(getOriginalDateFormat($("#air_arrival_temp").datepicker("getDate")));
 			//Multi date 5
-			
+
 			var departure = $("#air_departure_5_temp");
             var arrival = $("#air_arrival_5_temp");
 			var nights = $("#air_nights_5");
 			var triggeringElement = $(this);
 			var minArrivalDate = new Date();
-								
-			var departureDate= departure.datepicker("getDate") ;				
-			
-			if (departureDate != null) {				
-				departureDate.setDate(departureDate.getDate() + 1);										
-			
-			} else {                       
-				minArrivalDate.setDate(minArrivalDate.getDate() +2);					
+
+			var departureDate= departure.datepicker("getDate") ;
+
+			if (departureDate != null) {
+				departureDate.setDate(departureDate.getDate() + 1);
+
+			} else {
+				minArrivalDate.setDate(minArrivalDate.getDate() +2);
 				var month = minArrivalDate.getMonth() + 1;
   				var todDate = month + '/' + minArrivalDate.getDate() + '/' + minArrivalDate.getFullYear();
 				arrival.val(todDate);
-				
+
 			    var myDate = new Date();
  				var month = myDate.getMonth() + 1;
   				var todDates = month + '/' + myDate.getDate()+ '/' + myDate.getFullYear();
- 				departure.val(todDates);								
+ 				departure.val(todDates);
 			}
  		$(function () {
 				$("#air_departure_5_temp").datepicker({
-				dateFormat: dateFormatKey,	
+				dateFormat: dateFormatKey,
 				defaultDate: +6,
 				onSelect: DatePicked,
 				showAnim:'slide',
 				minDate: '5d'
-				});				
+				});
         });
-			
+
  		$("#air_departure_5_temp").datepicker( "setDate", '+6d');
 		$("#air_departure_5_temp").datepicker('option', 'minDate', '+5d');
 		$("#air_departure_temp").val(getDateFormat($("#air_departure_temp").datepicker("getDate")));
 		$("#air_departure").val(getOriginalDateFormat($("#air_departure_temp").datepicker("getDate")));
         $("#air_arrival_temp").val(getDateFormat($("#air_arrival_temp").datepicker("getDate")));
         $("#air_arrival").val(getOriginalDateFormat($("#air_arrival_temp").datepicker("getDate")));
-		
+
         becConfigLoad();
        	becFilterLoad('F');
 
 </script>
 <script>
-	$(document).ready(function() {						   
+	$(document).ready(function() {
 		$("#Air_TripType3").click(function(){
 			$("#multi_des_01").show();
-			$("#hide_return_date").hide();			
+			$("#hide_return_date").hide();
 		});
 
 		$("#Air_TripType2").click(function(){
-			$("#multi_des_01").hide();	
+			$("#multi_des_01").hide();
 			$("#hide_return_date").show();
 		});
 
 		$("#Air_TripType1").click(function(){
-			$("#multi_des_01").hide();	
+			$("#multi_des_01").hide();
 			$("#hide_return_date").show();
 		});
-		
+
 	});
 </script>
 </head>
@@ -786,15 +786,15 @@ var DatePicked = function() {
             </select>
           </div>
         </li>
-		
+
 		<li id="flax_container_div" style="display: block;">
         <input type="checkbox" name="isFlexSearch_F" id="isFlexSearch_F" class="radio_top" />
-        <label class="option-sub-label">上述日期 <span class="option-sub-label"> (3天前后出行的也可以接受)</span></label>
+        <label class="option-sub-label">上述日期 <span class="option-sub-label"> (**3天前后出行的也可以接受**)</span></label>
       </li>
       <div class="polka-dots"></div>
-      
+
       <ul>
-      	
+
       		<!-- Multi Destination 1 -->
       <li  id="multi_des_01"  style="display:none;">
         <ul class="location-inputs">
@@ -980,12 +980,12 @@ var DatePicked = function() {
               <option value="0">Exact Date</option>
             </select>
           </li>
-		  
+
         </ul>
 
       	</li>
       </ul>
-      
+
       <li>
         <div class="option-main-label">
           <h1>乘客信息</h1>
@@ -994,11 +994,11 @@ var DatePicked = function() {
         </ul>
       </li>
       </ul>
-      
-      <li class="morefilters" style="display:none;">        
+
+      <li class="morefilters" style="display:none;">
         <ul>
-      
-      </ul>	  
+
+      </ul>
 	  <div class="polka-dots"></div>
       <ul>
           <li id="pref_airline_F" class="preffered-airline">
@@ -1058,7 +1058,7 @@ var DatePicked = function() {
         <div class="hide_filter"><a href="#" class="show_filter" translate="no">高级搜索<span id='arrow_down' class='arrow_down'>&nbsp;&nbsp;&nbsp;</span></a></div>
       </li>
       <li class="cf"> <a onClick="return validate('formF');" href="JavaScript:search('F');" class="search-button">
-        <div id="search_btns_f" translate="no">搜索</div> 
+        <div id="search_btns_f" translate="no">搜索</div>
         </a> </li>
     </ul>
   </div>
@@ -1066,21 +1066,21 @@ var DatePicked = function() {
 <input type="hidden" id="air_nights" name="F_nights"  />
 <script type="text/javascript">
 	setEngType("F");
-	$(document).ready(function(){		
+	$(document).ready(function(){
 		$("#air_Loc_dep_m_3").removeAttr('validate');
 		$("#air_Loc_to_m_3").removeAttr('validate');
-	
+
 		$("#air_Loc_dep_m_4").removeAttr('validate');
 		$("#air_Loc_to_m_4").removeAttr('validate');
-		
+
 		$("#air_Loc_dep_m_5").removeAttr('validate');
 		$("#air_Loc_to_m_5").removeAttr('validate');
-		
-		$(".arrow1").click(function(){ 			
-		$("#multi_des_02").slideDown("slow"); 
+
+		$(".arrow1").click(function(){
+		$("#multi_des_02").slideDown("slow");
 		//$("#air_Loc_dep_m_3").val('');
 		//$("#air_Loc_to_m_3").val('');
-		
+
 		if ($(".arrow1").hasClass("arrow_min")) {
 			$("#air_Loc_to_m_3").removeAttr('validate');
 			$("#air_Loc_dep_m_3").removeAttr('validate');
@@ -1088,62 +1088,62 @@ var DatePicked = function() {
 			$("#air_Loc_to_m_4").removeAttr('validate');
 			$("#air_Loc_dep_m_5").removeAttr('validate');
 			$("#air_Loc_to_m_5").removeAttr('validate');
-			
+
 			$("#multi_des_02").slideUp("slow");
 			$("#multi_des_03").slideUp("slow");
 			$("#multi_des_04").slideUp("slow");
-			$(".arrow1").removeClass("arrow_min").addClass("arrow_plu"); 
-			$(".arrow2").removeClass("arrow_min").addClass("arrow_plu"); 
-			$(".arrow3").removeClass("arrow_min").addClass("arrow_plu"); 
+			$(".arrow1").removeClass("arrow_min").addClass("arrow_plu");
+			$(".arrow2").removeClass("arrow_min").addClass("arrow_plu");
+			$(".arrow3").removeClass("arrow_min").addClass("arrow_plu");
 		 }else{
 			$("#air_Loc_dep_m_3").attr('validate', 'formF');
 	 		$("#air_Loc_to_m_3").attr('validate', 'formF');
-	 			
+
 			$(".arrow1").removeClass("arrow_plu").addClass("arrow_min");
 		 }
 		 setTimeout('resizeContainer()',400);
 	});
-		
-		$(".arrow2").click(function(){ 			
-			$("#multi_des_03").slideDown("slow"); 
+
+		$(".arrow2").click(function(){
+			$("#multi_des_03").slideDown("slow");
 			//$("#air_Loc_dep_m_4").val('');
 			//$("#air_Loc_to_m_4").val('');
-			
+
 		 	if ($(".arrow2").hasClass("arrow_min")) {
 		 		$("#air_Loc_dep_m_4").removeAttr('validate');
 				$("#air_Loc_to_m_4").removeAttr('validate');
 				$("#air_Loc_dep_m_5").removeAttr('validate');
 				$("#air_Loc_to_m_5").removeAttr('validate');
-		 		
+
 				$("#multi_des_03").slideUp("slow");
-			  	$("#multi_des_04").slideUp("slow");	
-			 	$(".arrow2").removeClass("arrow_min").addClass("arrow_plu"); 
-			  	$(".arrow3").removeClass("arrow_min").addClass("arrow_plu"); 
-			   	$(".arrow4").removeClass("arrow_min").addClass("arrow_plu"); 
-			}else{					
+			  	$("#multi_des_04").slideUp("slow");
+			 	$(".arrow2").removeClass("arrow_min").addClass("arrow_plu");
+			  	$(".arrow3").removeClass("arrow_min").addClass("arrow_plu");
+			   	$(".arrow4").removeClass("arrow_min").addClass("arrow_plu");
+			}else{
 				$("#air_Loc_dep_m_4").attr('validate', 'formF');
-				$("#air_Loc_to_m_4").attr('validate', 'formF');	
-					
+				$("#air_Loc_to_m_4").attr('validate', 'formF');
+
 		 		$(".arrow2").removeClass("arrow_plu").addClass("arrow_min");
-			} 
+			}
 			setTimeout('resizeContainer()',400);
-		});	
-		
-		$(".arrow3").click(function(){		
+		});
+
+		$(".arrow3").click(function(){
 			//$("#air_Loc_dep_m_5").val('');
 			//$("#air_Loc_to_m_5").val('');
 			if ($(".arrow3").hasClass("arrow_min")) {
 				$("#air_Loc_dep_m_5").removeAttr('validate');
 				$("#air_Loc_to_m_5").removeAttr('validate');
-			}else{				
+			}else{
 				$("#air_Loc_dep_m_5").attr('validate', 'formF');
-				$("#air_Loc_to_m_5").attr('validate', 'formF');	
+				$("#air_Loc_to_m_5").attr('validate', 'formF');
 			}
-			
+
 			$("#multi_des_04").slideToggle("slow");
 		 	$(".arrow3").toggleClass('arrow_min');
 			setTimeout('resizeContainer()',400);
-		});		
+		});
 
 	});
 </script>
