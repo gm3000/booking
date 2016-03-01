@@ -43,8 +43,8 @@
              <div class="ui column">
                <div id="menu_bar" class="ui {{config('app.primary_color')}} inverted icon menu">
                    <a id="home" class="item" href="/home"><i class="large home icon"></i></a>
-                   <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>
                    <a id="flight" class="item" href="/flights">{{ trans('menu.flight') }}</a>
+                   <a id="hotel" class="item" href="/hotels">{{ trans('menu.hotel') }}</a>                 
                    <a id="package" class="item" href="/travelpackages">{{ trans('menu.package') }}</a>
                    <a id="vipprogram" class="item" href="/vipprograms">{{ trans('menu.VipProgram') }}</a>
                    <a id="shopping" class="item" href="/shopping-partner">{{ trans('menu.shopping') }}</a>
