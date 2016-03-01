@@ -86,3 +86,7 @@ input.activity-country-select {
 	line-height:1.7em;
 	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
+
+ul.package-passenger-block.holiday-pax-rooms > li:nth-child(2){
+	margin-right:1em;
+}
