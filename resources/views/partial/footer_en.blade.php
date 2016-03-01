@@ -10,7 +10,6 @@
           </p>
           <div style="background-color:white;text-align:center;">
             <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
-            <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
           </div>
       </div>
       <div class="ui column">
