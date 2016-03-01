@@ -32,6 +32,8 @@ class DatabaseSeeder extends Seeder
         //shopping data
         $this->call(ShoppingsTableSeeder::class);
 
+        //shopping data
+        $this->call(HotelsTableSeeder::class);
 
         Model::reguard();
     }
