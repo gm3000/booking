@@ -10,12 +10,18 @@ ul.activity-main-block {
 	margin-top:0.85em;
 }
 
+#tabs, label, .ui-widget div input, a.show_filter, a.hide_filter {
+	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
 div.option-sub-label, label.option-sub-label , ul.activity-destination-country > li > h1{
 	color: white;
+	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
 div.option-main-label  > h1, li.option-main-label > h1, div.hotel-passenger-block > ul  > li.hotel-passenger-label-text {
 	color: white;
+	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
 div.polka-dots {
@@ -26,9 +32,10 @@ ul.activity-dates-block > li > div > input {
 	width:139px;
 }
 
-a.search-button {
+a.search-button > div {
 	margin-right:20px;
 	margin-bottom:10px;
+	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
 a.search-button > div {

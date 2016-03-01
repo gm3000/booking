@@ -70,6 +70,15 @@ body p {
   text-align:justify;
 }
 
+body p,ul,#menu_bar, .list>.item,.ui.items>.item>.content>div.header {
+  font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
+.ui.items>.item>.content>.header {
+  margin-bottom: 1em;
+  color:#CE3434;
+}
+
 #footer .title {
     color:white;
     margin-top:1em;
