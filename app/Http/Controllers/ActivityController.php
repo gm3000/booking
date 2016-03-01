@@ -50,16 +50,17 @@ class ActivityController extends Controller
      */
     public function show($id)
     {
-        $activity = Activity::where('id', $id)->get(
-            [
-                'id',
-                'name_'.$this->lang.' as name',
-                'desc_'.$this->lang.' as desc',
-                'gallery'
-            ]
-        );
+        $activity = Activity::find($id,[
+            'id',
+            'name_'.$this->lang.' as name',
+            'desc_'.$this->lang.' as desc',
+            'body_'.$this->lang.' as body',
+            'gallery'
+        ]);
 
-        return view('activity.detail', compact('acitvity'));
+        //dd($activity);
+
+        return view('activity.detail', compact('activity'));
     }
 
     /**
