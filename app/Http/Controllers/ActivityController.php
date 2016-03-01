@@ -58,8 +58,6 @@ class ActivityController extends Controller
             'gallery'
         ]);
 
-        //dd($activity);
-
         return view('activity.detail', compact('activity'));
     }
 
