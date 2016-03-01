@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         $cities = \App\City::all();
         foreach($cities as $city)
         {
-            $city->hotels()->saveMany(factory(\App\Hotel::class,5)->make());
+            //$city->hotels()->saveMany(factory(\App\Hotel::class,5)->make());
             //$city->shoppings()->saveMany(factory(\App\Shopping::class,5)->make());
             $city->activities()->saveMany(factory(\App\Activity::class,5)->make());
         }
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
         //shopping data
         $this->call(ShoppingsTableSeeder::class);
 
-        //shopping data
+        //hotel data
         $this->call(HotelsTableSeeder::class);
 
         Model::reguard();
