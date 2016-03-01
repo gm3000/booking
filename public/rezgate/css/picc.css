@@ -81,3 +81,8 @@ input#discountCoupon_No_F,input#discountCoupon_No_V,input#Air_line,input#Air_lin
 input.activity-country-select {
 	height:18px;
 }
+
+#dialogs, #dialogs2, #dialogs3 {
+	line-height:1.7em;
+	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
