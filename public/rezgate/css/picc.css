@@ -10,7 +10,7 @@ ul.activity-main-block {
 	margin-top:0.85em;
 }
 
-#tabs, label, .ui-widget div input, a.show_filter, a.hide_filter {
+#tabs, label, .ui-widget div select, .ui-widget div input, a.show_filter, a.hide_filter {
 	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
