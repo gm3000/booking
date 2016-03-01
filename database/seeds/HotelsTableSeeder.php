@@ -11,6 +11,7 @@ class HotelsTableSeeder extends Seeder
      */
     public function run()
     {
+
         $city = \App\City::where('name_en', '=', 'LasVegas')->get()->each(function ($city) {
                     $city->hotels()->saveMany([
                         factory(\App\Hotel::class)->make([
@@ -94,5 +95,6 @@ class HotelsTableSeeder extends Seeder
                         ]),
                     ]);
                 });
+
     }
 }

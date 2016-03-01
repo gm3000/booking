@@ -10,4 +10,9 @@ class Activity extends Model
     {
         return $this->belongsTo('App\City');
     }
+
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag');
+    }
 }
