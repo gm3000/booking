@@ -17,8 +17,8 @@ class HotelsTableSeeder extends Seeder
                         factory(\App\Hotel::class)->make([
                             'name_en' => 'The Venetian Resort-Hotel-Casino',
                             'name_cn' => '威尼斯人度假赌场酒店',
-                            'desc_en' => 'At the edge of fashion, in the heart of Las Vegas you’ll find Fashion Show – one of the largest and most exciting retail shopping destinations in the United States.',
-                            'desc_cn' => '位于拉斯维加斯的中心地带，“时装秀”百货是美国最大和最令人兴奋的零售百货之一，总是处于时尚的前沿.',
+                            'desc_en' => 'Set on the Las Vegas Strip, this lavish, Italian-themed, all-suite casino hotel is 1.5 miles from the Las Vegas Convention Center. Plush, classical suites feature flat-screens, WiFi, minibars and Egyptian linens. Select suites add living and dining areas, marble baths, fireplaces, whirlpool tubs and access to a club lounge. ',
+                            'desc_cn' => '威尼斯人度假赌场酒店位于拉斯维加斯，是家5星级酒店。无论您是因为出差或度假而造访拉斯维加斯，威尼斯人度假赌场酒店都会是您住宿的绝佳选择。在这里您将得到一份贴心服务、收获一份美丽心情。酒店位置较好，距离威尼斯人酒店步行不到1分钟。',
                             'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_veneian_lasvagas_banner.jpg">
                                             <p></p>
                                             <p>This 5-star Italian-themed Las Vegas Strip resort features spacious guest rooms, 19 international restaurants, a state-of-the-art casino and 5-acre pool deck. The on-site Grand Canal Shoppes offer over 80 boutique stores.</p>
@@ -96,31 +96,31 @@ class HotelsTableSeeder extends Seeder
                             'logo' => '/images/hotels/hotel_Bellagio_lasvagas_logo.jpg',
                         ]),
                         factory(\App\Hotel::class)->make([
-                            'name_en' => 'Bellagio',
-                            'name_cn' => '贝拉吉奥度假村',
-                            'desc_en' => 'Across the street from Paris Las Vegas, this luxe, mammoth Strip casino resort is housed in an Italian-inspired, 36-story tower fronted by a man-made 8-acre lake featuring dancing fountains. The standard modern rooms feature custom artwork and marble bathrooms with soaking tubs; lavish suites and villas come with private elevator access, living rooms and butler service. ',
-                            'desc_cn' => '百乐宫酒店（Bellagio）是位于美国内华达州拉斯维加斯大道上的一间赌场酒店，由美高梅集团持有及营运, 百乐宫酒店其中一项最著名的特色项目为酒店门前的人工湖，人工湖面积达32,000平方米，并提供音乐喷泉表演，是旅客必到的景点之一。',
-                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
+                            'name_en' => 'The Palazzo Resort Hotel Casino',
+                            'name_cn' => '帕拉佐赌场度假酒店',
+                            'desc_en' => 'Tucked between the Wynn and the Venetian, this upscale, all-suite resort and casino is a 6-minute walk from the Fashion Show Mall. Plush accommodations feature Italian-inspired decor and range from modern rooms with flat-screen TVs and soaking tubs to entertainment-focused suites with sunken living rooms, dining areas and pool tables.',
+                            'desc_cn' => '帕拉佐赌场度假酒店位于拉斯维加斯，是家5星级酒店。是拉斯维加斯最受欢迎的酒店之一。凭借独有的人文素养和其婉约美丽的殷殷之情不断吸引着广大顾客的到访。酒店位置较好，距离威尼斯人酒店步行4分钟。',
+                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_banner.jpg">
                                           <p></p>
-                                          <p>Right behind the famous Fountains of Bellagio, this luxury Las Vegas Strip hotel and casino offers an upscale day spa, multiple dining options and elegant rooms with marble private bathrooms. The Cirque du Soleil show "O" is on site.</p>
-                                          <p><strong>SHOPPING </strong>– The richly-decorated rooms of the Bellagio come with a flat-screen satellite TV and electric drapes. Soft bathrobes, a minibar and an iPod docking station are provided. Bellagio guests can experience a variety of treatments at the spa or enjoy a massage beside one of 5 beautiful courtyard pools. Lush botanical gardens and a fine art gallery are open for viewing.</p>
-                                          <p><strong>DINING</strong>– A wide range of dining options are available, including Michael Mina fine dining restaurant, open-air dining with fountain views at Picasso and contemporary Japanese dishes at Yellowtail. Sophisticated boutique shops and The Bank Nightclub are also in the hotel.</p>
-                                          <p><strong>ENTERTAINMENT</strong>– The Las Vegas Bellagio is 3 miles from McCarran International Airport. Las Vegas Strip is a great choice for travelers interested in shopping, entertainment and nightlife. This is our guests favorite part of Las Vegas, according to independent reviews.</p>
+                                          <p>This 5-star eco-friendly Las Vegas hotel is on the Vegas Strip. The luxury hotel features a full-service spa and health club, pool deck overlooking the Strip, and a state-of-the-art casino.</p>
+                                          <p><strong>SHOPPING </strong>– The Palazzo offers spacious guest rooms with a separate living area and a dining table. In-room media includes 2 flat-screen TVs, a DVD player and high-speed internet access. The extra large bathrooms feature a 20-inch flat-screen TV and deluxe amenities. A daily newspaper is available.</p>
+                                          <p><strong>DINING</strong>– Hotel Palazzo boasts 16 restaurants and bars serving a variety of food from around the world. Guests can choose from fine and casual dining. The Palazzo Resort Hotel features 7 outdoor pools, 4 hot tubs and private cabanas surrounded by gardens. At The Shoppes, located inside the hotel, has over 50 international boutique shops.</p>
+                                          <p><strong>ENTERTAINMENT</strong>– Guests have free access to the Canyon Ranch SpaClub gym. The club also features spa services, fitness classes and a 40-foot rock-climbing wall. Las Vegas Strip is a great choice for travelers interested in shopping, entertainment and nightlife.</p>
                                           <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
+                                          <img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_bottom1.jpg">
                                           <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
+                                          <img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_bottom2.jpg">',
+                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_banner.jpg">
                                           <p></p>
-                                          <p>这家豪华的赌场酒店位于拉斯维加斯大道（Las Vegas Strip），坐落在著名的Fountains of Bellagio喷泉的后面，拥有高档的日间SPA中心、多间餐饮场所以及带大理石浴室的典雅客房，内设太阳马戏团（Cirque du Soleil）的“O”水上主题演出。</p>
-                                          <p>Bellagio酒店装饰华丽的客房配备了平面卫星电视、电动窗帘、柔软的浴袍、迷你吧和iPod基座。Bellagio酒店的客人可以在SPA中心体验各种理疗服务，在5座迷人的庭院泳池畔享受舒缓的按摩服务，或漫步葱翠的植物园和艺术画廊。</p>
-                                          <p>酒店拥有各种餐饮场所，包括供应精致美食的Michael Mina餐厅、设有喷泉景户外用餐区的Picasso餐厅以及提供当代日本料理的Yellowtail餐厅。酒店内还设有高档精品店和The Bank Nightclub夜总会。</p>
-                                          <p>Las Vegas Bellagio酒店距离麦卡伦国际机场（McCarran International Airport）有3英里（4.8公里）。旅友们喜爱拉斯维加斯大道的理由：购物、娱乐和夜生活。根据我们网站上的真实住客点评，这里是拉斯维加斯的人气地区之一。</p>
+                                          <p>这家五星级的生态友好型酒店坐落在拉斯维加斯大道上，位于拉斯维加斯。豪华的酒店设有服务齐全的spa、健身俱乐部、俯瞰着拉斯维加斯大道的泳池甲板以及顶尖的赌场。</p>
+                                          <p>Palazzo酒店提供带独立起居区和餐桌的宽敞客房。室内媒体设施包括2台平面电视、1台DVD播放器和高速网络连接。额外宽敞的浴室内设有1台20英寸的平面电视以及豪华设施。酒店提供日报。</p>
+                                          <p>Hotel Palazzo酒店设有16间餐厅和酒吧，供应各种国际美食。客人可以享用美食或休闲餐。Palazzo Resort Hotel酒店设有7座户外泳池、4个热水浴缸以及花园簇拥中的私人小屋。酒店内的名店设有超过50间国际精品店。</p>
+                                          <p>客人可以免费使用Canyon Ranch SpaClub健身房。这里还提供各种spa服务、健身课程以及高40英尺（12.2米）的攀岩墙。旅友们喜爱拉斯维加斯大道的理由：购物、娱乐和夜生活。</p>
                                           <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
+                                          <img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_bottom1.jpg">
                                           <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'logo' => '/images/hotels/hotel_Bellagio_lasvagas_logo.jpg',
+                                          <img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_bottom2.jpg">',
+                            'logo' => '/images/hotels/hotel_PalazzoResort_lasvagas_logo.jpg',
                         ]),
                         factory(\App\Hotel::class)->make([
                             'name_en' => 'Bellagio',
