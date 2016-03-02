@@ -94,3 +94,7 @@ ul.package-passenger-block.holiday-pax-rooms > li:nth-child(2){
 div.bec_container_div.cf {
 	padding-left:15px;
 }
+
+select#R1occChildren_V {
+	width:50px;
+}
