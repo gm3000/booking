@@ -2,14 +2,16 @@
 @section('title', trans('title.hotel'))
 @section('content')
 <div class="page_container">
-    <div id="hotel-detail" class="ui stackable grid container">
-        <div class="thirteen wide column">
-            <p></p>
-            <p></p>
-            <h3 class="ui left floated red header">{{$hotel->name}}</h3>
-            <p>
+    <div id="hotel-detail" class="ui vertically divided grid container">
+        <div class="row">
+            <div class="column">
+                <h1 class="ui {{config('app.primary_color')}} header">{{$hotel->name}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
                 {!! $hotel['body'] !!}
-            </p>
+            </div>
         </div>
     </div>
 </div>
