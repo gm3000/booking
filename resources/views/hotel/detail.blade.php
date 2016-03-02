@@ -1,6 +1,7 @@
 @extends('layout.page')
 @section('title', trans('title.hotel'))
 @section('content')
+<div class="page_container">
     <div id="hotel-detail" class="ui stackable grid container">
         <div class="thirteen wide column">
             <p></p>
@@ -11,8 +12,8 @@
             </p>
         </div>
     </div>
+</div>
 @endsection
-
 
 @section('scripts')
     @parent
