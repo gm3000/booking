@@ -12,7 +12,6 @@ class SwitchLanguageController extends Controller
 {
     public function switchLanguage()
     {
-        Cache::flush();
         $language = \Input::get('lang');
         $backUrl = \URL::previous();
         if(str_contains($backUrl,'/setlanguage'))

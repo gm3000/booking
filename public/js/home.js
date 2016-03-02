@@ -18,7 +18,7 @@ $('.partner').dimmer({
         items.push({
             src: '/tops',
             srct: '/images/thumbnails/more.jpg',
-            title: 'More/了解更多'
+            title: $('html').attr('lang') == 'en' ? 'More' : '了解更多'
         });
 
         $('#home-gallery').nanoGallery(

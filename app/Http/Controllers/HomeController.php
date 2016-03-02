@@ -12,12 +12,12 @@ class HomeController extends Controller
 {
     public function show()
     {
-        return Cache::remember('home',120,function(){
+        $cacheKey = 'home.'.$this->lang;
+        return Cache::remember($cacheKey,120,function(){
           $cities_url=[];
           $cities = \App\City::select('name_en as name','id')
               ->whereIn('name',['LasVegas','NewYork','Chicago'])
               ->get()->all();
-
           foreach($cities as $city){
               $cities_url[$city->name] = '/tops/'.$city->id;
           }
