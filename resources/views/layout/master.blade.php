@@ -24,8 +24,8 @@
         <div class="ui grid container">
            <div id="header" class="ui two column row">
              <div class="ui column">
-                 <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
-                 <img src="/images/happybookings_logo.png" alt="happybookings logo"/>
+                 <a href="http://www.picc.com/"><img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/></a>
+                 <a href="http://www.happybookings.com/"><img src="/images/happybookings_logo.png" alt="happybookings logo"/></a>
              </div>
              <div class="ui right aligned column">
                <div class="basic segment" style="padding-top:7px;" data-no-turbolink>
@@ -61,18 +61,18 @@
         </div>
     </div>
     @include('partial.footer_'.App::getLocale())
-    @section('bookingContainer')
-    <div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:160px;width:90%;z-index:999">
-         <div class="ui row">
-            <div class="ui seven wide column">
-            </div>
-            <div class="ui center aligned nine wide column">
-              <iframe id="bec_container_frame" frameborder="0" src="@yield('rezgate_url')" scrolling="no" width="640"></iframe>
-            </div>
-         </div>
-    </div>
-    @show
 </div>
+@section('bookingContainer')
+<div id="bookingContainer" class="ui grid" style="position:absolute;left:100px;top:160px;width:90%;z-index:999">
+     <div class="ui row">
+        <div class="ui seven wide column">
+        </div>
+        <div class="ui center aligned nine wide column">
+          <iframe id="bec_container_frame" frameborder="0" src="@yield('rezgate_url')" scrolling="no" width="640"></iframe>
+        </div>
+     </div>
+</div>
+@show
 @section('scripts')
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/semantic.min.js"></script>
