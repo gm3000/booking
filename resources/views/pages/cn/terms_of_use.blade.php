@@ -2,7 +2,7 @@
 @section('title', 'PICC - 使用条款')
 
 @section('content')
-<img class="page ui fluid image" src="/images/about.jpg" alt="PICC VIP 使用条款" />
+<img class="page ui fluid image" style="height:430px;" src="/images/termofuse.jpg" alt="PICC VIP 使用条款" />
 <div id="terms_of_use" class="page_container">
   <div class="ui grid container">
     <div class="ui column">
