@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Cache;
 
 class SwitchLanguageController extends Controller
 {
     public function switchLanguage()
     {
+        Cache::flush();
         $language = \Input::get('lang');
         $backUrl = \URL::previous();
         if(str_contains($backUrl,'/setlanguage'))
