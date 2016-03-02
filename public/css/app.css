@@ -70,7 +70,7 @@ body p {
   text-align:justify;
 }
 
-body p,td,ul,a,a.ui.header,h2.ui.header,h3.ui.header,#menu_bar, .list>.item,.ui.items>.item>.content>div.header,.labelTitle {
+body p,th,td,ul,a,a.ui.header,h2.ui.header,h3.ui.header,#menu_bar, .list>.item,.ui.items>.item>.content>div.header,.labelTitle {
   font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
