@@ -69,33 +69,6 @@ class HotelsTableSeeder extends Seeder
                             'logo' => '/images/hotels/hotel_Bellagio_lasvagas_logo.jpg',
                         ]),
                         factory(\App\Hotel::class)->make([
-                            'name_en' => 'Bellagio',
-                            'name_cn' => '贝拉吉奥度假村',
-                            'desc_en' => 'Across the street from Paris Las Vegas, this luxe, mammoth Strip casino resort is housed in an Italian-inspired, 36-story tower fronted by a man-made 8-acre lake featuring dancing fountains. The standard modern rooms feature custom artwork and marble bathrooms with soaking tubs; lavish suites and villas come with private elevator access, living rooms and butler service. ',
-                            'desc_cn' => '百乐宫酒店（Bellagio）是位于美国内华达州拉斯维加斯大道上的一间赌场酒店，由美高梅集团持有及营运, 百乐宫酒店其中一项最著名的特色项目为酒店门前的人工湖，人工湖面积达32,000平方米，并提供音乐喷泉表演，是旅客必到的景点之一。',
-                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
-                                          <p></p>
-                                          <p>Right behind the famous Fountains of Bellagio, this luxury Las Vegas Strip hotel and casino offers an upscale day spa, multiple dining options and elegant rooms with marble private bathrooms. The Cirque du Soleil show "O" is on site.</p>
-                                          <p><strong>SHOPPING </strong>– The richly-decorated rooms of the Bellagio come with a flat-screen satellite TV and electric drapes. Soft bathrobes, a minibar and an iPod docking station are provided. Bellagio guests can experience a variety of treatments at the spa or enjoy a massage beside one of 5 beautiful courtyard pools. Lush botanical gardens and a fine art gallery are open for viewing.</p>
-                                          <p><strong>DINING</strong>– A wide range of dining options are available, including Michael Mina fine dining restaurant, open-air dining with fountain views at Picasso and contemporary Japanese dishes at Yellowtail. Sophisticated boutique shops and The Bank Nightclub are also in the hotel.</p>
-                                          <p><strong>ENTERTAINMENT</strong>– The Las Vegas Bellagio is 3 miles from McCarran International Airport. Las Vegas Strip is a great choice for travelers interested in shopping, entertainment and nightlife. This is our guests favorite part of Las Vegas, according to independent reviews.</p>
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
-                                          <p></p>
-                                          <p>这家豪华的赌场酒店位于拉斯维加斯大道（Las Vegas Strip），坐落在著名的Fountains of Bellagio喷泉的后面，拥有高档的日间SPA中心、多间餐饮场所以及带大理石浴室的典雅客房，内设太阳马戏团（Cirque du Soleil）的“O”水上主题演出。</p>
-                                          <p>Bellagio酒店装饰华丽的客房配备了平面卫星电视、电动窗帘、柔软的浴袍、迷你吧和iPod基座。Bellagio酒店的客人可以在SPA中心体验各种理疗服务，在5座迷人的庭院泳池畔享受舒缓的按摩服务，或漫步葱翠的植物园和艺术画廊。</p>
-                                          <p>酒店拥有各种餐饮场所，包括供应精致美食的Michael Mina餐厅、设有喷泉景户外用餐区的Picasso餐厅以及提供当代日本料理的Yellowtail餐厅。酒店内还设有高档精品店和The Bank Nightclub夜总会。</p>
-                                          <p>Las Vegas Bellagio酒店距离麦卡伦国际机场（McCarran International Airport）有3英里（4.8公里）。旅友们喜爱拉斯维加斯大道的理由：购物、娱乐和夜生活。根据我们网站上的真实住客点评，这里是拉斯维加斯的人气地区之一。</p>
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'logo' => '/images/hotels/hotel_Bellagio_lasvagas_logo.jpg',
-                        ]),
-                        factory(\App\Hotel::class)->make([
                             'name_en' => 'The Palazzo Resort Hotel Casino',
                             'name_cn' => '帕拉佐赌场度假酒店',
                             'desc_en' => 'Tucked between the Wynn and the Venetian, this upscale, all-suite resort and casino is a 6-minute walk from the Fashion Show Mall. Plush accommodations feature Italian-inspired decor and range from modern rooms with flat-screen TVs and soaking tubs to entertainment-focused suites with sunken living rooms, dining areas and pool tables.',
@@ -121,60 +94,6 @@ class HotelsTableSeeder extends Seeder
                                           <p></p>
                                           <img class="ui fluid image" src="/images/hotels/hotel_PalazzoResort_lasvagas_bottom2.jpg">',
                             'logo' => '/images/hotels/hotel_PalazzoResort_lasvagas_logo.jpg',
-                        ]),
-                        factory(\App\Hotel::class)->make([
-                            'name_en' => 'Bellagio',
-                            'name_cn' => '贝拉吉奥度假村',
-                            'desc_en' => 'Across the street from Paris Las Vegas, this luxe, mammoth Strip casino resort is housed in an Italian-inspired, 36-story tower fronted by a man-made 8-acre lake featuring dancing fountains. The standard modern rooms feature custom artwork and marble bathrooms with soaking tubs; lavish suites and villas come with private elevator access, living rooms and butler service. ',
-                            'desc_cn' => '百乐宫酒店（Bellagio）是位于美国内华达州拉斯维加斯大道上的一间赌场酒店，由美高梅集团持有及营运, 百乐宫酒店其中一项最著名的特色项目为酒店门前的人工湖，人工湖面积达32,000平方米，并提供音乐喷泉表演，是旅客必到的景点之一。',
-                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
-                                          <p></p>
-                                          <p>Right behind the famous Fountains of Bellagio, this luxury Las Vegas Strip hotel and casino offers an upscale day spa, multiple dining options and elegant rooms with marble private bathrooms. The Cirque du Soleil show "O" is on site.</p>
-                                          <p><strong>SHOPPING </strong>– The richly-decorated rooms of the Bellagio come with a flat-screen satellite TV and electric drapes. Soft bathrobes, a minibar and an iPod docking station are provided. Bellagio guests can experience a variety of treatments at the spa or enjoy a massage beside one of 5 beautiful courtyard pools. Lush botanical gardens and a fine art gallery are open for viewing.</p>
-                                          <p><strong>DINING</strong>– A wide range of dining options are available, including Michael Mina fine dining restaurant, open-air dining with fountain views at Picasso and contemporary Japanese dishes at Yellowtail. Sophisticated boutique shops and The Bank Nightclub are also in the hotel.</p>
-                                          <p><strong>ENTERTAINMENT</strong>– The Las Vegas Bellagio is 3 miles from McCarran International Airport. Las Vegas Strip is a great choice for travelers interested in shopping, entertainment and nightlife. This is our guests favorite part of Las Vegas, according to independent reviews.</p>
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
-                                          <p></p>
-                                          <p>这家豪华的赌场酒店位于拉斯维加斯大道（Las Vegas Strip），坐落在著名的Fountains of Bellagio喷泉的后面，拥有高档的日间SPA中心、多间餐饮场所以及带大理石浴室的典雅客房，内设太阳马戏团（Cirque du Soleil）的“O”水上主题演出。</p>
-                                          <p>Bellagio酒店装饰华丽的客房配备了平面卫星电视、电动窗帘、柔软的浴袍、迷你吧和iPod基座。Bellagio酒店的客人可以在SPA中心体验各种理疗服务，在5座迷人的庭院泳池畔享受舒缓的按摩服务，或漫步葱翠的植物园和艺术画廊。</p>
-                                          <p>酒店拥有各种餐饮场所，包括供应精致美食的Michael Mina餐厅、设有喷泉景户外用餐区的Picasso餐厅以及提供当代日本料理的Yellowtail餐厅。酒店内还设有高档精品店和The Bank Nightclub夜总会。</p>
-                                          <p>Las Vegas Bellagio酒店距离麦卡伦国际机场（McCarran International Airport）有3英里（4.8公里）。旅友们喜爱拉斯维加斯大道的理由：购物、娱乐和夜生活。根据我们网站上的真实住客点评，这里是拉斯维加斯的人气地区之一。</p>
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'logo' => '/images/hotels/hotel_Bellagio_lasvagas_logo.jpg',
-                        ]),
-                        factory(\App\Hotel::class)->make([
-                            'name_en' => 'Bellagio',
-                            'name_cn' => '贝拉吉奥度假村',
-                            'desc_en' => 'Across the street from Paris Las Vegas, this luxe, mammoth Strip casino resort is housed in an Italian-inspired, 36-story tower fronted by a man-made 8-acre lake featuring dancing fountains. The standard modern rooms feature custom artwork and marble bathrooms with soaking tubs; lavish suites and villas come with private elevator access, living rooms and butler service. ',
-                            'desc_cn' => '百乐宫酒店（Bellagio）是位于美国内华达州拉斯维加斯大道上的一间赌场酒店，由美高梅集团持有及营运, 百乐宫酒店其中一项最著名的特色项目为酒店门前的人工湖，人工湖面积达32,000平方米，并提供音乐喷泉表演，是旅客必到的景点之一。',
-                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
-                                          <p></p>
-                                          <p>Right behind the famous Fountains of Bellagio, this luxury Las Vegas Strip hotel and casino offers an upscale day spa, multiple dining options and elegant rooms with marble private bathrooms. The Cirque du Soleil show "O" is on site.</p>
-                                          <p><strong>SHOPPING </strong>– The richly-decorated rooms of the Bellagio come with a flat-screen satellite TV and electric drapes. Soft bathrobes, a minibar and an iPod docking station are provided. Bellagio guests can experience a variety of treatments at the spa or enjoy a massage beside one of 5 beautiful courtyard pools. Lush botanical gardens and a fine art gallery are open for viewing.</p>
-                                          <p><strong>DINING</strong>– A wide range of dining options are available, including Michael Mina fine dining restaurant, open-air dining with fountain views at Picasso and contemporary Japanese dishes at Yellowtail. Sophisticated boutique shops and The Bank Nightclub are also in the hotel.</p>
-                                          <p><strong>ENTERTAINMENT</strong>– The Las Vegas Bellagio is 3 miles from McCarran International Airport. Las Vegas Strip is a great choice for travelers interested in shopping, entertainment and nightlife. This is our guests favorite part of Las Vegas, according to independent reviews.</p>
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_banner.jpg">
-                                          <p></p>
-                                          <p>这家豪华的赌场酒店位于拉斯维加斯大道（Las Vegas Strip），坐落在著名的Fountains of Bellagio喷泉的后面，拥有高档的日间SPA中心、多间餐饮场所以及带大理石浴室的典雅客房，内设太阳马戏团（Cirque du Soleil）的“O”水上主题演出。</p>
-                                          <p>Bellagio酒店装饰华丽的客房配备了平面卫星电视、电动窗帘、柔软的浴袍、迷你吧和iPod基座。Bellagio酒店的客人可以在SPA中心体验各种理疗服务，在5座迷人的庭院泳池畔享受舒缓的按摩服务，或漫步葱翠的植物园和艺术画廊。</p>
-                                          <p>酒店拥有各种餐饮场所，包括供应精致美食的Michael Mina餐厅、设有喷泉景户外用餐区的Picasso餐厅以及提供当代日本料理的Yellowtail餐厅。酒店内还设有高档精品店和The Bank Nightclub夜总会。</p>
-                                          <p>Las Vegas Bellagio酒店距离麦卡伦国际机场（McCarran International Airport）有3英里（4.8公里）。旅友们喜爱拉斯维加斯大道的理由：购物、娱乐和夜生活。根据我们网站上的真实住客点评，这里是拉斯维加斯的人气地区之一。</p>
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom1.jpg">
-                                          <p></p>
-                                          <img class="ui fluid image" src="/images/hotels/hotel_Bellagio_lasvagas_bottom2.jpg">',
-                            'logo' => '/images/hotels/hotel_Bellagio_lasvagas_logo.jpg',
                         ]),
                         factory(\App\Hotel::class)->make([
                             'name_en' => 'ARIA Resort & Casino at CityCenter Las Vegas',
@@ -232,6 +151,90 @@ class HotelsTableSeeder extends Seeder
                         ]),
                     ]);
                 });
-
+        $city = \App\City::where('name_en', '=', 'NewYork')->get()->each(function ($city) {
+                    $city->hotels()->saveMany([
+                        factory(\App\Hotel::class)->make([
+                            'name_en' => 'Soho Grand Hotel',
+                            'name_cn' => '苏豪区格兰德酒店',
+                            'desc_en' => 'Situated in the upscale SoHo neighborhood, this luxury hotel is close to art galleries, designer shops and popular restaurants. This modern hotel features an outdoor restaurant and all rooms have city views. The elegant guest rooms at the Hotel Soho Grand come with free Wi-Fi, a flat-screen TV, a DVD Player, and an iPod docking station. Designer bathrobes and toiletries are also provided. Guests can enjoy American cuisine and signature cocktails in the Club Room, the Grand Bar and the Salon. ',
+                            'desc_cn' => '苏豪区格兰德酒店座落于纽约(NY)的苏活，是带给您欢乐假期与放松身心的完美住宿选择。 在这里，旅客们可轻松前往市区内各大旅游、购物、餐饮地点。 从酒店到市内几大地标相当方便，例如绘图中心公司, 斯潘色上流社会画廊, 翠贝卡电影院。苏豪区格兰德酒店酒店提供优质贴心的服务和方便实用的设施，赢得了客人的普遍好评。',
+                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_Soho_NewYork_banner.jpg">
+                                            <p></p>
+                                            <p>In the upscale SoHo neighborhood, this luxury hotel is close to art galleries, designer shops and popular restaurants. This modern hotel features an outdoor restaurant and all rooms have city views.</p>
+                                            <p><strong><span style="color: #000000;">SHOPPING</span></strong> The elegant guest rooms at the Hotel Soho Grand include free Wi-Fi, a flat-screen TV, a DVD Player, and an iPod docking station. Designer bathrobes and toiletries are also provided. Guests can enjoy American cuisine and signature cocktails in the Club Room, the Grand Bar and the Salon. Opening seasonally, the outdoor Yard has a summer menu.</p>
+                                            <p><strong><span style="color: #000000;">DINING</span></strong> Soho Grand Hotel features a 24-hour gym and business center. A helpful concierge desk is also available 24 hours a day. Canal Street subway station is a 5-minute walk from Soho Grand and provides easy access to Central Park and Times Square. Little Italy is a 10-minute walk away.</p>
+                                            <p><strong><span style="color: #000000;">ENTERTAINMENT</span></strong> Check-out is a relaxed 12:00 PM, so you can sleep in and really enjoy that morning cup o joe. SoHo is a great choice for travelers interested in restaurants, food and shopping. This is our guests favorite part of New York City, according to independent reviews. In this area you can shop till you drop for popular brands like Apple, H&M, Zara, Prada, Ralph Lauren.</p>
+                                            <p></p>
+                                            <img class="ui fluid image" src="/images/hotels/hotel_Soho_NewYork_bottom1.jpg">
+                                            <p></p>
+                                            <img class="ui fluid image" src="/images/hotels/hotel_Soho_NewYork_bottom2.jpg">',
+                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_Soho_NewYork_banner.jpg">
+                                            <p></p>
+                                            <p>这家豪华酒店坐落在高档的SoHo区，靠近艺术画廊、设计商店和受欢迎的餐厅，设有1间室外餐厅，所有的客房均享有市景。</p>
+                                            <p>Hotel Soho Grand酒店典雅的客房都提供免费无线网络连接、平面电视、DVD播放机、iPod基座、名牌浴袍和洗浴用品。客人可以在俱乐部客房、Grand酒吧和沙龙享受美式佳肴和特色鸡尾酒。室外的Yard餐厅季节性营业，提供夏季菜单。</p>
+                                            <p>Soho Grand Hotel酒店设有24小时开放的健身房和商务中心。乐于助人的礼宾服务台亦提供24小时服务。运河街地铁站(Canal Street Subway Station)距离Soho Grand酒店有5分钟步行路程，方便客人轻松前往中央公园(Central Park)和时代广场(Times Square)。小意大利距离酒店有10分钟步行路程。</p>
+                                            <p>退房时间12:00，睡个懒觉再收拾行李也来得及！旅友们喜爱苏活区的理由：餐厅、美食和购物。根据我们网站上的真实住客点评，这里是纽约的人气地区之一。 购物超赞！周边商店：Apple、 H&M、 Zara、 Prada、 Ralph Lauren。</p>
+                                            <p></p>
+                                            <img class="ui fluid image" src="/images/hotels/hotel_Soho_NewYork_bottom1.jpg">
+                                            <p></p>
+                                            <img class="ui fluid image" src="/images/hotels/hotel_Soho_NewYork_bottom2.jpg">',
+                            'logo' => '/images/hotels/hotel_Soho_NewYork_logo.jpg',
+                        ]),
+                        factory(\App\Hotel::class)->make([
+                            'name_en' => 'New York Marriott Marquis',
+                            'name_cn' => '纽约马奎斯万豪酒店',
+                            'desc_en' => 'Surround yourself with the sights and sounds of the city at New York Marriott Marquis. Get relaxed and energized simultaneously as you step into some of the largest guest rooms in NYC, amid the hustle and bustle of famed Broadway. Nestled in the heart of Times Square, our Broadway hotel in New York gives you easy access to the Javits Center, exciting shows and several subway lines to access any part of NYC. Located near Fifth Avenue shopping, Radio City Music Hall, Rockefeller Center, Central Park, Lincoln Center and Madison Square Garden, our hotel puts travelers in the midst of popular NYC attractions and business destinations. ',
+                            'desc_cn' => '入住纽约马奎斯万豪酒店，尽情探索繁华纽约的迷人魅力。酒店位于繁华喧嚣的百老汇地区，客房宽敞舒适，在纽约市内独树一帜，欢迎您前来休闲放松、恢复活力。我们的酒店位于纽约百老汇地区，坐拥时代广场的中心地带，地理位置便利，信步可至贾维茨会议中心 (Javits Center)，方便观赏精彩表演，您亦可乘坐多条地铁线路轻松抵达纽约市各大热门场所。酒店地理位置优越，靠近第五大道购物区、无线电城音乐厅、洛克菲勒中心、中央公园、林肯中心和麦迪逊广场花园，可方便前往众多纽约风景名胜和商业场所。',
+                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_Marriott_NewYork_banner.jpg">
+                                          <p></p>
+                                          <p>In the heart of Times Square and the Broadway theater district, this 4-star hotel features 3 dining options, including a revolving rooftop restaurant.</p>
+                                          <p><strong>SHOPPING </strong>– The luxurious rooms at the New York Marriott Marquis have a spacious sitting area, an LCD TV with satellite channels and a stylish marble bathroom with a range of amenities. Select rooms offer a panoramic view of New York city.</p>
+                                          <p><strong>DINING</strong>– Guests can enjoy continental cuisine at the popular revolving rooftop View Restaurant & Lounge, or have American cuisine at Crossroads American Kitchen & Bar. Alternatively, the Broadway Lounge offers cocktails and light refreshments on the hotels 8th floor, with views overlooking Times Square. The lobby on this floor has free WiFi.</p>
+                                          <p><strong>ENTERTAINMENT</strong>– The Marriott Marquis also features a 4,000 square-foot fitness center, which also overlooks Times Square. The New York Marriott is just minutes from Fifth Avenue shops. Check-out is a relaxed 12:00 PM, so you can sleep in and really enjoy that morning cup o joe. This is our guests favorite part of New York City, according to independent reviews. In this area you can shop till you drop for popular brands like Apple, Tiffany & Co, H&M, Prada, Nike.</p>
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_Marriott_NewYork_bottom1.jpg">
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_Marriott_NewYork_bottom2.jpg">',
+                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_Marriott_NewYork_banner.jpg">
+                                          <p></p>
+                                          <p>这家四星级酒店位于时代广场（Times Square）和百老汇（Broadway）剧院区的中心地带，设有3个餐饮场所，其中包括1间旋转屋顶餐厅。</p>
+                                          <p>New York Marriott Marquis酒店的豪华客房设有一个宽敞的休息区、一台带卫星频道的液晶电视以及一间带各类用品的时尚大理石浴室。部分客房享有纽约市全景。</p>
+                                          <p>客人可以在深受欢迎的View Restaurant & Lounge旋转屋顶餐厅及酒廊享用欧陆式美食，或在Crossroads American Kitchen & Bar美式厨房及酒吧享用美式菜肴。此外，酒店8楼的Broadway Lounge酒廊提供鸡尾酒和清淡的点心，并享有时代广场的景色。同样位于8楼的大堂设有免费Wi-Fi。</p>
+                                          <p>Marriott Marquis酒店还设有一个4000平方英尺的健身中心，也俯瞰着时代广场。New York Marriott酒店距离第五大道（Fifth Avenue）的商店仅有几分钟路程。 退房时间12:00，睡个懒觉再收拾行李也来得及！根据我们网站上的真实住客点评，这里是纽约的人气地区之一。 购物超赞！周边商店：Apple、 Tiffany & Co、 H&M、 Prada、 Nike。</p>
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_Marriott_NewYork_bottom1.jpg">
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_Marriott_NewYork_bottom2.jpg">',
+                            'logo' => '/images/hotels/hotel_Marriott_NewYork_logo.jpg',
+                        ]),
+                        factory(\App\Hotel::class)->make([
+                            'name_en' => 'The London NYC',
+                            'name_cn' => '伦敦纽约酒店',
+                            'desc_en' => 'A high-end hotel in the heart of Midtown, this high-rise is 2 blocks from the subway and within 4 blocks of Central Park and Times Square. The luxurious suites begin at 500 sq ft and have Italian linens, 2 flat-screen TVs and complimentary WiFi. The other suites increase in size, up to as much as 2,500 sq ft in the penthouse, and may add amenities such as full kitchens or an atrium.',
+                            'desc_cn' => '伦敦纽约酒店为商务和休闲旅游游客而设计，位于得天独厚的中城西地区，是本市最受欢迎的酒店之一。 在这里，旅客们可轻松前往市区内各大旅游、购物、餐饮地点。 对于喜欢冒险的游客来说，科利尔维尔的齐格菲尔德剧院, 卡内基厅, 纽约游客和询问处再合适不过了。',
+                            'body_en' => '<img class="ui fluid image" src="/images/hotels/hotel_LondonNYC_lasvagas_banner.jpg">
+                                          <p></p>
+                                          <p>This Midtown Manhattan hotel is a 5-minute walk from Central Park. It features an on-site bar. Shops along Fifth Avenue are a 7-minute walk away.</p>
+                                          <p><strong>SHOPPING </strong>– Luxurious rooms include a flat-screen cable TV, free WiFi, and an iPod dock. The London New York features plush bedding and linens. Select suites have views of Central Park. The London has a 24-hour health club with state-of-the-art equipment. The concierge team can arrange a variety of services throughout the city. Guests can enjoy evening cocktails and afternoon tea at The London Bar.</p>
+                                          <p><strong>DINING</strong>– Times Square and Rockefeller Center are both a 10-minute walk away. Check-out is a relaxed 12:00 PM, so you can sleep in and really enjoy that morning cup joe.</p>
+                                          <p><strong>ENTERTAINMENT</strong>– This is our guests favorite part of New York City, according to independent reviews. In this area you can shop till you drop for popular brands like Apple, Tiffany & Co, H&M, Prada, Nike.</p>
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_LondonNYC_lasvagas_bottom1.jpg">
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_LondonNYC_lasvagas_bottom2.jpg">',
+                            'body_cn' => '<img class="ui fluid image" src="/images/hotels/hotel_LondonNYC_lasvagas_banner.jpg">
+                                          <p></p>
+                                          <p>这间位于曼哈顿Midtown的酒店距离中央公园有5分钟步行路程，内设酒吧，距离第五大道上的商店有7分钟步行路程。</p>
+                                          <p>豪华的客房配有一台平板有线电视、免费WiFi以及一个iPod基座。London New York酒店提供被子和床单。部分套房享有中央公园的景致。London酒店设有带先进设备的24小时健康俱乐部。礼宾团队可以为客人安排城市各处的服务。客人可以在London Bar酒吧享用晚间鸡尾酒和下午茶。</p>
+                                          <p>时代广场（Times Square）和洛克菲勒中心（Rockefeller Center）距离酒店均有10分钟步行路程。</p>
+                                          <p>退房时间12:00，睡个懒觉再收拾行李也来得及！根据我们网站上的真实住客点评，这里是纽约的人气地区之一。 购物超赞！周边商店：Apple、 Tiffany & Co、 H&M、 Prada、 Nike </p>
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_LondonNYC_lasvagas_bottom1.jpg">
+                                          <p></p>
+                                          <img class="ui fluid image" src="/images/hotels/hotel_LondonNYC_lasvagas_bottom2.jpg">',
+                            'logo' => '/images/hotels/hotel_LondonNYC_lasvagas_logo.jpg',
+                        ]),
+                    ]);
+                });
     }
 }
