@@ -90,3 +90,7 @@ input.activity-country-select {
 ul.package-passenger-block.holiday-pax-rooms > li:nth-child(2){
 	margin-right:1em;
 }
+
+div.bec_container_div.cf {
+	padding-left:15px;
+}
