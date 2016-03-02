@@ -29,7 +29,7 @@ class CitiesTableSeeder extends Seeder
                   'heat'    => 4,
                   'thumbnail'=> '/images/thumbnails/lasvegas.jpg',
                   'logo' => '/images/thumbnails/lasvegas.jpg',
-                  'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                  'slider' => '/images/cities/lasvegas1.jpg;/images/cities/lasvegas2.jpg',
                   'slider_caption_cn' => '欢迎来到拉斯维加斯;出发前请及早预定以获得最佳优惠',
                   'slider_caption_en' => 'Welcome to Las Vegas;Book your Activities and Sightseeing Tours before you go.',
                   'body_cn' => '<p>拉斯维加斯位于内华达州的莫哈韦沙漠里，是一个以拥有不懈活力而闻名的度假胜地，有24小时营业的娱乐场和无尽的娱乐项目。其焦点是在拉斯维加斯大道，仅有4个多英里长，但是遍布精致的主题酒店，如金字塔形的卢克索酒店和有完整大运河的威尼斯酒店;以及豪华度假村包括有标志性音乐喷泉的贝拉吉欧酒店等;当然还有拉斯维加斯最出名的无数娱乐场。</p>
@@ -163,7 +163,7 @@ class CitiesTableSeeder extends Seeder
                   'heat'    => 3,
                   'thumbnail'=> '/images/thumbnails/newyork.jpg',
                   'logo' => '/images/thumbnails/newyork.jpg',
-                  'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                  'slider' => '/images/cities/newyork1.jpg;/images/cities/newyork2.jpg',
                   'slider_caption_cn' => '欢迎来到纽约;出发前请及早预定以获得最佳优惠',
                   'slider_caption_en' => 'Welcome to New York;Book your Activities and Sightseeing Tours before you go.',
                   'body_cn' => '<p>1524年，意大利裔航海家乔凡尼·达·维拉扎诺在航海驶向法国的途中，发现了纽约湾。1609年，英国人亨利·哈德逊受雇于荷兰人，驶进纽约湾并沿河勘查，这条河后来就以他的名字被命名为哈德逊河。同年，法国人萨穆埃尔·德·尚普伦发现并开发了纽约北部，并将宣称法国对此地拥有主权。</p>
@@ -188,7 +188,7 @@ class CitiesTableSeeder extends Seeder
                   'heat'    => 2,
                   'thumbnail'=> '/images/thumbnails/chicago.jpg',
                   'logo' => '/images/thumbnails/chicago.jpg',
-                  'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                  'slider' => '/images/cities/chicago1.jpg;/images/cities/chicago2.jpg',
                   'slider_caption_cn' => '欢迎来到芝加哥;出发前请及早预定以获得最佳优惠',
                   'slider_caption_en' => 'Welcome to Chicago;Book your Activities and Sightseeing Tours before you go.',
                   'body_cn' => '<p>芝加哥市区面积606.1平方公里，海拔高度176米（578英尺），坐落于密西根湖的西南岸。密歇根湖长190公里，宽495公里，是世界上第五大淡水湖。芝加哥市内有两条河流，芝加哥河流经市中心，卡拉麦特河则穿过城市南部的工业区。芝加哥市内绿地广阔，园林众多，其中城市公园的占地面积达到3000公顷，每年吸引约8600万游客到访。</p>
@@ -211,7 +211,7 @@ class CitiesTableSeeder extends Seeder
                   'heat'    => 2,
                   'thumbnail'=> '/images/thumbnails/orlando.jpg',
                   'logo' => '/images/thumbnails/orlando.jpg',
-                  'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                  'slider' => '/images/cities/orlando1.jpg;/images/cities/orlando2.jpg',
                   'slider_caption_cn' => '欢迎来到奥兰多;出发前请及早预定以获得最佳优惠',
                   'slider_caption_en' => 'Welcome to Orlando;Book your Activities and Sightseeing Tours before you go.',
                   'body_cn' => '<p>奥兰多市美国佛罗里达州中部的一个城市，行政区划在橘子郡内。奥兰多都市圈以奥兰多市为中心，人口约有213万人（2010年数据），是全美第26大都市圈，美国南部地区第六大都市圈，佛州的第三大都市圈。2010年，奥兰多市人口达到23万人，是全美第77大城市，佛州第五大城市，也是州内第一大内陆城市。</p>
@@ -230,7 +230,7 @@ class CitiesTableSeeder extends Seeder
                   'heat'    => 2,
                   'thumbnail'=> '/images/thumbnails/losangeles.jpg',
                   'logo' => '/images/thumbnails/losangeles.jpg',
-                  'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                  'slider' => '/images/cities/losangeles1.jpg;/images/cities/losangeles2.jpg',
                   'slider_caption_cn' => '欢迎来到洛杉矶;出发前请及早预定以获得最佳优惠',
                   'slider_caption_en' => 'Welcome to Los Angeles (LA);Book your Activities and Sightseeing Tours before you go.',
                   'body_cn' => '<p>洛杉矶有许多不同之处。洛杉矶是世界娱乐之都，是有100多个博物馆的文化圣地，也是晴朗天气的天堂。无论是从星光大道这样的旅游景点（已收录2553个明星，且每月增加一至两个），还是从不断扩张的高科技产业带来职业发展机会来看，洛杉矶都是一个不错的选择。它是北美大陆上唯一曾两次举办夏季奥运会的城市。洛杉矶市区是除华盛顿特区外，全美最大的都会区。洛杉矶有加州唯一仅存的木灯塔（位于圣佩德罗的奔牛节公园）和收录于国家史迹名录中的最大历史戏剧区（位于市中心百老汇。</p>
@@ -262,7 +262,7 @@ class CitiesTableSeeder extends Seeder
                     'heat'    => 2,
                     'thumbnail'=> '/images/thumbnails/london.jpg',
                     'logo' => '/images/thumbnails/london.jpg',
-                    'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                    'slider' => '/images/cities/london1.jpg;/images/cities/london2.jpg',
                     'slider_caption_cn' => '欢迎来到伦敦;出发前请及早预定以获得最佳优惠',
                     'slider_caption_en' => 'Welcome to London;Book your Activities and Sightseeing Tours before you go.',
                     'body_cn' => '<p>伦敦是英国的首都，位于泰晤士河畔。这个21世纪的现代化城市的历史可以追溯到古罗马时代。英国议会、标志性的&ldquo;大本钟&rdquo;和威斯敏斯特大教堂都位于市中心。在横跨泰晤士河的&rdquo;伦敦眼&ldquo;ldquo;摩天轮上可欣赏到南岸文化综合区的全景，以及整个城市。<img style="margin: 10px; float: right;" src="image/london.gif" alt="" /></p>
@@ -288,7 +288,7 @@ class CitiesTableSeeder extends Seeder
                     'heat'    => 2,
                     'thumbnail'=> '/images/thumbnails/sydney.jpg',
                     'logo' => '/images/thumbnails/Sydney-logo.jpg',
-                    'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                    'slider' => '/images/cities/sydney1.jpg;/images/cities/sydney2.jpg',
                     'slider_caption_cn' => '欢迎来到悉尼;出发前请及早预定以获得最佳优惠',
                     'slider_caption_en' => 'Welcome to Sydney;Book your Activities and Sightseeing Tours before you go.',
                     'body_cn' => '<p>悉尼都市圈的面积约26.15平方公里。在过去的十年里，悉尼市已经成为新南威尔士州发展最快、面积最大的地方政府所在地。</p>
@@ -316,7 +316,7 @@ class CitiesTableSeeder extends Seeder
                     'heat'    => 2,
                     'thumbnail'=> '/images/thumbnails/tokyo.jpg',
                     'logo' => '/images/thumbnails/tokyo.jpg',
-                    'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                    'slider' => '/images/cities/tokyo1.jpg;/images/cities/tokyo2.jpg',
                     'slider_caption_cn' => '欢迎来到东京;出发前请及早预定以获得最佳优惠',
                     'slider_caption_en' => 'Welcome to Tokyo;Book your Activities and Sightseeing Tours before you go.',
                     'body_cn' => '<p>大东京区是世界上人口最多的城市圈，也是日本文化、金融和政治的中心。东京是一个繁华的大都市，也是全球重要的交通枢纽和世界经济和工业中心。该市拥有一大批世界一流高等教育机构，在日本高校最集中的地区。东京之前被称为江户，直至1868年日本皇室从京都迁到这里。东京都市圈一般被定义为由四个行政区域组成，即琦玉县、东京都、神奈川县和千叶县，而东京市区通常是指东京都辖区内的23个区。东京都市圈包括的大城市有横滨（日本第二大城市）、川崎、千叶，以及城市西部的农村山区，东京湾外的伊豆群岛，和位于东南太平洋上小笠原群岛。</p>
@@ -344,7 +344,7 @@ class CitiesTableSeeder extends Seeder
                     'heat'    => 2,
                     'thumbnail'=> '/images/thumbnails/paris.jpg',
                     'logo' => '/images/thumbnails/paris-logo.jpg',
-                    'slider' => '/images/cities/city.jpg;/images/cities/city.jpg',
+                    'slider' => '/images/cities/paris1.jpg;/images/cities/paris2.jpg',
                     'slider_caption_cn' => '欢迎来到巴黎;出发前请及早预定以获得最佳优惠',
                     'slider_caption_en' => 'Welcome to Paris;Book your Activities and Sightseeing Tours before you go.',
                     'body_cn' => '<p>巴黎一直被视作欧洲最有趣的城市，甚至可能是世界上最令人惊叹的城市之一。来自世界各地的人们都愿意到巴黎去探索和体验这个童话般的城市。巴黎是爱之城，灵感之城，也是艺术与时尚之城。巴黎的夜景，埃菲尔铁塔和城市温暖的气氛会让你感到就在家中。巴黎有很多有趣的建筑和博物馆可供参观，也是购物狂的天堂。巴黎是一个值得每一个参观和体验的城市。</p>
