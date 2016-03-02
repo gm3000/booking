@@ -14,7 +14,7 @@ ul.activity-main-block {
 	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
-div.option-sub-label, label.option-sub-label, ul.activity-destination-country > li > h1,span.option-sub-label{
+div.option-sub-label, label.option-sub-label, ul.activity-destination-country > li > h1,span.option-sub-label,span.hotel-passenger-label-text{
 	color: white;
 	font-family: Georgia, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
