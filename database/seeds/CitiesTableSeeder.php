@@ -49,7 +49,7 @@ class CitiesTableSeeder extends Seeder
                   'package_cn' => '<table class="ui celled table">
                           <thead>
                               <tr>
-                                  <th colspan="2">所有中国人保险客户，只要订了“机+酒”套票，并至少在拉斯维加斯连住5晚及以上，将获得以下免费赠品：</th>
+                                  <th colspan="2">所有中国人民保险客户，只要订了“机+酒”套票，并至少在拉斯维加斯连住5晚及以上，将获得以下免费赠品：</th>
                               </tr>
                           </thead>
                           <tbody>
