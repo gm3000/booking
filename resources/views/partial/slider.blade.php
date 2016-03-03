@@ -3,7 +3,7 @@
         @foreach($images as $index=>$image)
         <li>
             <div id="slide-{{$index}}" class="home-slide" style="background-image: url({{$image}});">
-                @if(isset($captions))
+                @if(isset($captions) && !empty($captions[$index]))
                     <h1 class="ui inverted header">
                         <span class="slide-caption">{{$captions[$index]}}</span>
                     </h1>

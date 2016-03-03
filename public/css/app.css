@@ -12,13 +12,18 @@
     position: absolute;
     font-size: 3rem;
     font-weight: bold;
+    font-family: Georgia, Helvetica, Tahoma, Arial, SimSun, "宋体","Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
     text-shadow: 0px 0px 10px rgba(0,0,0,1);
-
     top: 25%;
     left: 7%;
-    width: 35%;
+    max-width: 35%;
     line-height: 1.2;
-
+    color: white;
+    letter-spacing: -1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    border-radius: 5px;
+    text-align:justify;
 }
 
 #home-detail{
