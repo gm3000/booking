@@ -98,3 +98,7 @@ div.bec_container_div.cf {
 select#R1occChildren_V {
 	width:50px;
 }
+
+td.ui-datepicker-unselectable.ui-state-disabled {
+	opacity: 0.4;
+}
