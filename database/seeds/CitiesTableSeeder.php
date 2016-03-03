@@ -49,7 +49,7 @@ class CitiesTableSeeder extends Seeder
                   'package_cn' => '<table class="ui celled table">
                           <thead>
                               <tr>
-                                  <th colspan="2">所有招行信用卡客户，只要订了“机+酒”套票，并至少在拉斯维加斯连住5晚及以上，将获得以下免费赠品：</th>
+                                  <th colspan="2">所有中国人保险客户，只要订了“机+酒”套票，并至少在拉斯维加斯连住5晚及以上，将获得以下免费赠品：</th>
                               </tr>
                           </thead>
                           <tbody>
@@ -103,7 +103,7 @@ class CitiesTableSeeder extends Seeder
                   'package_en' => '<table class="ui celled table">
                           <thead>
                               <tr>
-                                  <th colspan="2">Every CMB Cardholders that books a minimum of 5 nights will qualify for the following Exclusive Offers:</th>
+                                  <th colspan="2">Every PICC customer that books a minimum of 5 nights will qualify for the following Exclusive Offers:</th>
                               </tr>
                           </thead>
                           <tbody>
