@@ -22,6 +22,7 @@ class CreateHotelsTable extends Migration
             $table->text('body_cn')->nullable();
             $table->text('body_en')->nullable();
             $table->string('logo')->nullable();
+            $table->text('gallery')->nullable();
             $table->softDeletes();
             $table->timestamps();
             $table->boolean('is_partner')->nullable();

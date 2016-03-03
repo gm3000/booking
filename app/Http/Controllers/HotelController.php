@@ -131,7 +131,8 @@ class HotelController extends Controller
       $hotel = \App\Hotel::findOrNew($id,[
                   'name_'.$lang.' as name',
                   'desc_'.$lang.' as desc',
-                  'body_'.$lang.' as body']);
+                  'body_'.$lang.' as body',
+                  'gallery']);
        //dd($hotel);
        return view('hotel.detail', compact('hotel'));
     }

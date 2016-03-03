@@ -28,7 +28,7 @@
 @section('scripts')
     @parent
     <script type="text/javascript" src="/js/activity.js"></script>
-    @unless(empty($activity))
+    @unless(empty($activity) || empty($activity['gallery']))
         @include('partial.gallery',['target'=>'#activity-gallery','images'=>explode(';',$activity['gallery'])])
     @endunless
 @endsection
