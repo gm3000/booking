@@ -12,6 +12,7 @@ return [
     'offers' => 'OFFERS',
     'hours' => 'HOURS',
     'location' => 'LOCATION',
-    'website' => 'WEBSITE'
-
+    'website' => 'WEBSITE',
+    'fashionshow' => 'Fashion Show Mall',
+    'grand_canal_shoppes' => 'Grand Canal Shoppes',
 ];

@@ -1,7 +1,8 @@
-@extends('layout.page')
+@extends('layout.slider-page')
 @section('title', trans('title.shopping'))
 
 @section('content')
+@include('partial.slider',['images'=>['/images/slider/shopping1.jpg','/images/slider/shopping2.jpg'],'captions'=>[trans('shopping.fashionshow'),trans('shopping.grand_canal_shoppes'),]])
     <div id="shopping-list" class="ui grid container">
         <div class="row">
             <div class="column">
