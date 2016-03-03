@@ -5,9 +5,9 @@
         <div id="activity-detail" class="ui vertically divided grid container">
             <div class="row">
                 <div class="column">
-                    <div class="ui {{config('app.primary_color')}} header">
+                    <h1 class="ui {{config('app.primary_color')}} header">
                         {{$activity['name']}}
-                    </div>
+                    </h1>
                 </div>
             </div>
             <div class="row">
