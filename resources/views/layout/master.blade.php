@@ -24,7 +24,7 @@
         <div class="ui grid container">
            <div id="header" class="ui two column row">
              <div class="ui column">
-                 <a href="http://www.picc.com/"><img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/></a>
+                 <a href="http://www.cmbchina.com/"><img src="/images/cmb_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/></a>
                  <a href="http://www.happybookings.com/"><img src="/images/happybookings_logo.png" alt="happybookings logo"/></a>
              </div>
              <div class="ui right aligned column">

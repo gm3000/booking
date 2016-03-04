@@ -6,19 +6,19 @@
             About Us
           </h3>
           <p style="text-align:justify;">
-            PICC VIP Travel makes travel easy for all of your international and outbound trips with over 300,000 hotels worldwide with a lowest price guarantee at the time of your booking. PICC VIP Travel provides PICC customers the ability to customize your trip with our easy to use booking engine or you can select from our pre-packaged vacations.
+            CMB VIP Travel makes travel easy for all of your international and outbound trips with over 300,000 hotels worldwide with a lowest price guarantee at the time of your booking. CMB VIP Travel provides CMB customers the ability to customize your trip with our easy to use booking engine or you can select from our pre-packaged vacations.
           </p>
           <div style="background-color:white;text-align:center;">
-            <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
+            <img src="/images/cmb_logo.jpg" alt="CMB logo" style="margin-right:0.618em;"/>
           </div>
       </div>
       <div class="ui column">
           <h3 class="ui header title">
-            About PICC VIP Travel
+            About CMB VIP Travel
           </h3>
           <ul class="ui list">
-            <li><a href="/about">PICC Travel Overview</a></li>
-            <li><a href="/about_vip">PICC Travel VIP Membership</a></li>
+            <li><a href="/about">CMB Travel Overview</a></li>
+            <li><a href="/about_vip">CMB Travel VIP Membership</a></li>
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
@@ -52,7 +52,7 @@
           Outside of China: <br/>
           <span>1-888-929-9991</span> <br/>
           Email:<br/>
-          <a href="mailto:piccinfo@happybookings.com" style="color:white;">piccinfo@happybookings.com</a>
+          <a href="mailto:cmbinfo@happybookings.com" style="color:white;">cmbinfo@happybookings.com</a>
         </p>
         <h3 class="ui header title">
           Info

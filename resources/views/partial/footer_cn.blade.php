@@ -6,19 +6,19 @@
               关于我们
             </h3>
             <p style="text-align:justify;">
-              PICC VIP 旅游使得所有的出境游变得容易得多。我们拥有全球30多万家酒店，并保证最低价格。我们可以向中国人民保险客户定制旅游行程，也可以让这些用户自行在我们的预定系统里直接预定全球机票和酒店，还可以提供全球各地的旅游套餐。
+              CMB VIP 旅游使得所有的出境游变得容易得多。我们拥有全球30多万家酒店，并保证最低价格。我们可以向招商银行客户定制旅游行程，也可以让这些用户自行在我们的预定系统里直接预定全球机票和酒店，还可以提供全球各地的旅游套餐。
             </p>
             <div style="background-color:white;text-align:center;">
-              <img src="/images/PICC_logo.jpg" alt="PICC logo" style="margin-right:0.618em;"/>
+              <img src="/images/cmb_logo.jpg" alt="CMB logo" style="margin-right:0.618em;"/>
             </div>
         </div>
         <div class="ui column">
             <h3 class="ui header title">
-              关于中国人民保险VIP旅游
+              关于招商银行VIP旅游
             </h3>
             <ul class="ui list">
-              <li><a href="/about">PICC VIP 旅游概况</a></li>
-              <li><a href="/about_vip">PICC 旅游贵宾会员计划</a></li>
+              <li><a href="/about">CMB VIP 旅游概况</a></li>
+              <li><a href="/about_vip">CMB 旅游贵宾会员计划</a></li>
               <li><a href="/terms-of-use">使用条款</a></li>
               <li><a href="/private_policy">隐私政策</a></li>
             </ul>
@@ -52,7 +52,7 @@
             中国境外可以拨打免费电话：<br/>
             <span>1-888-929-9991</span> <br/>
             电子邮箱：<br/>
-            <a href="mailto:piccinfo@happybookings.com" style="color:white;">piccinfo@happybookings.com</a>
+            <a href="mailto:cmbinfo@happybookings.com" style="color:white;">cmbinfo@happybookings.com</a>
           </p>
           <h3 class="ui header title">
             其他
