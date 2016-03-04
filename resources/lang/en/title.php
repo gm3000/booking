@@ -1,5 +1,5 @@
 <?php
-$postfix = ' - PICC';
+$postfix = ' - CMB';
 return [
 
     'home' => 'Home'.$postfix,

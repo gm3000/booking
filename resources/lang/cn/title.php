@@ -1,5 +1,5 @@
 <?php
-$postfix = ' - 中国人民保险集团股份有限公司';
+$postfix = ' - 招商银行';
 return [
 
     'home' => '首页'.$postfix,
