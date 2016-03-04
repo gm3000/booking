@@ -1,5 +1,5 @@
 <?php
-$postfix = ' - CMB';
+$postfix = ' - CMB Travel';
 return [
 
     'home' => 'Home'.$postfix,
